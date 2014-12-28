@@ -1,0 +1,50 @@
+{% extends '::home.html.twig' %}
+
+{% block body -%}
+
+    <section id="bannerSection"
+             style="background:url(themes/images/banner/portfolio.png) no-repeat center center  ;">
+        <div class="container">
+            <h1 id="pageTitle" class="style-h1">
+                <small class="style-h1">Liste des Témoignages</small>
+		<span class="pull-right toolTipgroup">
+			<a href="#" data-placement="top" data-original-title="Find us on via facebook"><img style="width:45px"
+                                                                                                src="{{ asset('themes/images/facebook.png') }}"
+                                                                                                alt="facebook"
+                                                                                                title="facebook"></a>
+			<a href="#" data-placement="top" data-original-title="Find us on via twitter"><img style="width:45px"
+                                                                                               src="{{ asset('themes/images/twitter.png') }}"
+                                                                                               alt="twitter"
+                                                                                               title="twitter"></a>
+			<a href="#" data-placement="top" data-original-title="Find us on via youtube"><img style="width:45px"
+                                                                                               src="{{ asset('themes/images/youtube.png') }}"
+                                                                                               alt="youtube"
+                                                                                               title="youtube"></a>
+		</span>
+            </h1>
+        </div>
+
+    </section>
+    <br>
+
+    <input type='hidden' id='current_page'/>
+    <input type='hidden' id='show_per_page'/>
+
+    <!-- Content div. The child elements will be used for paginating(they don't have to be all the same,
+        you can use divs, paragraphs, spans, or whatever you like mixed together). '-->
+    <div id='content'>
+        {% for entity in entities %}
+
+            <p>message:{{ entity.message|raw }}</p>
+            <p>envoyé par:{{ entity.nom }}</p>
+            <p>Age: {{ entity.age }}ans</p>
+            <p>Adresse:{{ entity.adresse }}</p>
+            <p> Profession:{{ entity.profession }}</p>
+
+        {% endfor %}
+
+    </div>
+    <!-- An empty div which will be populated using jQuery -->
+    <div id='page_navigation'></div>
+<br>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends '::home.html.twig' %}
+
+
+{% block body -%}
+
+    {% for entity in entities %}
+        <!--/stories-->
+        <div class="row">
+
+
+            <div class="col-md-12">
+                <h1 class="style-h1">{{ entity.titre }}</h1>
+            </div>
+
+        </div>
+        <div class="row">
+
+
+            <div class="style-image">
+                <a class="story-img" href="#"><img src="{{ asset('img/nedra.jpg') }}" class="img-circle"></a>
+            </div>
+
+
+            <div class=" col-lg-offset-2 col-xs-6">
+                <p style="text-align: center">{{ entity.description |raw }}</p>
+            </div>
+
+
+        </div>
+
+
+
+
+
+    {% endfor %}
+
+
+{% endblock %}

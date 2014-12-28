@@ -1,0 +1,38 @@
+{% extends '::home.html.twig' %}
+{% block body -%}
+    <section id="bannerSection" class="style-banner">
+
+        <div class="container">
+            <h1 id="pageTitle" class="style-h1">
+                <small class="style-h1">COACHING DE VIE( séance individuelle)</small>
+		<span class="pull-right toolTipgroup">
+			<a href="#" data-placement="top" data-original-title="Find us on via facebook"><img style="width:45px"
+                                                                                                src="{{ asset('themes/images/facebook.png') }}"
+                                                                                                alt="facebook"
+                                                                                                title="facebook"></a>
+			<a href="#" data-placement="top" data-original-title="Find us on via twitter"><img style="width:45px"
+                                                                                               src="{{ asset('themes/images/twitter.png') }}"
+                                                                                               alt="twitter"
+                                                                                               title="twitter"></a>
+			<a href="#" data-placement="top" data-original-title="Find us on via youtube"><img style="width:45px"
+                                                                                               src="{{ asset('themes/images/youtube.png') }}"
+                                                                                               alt="youtube"
+                                                                                               title="youtube"></a>
+		</span>
+            </h1>
+        </div>
+
+    </section>
+    <br>
+    <table class="records_list">
+
+        <tbody>
+        {% for entity in entities %}
+            <div class="jumbotron">
+                <p>{{ entity.description | raw }}</p>
+            </div>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

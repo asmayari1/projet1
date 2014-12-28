@@ -1,0 +1,51 @@
+SiteNedraBundle_coaching:
+    resource: "@SiteNedraBundle/Resources/config/routing/coaching.yml"
+    prefix:   admin/coaching
+SiteNedraBundle_contact:
+    resource: "@SiteNedraBundle/Resources/config/routing/contact.yml"
+    prefix:   /contact
+SiteNedraBundle_introduction:
+    resource: "@SiteNedraBundle/Resources/config/routing/introduction.yml"
+    prefix:   /admin/introduction
+SiteNedraBundle_media:
+    resource: "@SiteNedraBundle/Resources/config/routing/media.yml"
+    prefix:  /admin/media
+SiteNedraBundle_news:
+    resource: "@SiteNedraBundle/Resources/config/routing/news.yml"
+    prefix:  /admin/news
+SiteNedraBundle_programme:
+    resource: "@SiteNedraBundle/Resources/config/routing/programme.yml"
+    prefix:   /admin/programme
+SiteNedraBundle_services:
+    resource: "@SiteNedraBundle/Resources/config/routing/services.yml"
+    prefix:   /admin/services
+SiteNedraBundle_temoignages:
+    resource: "@SiteNedraBundle/Resources/config/routing/temoignages.yml"
+    prefix:   /admin/temoignages
+
+programme_show_front:
+    path:     /programme
+    defaults: { _controller: "SiteNedraBundle:Programme:showfront" }
+
+introduction_index_front:
+    path:     /apropos
+    defaults: { _controller: "SiteNedraBundle:Introduction:indexfront" }
+
+news_index_front:
+    path:     /actualite
+    defaults: { _controller: "SiteNedraBundle:News:indexfront" }
+
+services_index_front:
+    path:     /formation
+    defaults: { _controller: "SiteNedraBundle:Services:indexfront" }
+services_index_front:
+    path:     /coaching
+    defaults: { _controller: "SiteNedraBundle:Coaching:indexfront" }
+
+temoignages_index_front:
+    path:     /temoignages
+    defaults: { _controller: "SiteNedraBundle:Temoignages:indexfront" }
+
+media_index_front:
+    path:     /portfolio
+    defaults: { _controller: "SiteNedraBundle:Media:indexfront"}

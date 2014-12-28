@@ -1,0 +1,35 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1 style="color: magenta">Apropos</h1>
+
+
+    <table class="records_list">
+
+        <tbody>
+        {% for entity in entities %}
+            <div class="jumbotron">
+                <h1 style="color: mediumvioletred">{{ entity.titre }}</h1>
+                <p>{{ entity.description }}</p>
+            </div>
+            <tr>
+
+
+
+                <ul>
+                    <li>
+                        <a  class="btn btn-success" href="{{ path('introduction_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a  class="btn btn-info" href="{{ path('introduction_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+
+    {% endblock %}

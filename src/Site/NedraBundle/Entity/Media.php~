@@ -1,0 +1,89 @@
+<?php
+
+namespace Site\NedraBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Media
+ *
+ * @ORM\Table(name="media")
+ * @ORM\Entity
+ */
+class Media
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="photos", type="string", length=255, nullable=true)
+     */
+    private $photos;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="videos", type="string", length=255, nullable=true)
+     */
+    private $videos;
+
+    /**
+     * @var \Coaching
+     *
+     * @ORM\ManyToOne(targetEntity="Coaching")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="coaching_id", referencedColumnName="id")
+     * })
+     */
+    private $coaching;
+
+    /**
+     * @var \Introduction
+     *
+     * @ORM\ManyToOne(targetEntity="Introduction")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="introduction_id", referencedColumnName="id")
+     * })
+     */
+    private $introduction;
+
+    /**
+     * @var \Programme
+     *
+     * @ORM\ManyToOne(targetEntity="Programme")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="programmes_id", referencedColumnName="id")
+     * })
+     */
+    private $programmes;
+
+    /**
+     * @var \Services
+     *
+     * @ORM\ManyToOne(targetEntity="Services")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="services_id", referencedColumnName="id")
+     * })
+     */
+    private $services;
+
+    /**
+     * @var \News
+     *
+     * @ORM\ManyToOne(targetEntity="News")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="news_id", referencedColumnName="id")
+     * })
+     */
+    private $news;
+
+
+}

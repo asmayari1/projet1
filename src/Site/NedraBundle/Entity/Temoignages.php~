@@ -1,0 +1,80 @@
+<?php
+
+namespace Site\NedraBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Temoignages
+ *
+ * @ORM\Table(name="temoignages")
+ * @ORM\Entity
+ */
+class Temoignages
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=255, nullable=true)
+     */
+    private $nom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="age", type="string", length=255, nullable=true)
+     */
+    private $age;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="adresse", type="string", length=255, nullable=true)
+     */
+    private $adresse;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="message", type="text", nullable=true)
+     */
+    private $message;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="profession", type="string", length=255, nullable=true)
+     */
+    private $profession;
+
+    /**
+     * @var \Coaching
+     *
+     * @ORM\ManyToOne(targetEntity="Coaching")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="coaching_id", referencedColumnName="id")
+     * })
+     */
+    private $coaching;
+
+    /**
+     * @var \Services
+     *
+     * @ORM\ManyToOne(targetEntity="Services")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="services_id", referencedColumnName="id")
+     * })
+     */
+    private $services;
+
+
+}

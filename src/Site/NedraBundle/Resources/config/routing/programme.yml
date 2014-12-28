@@ -1,0 +1,30 @@
+programme:
+    path:     /
+    defaults: { _controller: "SiteNedraBundle:Programme:index" }
+
+programme_show:
+    path:     /{id}/show
+    defaults: { _controller: "SiteNedraBundle:Programme:show" }
+
+programme_new:
+    path:     /new
+    defaults: { _controller: "SiteNedraBundle:Programme:new" }
+
+programme_create:
+    path:     /create
+    defaults: { _controller: "SiteNedraBundle:Programme:create" }
+    requirements: { _method: post }
+
+programme_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "SiteNedraBundle:Programme:edit" }
+
+programme_update:
+    path:     /{id}/update
+    defaults: { _controller: "SiteNedraBundle:Programme:update" }
+    requirements: { _method: post|put }
+
+programme_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "SiteNedraBundle:Programme:delete" }
+    requirements: { _method: post|delete }

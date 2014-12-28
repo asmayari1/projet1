@@ -1,0 +1,86 @@
+{% extends '::home.html.twig' %}
+{% block body -%}
+    <section id="carouselSection" style="text-align:center">
+        <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div style="text-align:center" class="item">
+                    <div class="wrapper"><img src="{{ asset('img/nedra.jpg') }}" alt="business themes">
+
+                        <div class="carousel-caption">
+                            <h2>Qui je suis?</h2>
+
+                            <p>nedra </p>
+                            <a href="about_us.html" class="btn btn-large btn-success">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align:center" class="item active">
+                    <div class="wrapper"><img src="{{ asset('img/nedra.jpg') }}"
+                                              alt="business webebsite template">
+
+                        <div class="carousel-caption">
+                            <h2>Qu'est que je faire</h2>
+
+                            <p>We specialise in web design, web development and graphic design for different Desktop, Mobiles and Tablets.  We recently introduce cheapest and best mobile web design packages in our services. </p>
+                            <a href="services.html" class="btn btn-large btn-success">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align:center" class="item">
+                    <div class="wrapper"><img src="{{ asset('img/nedra.jpg') }}" alt="business themes">
+
+                        <div class="carousel-caption">
+                            <h2>What we have done?</h2>
+
+                            <p>We specialise in web design, web development and graphic design for different Desktop, Mobiles and Tablets.  We recently introduce cheapest and best mobile web design packages in our services.  </p>
+                            <a href="portfolio.html" class="btn btn-large btn-success">Our Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align:center" class="item">
+                    <div class="wrapper"><img src="{{ asset('img/nedra.jpg') }}" alt="business themes">
+
+                        <div class="carousel-caption">
+                            <h2>Need help?</h2>
+
+                            <p>We specialise in web design, web development and graphic design for different Desktop, Mobiles and Tablets.  We recently introduce cheapest and best mobile web design packages in our services.  </p>
+                            <a href="contact.html" class="btn btn-large btn-success">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div>
+    </section>
+
+    <input type='hidden' id='current_page'/>
+    <input type='hidden' id='show_per_page'/>
+    <div class="span8">
+        <div id='content'>
+
+            {% for entity in entities %}
+                <p><img class="img-responsive" src="{{ asset('img/nedra.jpg') }}" alt=""></p>
+                <P>{{ entity.titre }}</P>
+                <p>
+         publiée le:{% if entity.date %}{{ entity.date| date("Y-m-d ")}}{% endif %}
+        </p>
+                <p>{{ entity.description |raw }}</p>
+                <P>
+                    <button type="button" class="btn btn-warning"><a href="{{ path('news_show', { 'id': entity.id }) }}"
+                                                                     class="btn-warning">Lire la suite</a></button>
+                </P>
+
+
+            {% endfor %}
+
+        </div>
+
+
+        <!-- An empty div which will be populated using jQuery -->
+        <div id='page_navigation'></div>
+    </div>
+
+{% endblock %}

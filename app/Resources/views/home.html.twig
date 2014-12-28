@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Nedra Ghariani Mehdid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link id="callCss" rel="stylesheet" href="{{ asset('themes/current/bootstrap.min.css') }}" type="text/css"
+          media="screen"/>
+    <link href="{{ asset('css/bootstrap/bootstrap.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/bootstrap/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/bootstrap/bootstrap-responsive.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/bootstrap/bootstrap-responsive.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('themes/css/bootstrap-responsive.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('themes/css/font-awesome.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('themes/css/base.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/icons.css') }}" rel="stylesheet"/>
+
+    <style type="text/css" id="enject"></style>
+    <script type="text/javascript" src="{{ asset('js/jqueryPagination.js') }}"></script>
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //how much items per page to show
+            var show_per_page = 7;
+            //getting the amount of elements inside content div
+            var number_of_items = $('#content').children().size();
+            //calculate the number of pages we are going to have
+            var number_of_pages = Math.ceil(number_of_items / show_per_page);
+
+            //set the value of our hidden input fields
+            $('#current_page').val(0);
+            $('#show_per_page').val(show_per_page);
+
+            //now when we got all we need for the navigation let's make it '
+
+            /*
+             what are we going to have in the navigation?
+             - link to previous page
+             - links to specific pages
+             - link to next page
+             */
+            var navigation_html = '<a class="previous_link" href="javascript:previous();">Prev</a>';
+            var current_link = 0;
+            while (number_of_pages > current_link) {
+                navigation_html += '<a class="page_link" href="javascript:go_to_page(' + current_link + ')" longdesc="' + current_link + '">' + (current_link + 1) + '</a>';
+                current_link++;
+            }
+            navigation_html += '<a class="next_link" href="javascript:next();">Next</a>';
+
+            $('#page_navigation').html(navigation_html);
+
+            //add active_page class to the first page link
+            $('#page_navigation .page_link:first').addClass('active_page');
+
+            //hide all the elements inside content div
+            $('#content').children().css('display', 'none');
+
+            //and show the first n (show_per_page) elements
+            $('#content').children().slice(0, show_per_page).css('display', 'block');
+
+        });
+
+        function previous() {
+
+            new_page = parseInt($('#current_page').val()) - 1;
+            //if there is an item before the current active link run the function
+            if ($('.active_page').prev('.page_link').length == true) {
+                go_to_page(new_page);
+            }
+
+        }
+
+        function next() {
+            new_page = parseInt($('#current_page').val()) + 1;
+            //if there is an item after the current active link run the function
+            if ($('.active_page').next('.page_link').length == true) {
+                go_to_page(new_page);
+            }
+
+        }
+        function go_to_page(page_num) {
+            //get the number of items shown per page
+            var show_per_page = parseInt($('#show_per_page').val());
+
+            //get the element number where to start the slice from
+            start_from = page_num * show_per_page;
+
+            //get the element number where to end the slice
+            end_on = start_from + show_per_page;
+
+            //hide all children elements of content div, get specific items and show them
+            $('#content').children().css('display', 'none').slice(start_from, end_on).css('display', 'block');
+
+            /*get the page link that has longdesc attribute of the current page and add active_page class to it
+             and remove that class from previously active page link*/
+            $('.page_link[longdesc=' + page_num + ']').addClass('active_page').siblings('.active_page').removeClass('active_page');
+
+            //update the current page input field
+            $('#current_page').val(page_num);
+        }
+
+    </script>
+    <style>
+        #page_navigation a {
+            padding: 3px;
+            border: 1px solid #FC5114;
+            margin: 2px;
+            color: black;
+            text-decoration: none
+        }
+
+        .active_page {
+            background: #FC5114;
+            color: white !important;
+        }
+    </style>
+
+
+</head>
+<body>
+<section id="headerSection">
+    <div class="container">
+        <div class="navbar">
+            <div class="container">
+                <button type="button" class="btn btn-navbar active" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h1><a class="brand" href="index.html"> Nedra Ghariani
+                        <small></small>
+                    </a></h1>
+                <div class="nav-collapse collapse">
+                    <ul class="nav pull-right">
+                        <li class="active"><a href="path{{ ('apropos') }}">Accueil</a></li>
+
+                        <li><a href="path{{ ('apropos') }}">Aprops</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="elements.html">Coaching </a></li>
+                                <li><a href="comingsoon.html">Formation</a></li>
+                            </ul>
+                        </li>
+                        <li class="programme"><a href="{{ path('programme') }}">Evenement</a></li>
+
+                        <li><a href="{{ path('temoignages') }}">Témoignages</a></li>
+                        <li><a href="about_us.html">Portfollio</a></li>
+
+
+                        <li><a href="path{{ ('contact') }}" class=" glyphicon-envelope">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Header Ends================================================ -->
+<section id="bodySection">
+    <div class="container">
+        {% block slider %}
+        {% endblock %}
+
+        {% block body %}
+        {% endblock %}
+    </div>
+</section>
+<!-- Footer
+ ================================================== -->
+<section id="footerSection">
+    <div class="container">
+        <footer class="footer well well-small">
+            <div class="row-fluid">
+                <div class="span4">
+                    <h4>Newsletter and Subscription</h4>
+
+
+
+                    <form>
+                        <div class="input-append">
+                            <input id="appendedInputButton" placeholder="Enter your e-mail" type="text">
+                            <button class="btn btn-warning" type="button">send</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="span5">
+                    <h4>Ma page FaceBook</h4>
+                    <ul class="media-list">
+                        <li class="media">
+                            <div class="fb-like-box" data-href="https://www.facebook.com/nedraghariani?fref=ts"
+                                 data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false"
+                                 data-show-border="true"></div>
+                    </ul>
+                </div>
+
+                <div class="span3">
+
+
+                    <a href="" title="services" class="style-h5"><i ></i> Accueil </a><br/>
+                    <a href="" title="" class="style-h5"> Nedra Ghariani Mahdid </a><br/>
+                    <a href="" title="portfolio" class="style-h5"> Coaching </a><br/>
+                    <a href="" title="portfolio"  class="style-h5"> Formation </a><br/>
+                    <a href="" title="portfolio" class="style-h5"> Evénements </a><br/>
+                    <a href="" title="portfolio" class="style-h5"> Témoignages </a><br/>
+                    <a href="" title="portfolio" class="style-h5"> Contact </a><br/>
+
+
+
+                    <h5>Find us on</h5>
+
+                    <div style="font-size:2.5em;">
+                        <a href="#facebook" role="button" data-toggle="modal" style="display:inline-block; width:1em">
+                            <i class="icon-facebook-sign"> </i> </a>
+                        <a href="#twitter" role="button" data-toggle="modal" title=""
+                           style="display:inline-block; width:1em"> <i class="icon-twitter-sign"> </i> </a>
+                        <a href="#youtube" role="button" data-toggle="modal" style="display:inline-block;width:1em"> <i
+                                    class="icon-facetime-video"> </i> </a>
+                        <a href="#" title="" style="display:inline-block;width:1em"> <i
+                                    class="icon-google-plus-sign"> </i> </a>
+                        <a href="#rss" role="button" data-toggle="modal" style="display:inline-block;width:1em"> <i
+                                    class="icon-rss"> </i> </a>
+                        <!-- Facebook -->
+                        <div id="facebook" class="modal hide fade" tabindex="-1" role="dialog"
+                             aria-labelledby="facebook" aria-hidden="true">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h3>Facebook Header</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>"Our aim is simple - to provide affordable web design and development services for Mobile and Computer by creating websites that fully meet your requirements a professional look that inspire confidence in your customer."</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                                <button class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        <!-- Twitter -->
+                        <div id="twitter" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="twitter"
+                             aria-hidden="true">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h3>Twitter Header</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>"Our aim is simple - to provide affordable web design and development services for Mobile and Computer by creating websites that fully meet your requirements a professional look that inspire confidence in your customer."</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                                <button class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        <!-- Rss feed -->
+                        <div id="rss" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="rss"
+                             aria-hidden="true">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h3>RSS fed header</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>"Our aim is simple - to provide affordable web design and development services for Mobile and Computer by creating websites that fully meet your requirements a professional look that inspire confidence in your customer."</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                                <button class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        <!-- Youtube -->
+                        <div id="youtube" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="youtube"
+                             aria-hidden="true">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h3>Youtube Vedio</h3>
+                            </div>
+                            <div class="modal-body">
+                                Vedios here
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                                <button class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p style="padding:18px 0 44px">&copy; 2015,NadraGharianiMahdid </p>
+        </footer>
+    </div>
+
+    <!-- /container -->
+</section>
+<a href="#" class="btn" style="position: fixed; bottom: 38px; right: 10px; display: none; " id="toTop"> <i
+            class="icon-arrow-up"></i> Go to top</a>
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<script src="{{ asset('themes/js/jquery-1.8.3.min.js') }}"></script>
+<script src="{{ asset('themes/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('themes/js/bootstrap-tooltip.js') }}"></script>
+<script src="{{ asset('themes/js/bootstrap-popover.js') }}"></script>
+<script src="{{ asset('themes/js/business_ltd_1.0.js') }}"></script>
+
+<!-- Themes switcher section ============================================================================================= -->
+<div id="secectionBox">
+    <link rel="stylesheet" href="{{ asset('themes/switch/themeswitch.css') }}" type="text/css" media="screen"/>
+    <script src="{{ asset('themes/switch/theamswitcher.js') }}" type="text/javascript" charset="utf-8"></script>
+    <div id="themeContainer">
+        <div id="hideme" class="themeTitle"></div>
+        <div class="themeName">Follow via FaceBook</div>
+        <div class="images style">
+            <div class="fb-like-box" data-href="https://www.facebook.com/nedraghariani?fref=ts" data-colorscheme="light"
+                 data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+
+        </div>
+
+
+    </div>
+</div>
+
+<span id="themesBtn"></span>
+</body>
+</html>

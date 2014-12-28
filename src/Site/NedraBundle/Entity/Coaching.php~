@@ -1,0 +1,32 @@
+<?php
+
+namespace Site\NedraBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Coaching
+ *
+ * @ORM\Table(name="coaching")
+ * @ORM\Entity
+ */
+class Coaching
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="text", nullable=true)
+     */
+    private $description;
+
+
+}

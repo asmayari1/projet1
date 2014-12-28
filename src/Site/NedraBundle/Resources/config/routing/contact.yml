@@ -1,0 +1,30 @@
+contact:
+    path:     /
+    defaults: { _controller: "SiteNedraBundle:Contact:index" }
+
+contact_show:
+    path:     /{id}/show
+    defaults: { _controller: "SiteNedraBundle:Contact:show" }
+
+contact_new:
+    path:     /new
+    defaults: { _controller: "SiteNedraBundle:Contact:new" }
+
+contact_create:
+    path:     /create
+    defaults: { _controller: "SiteNedraBundle:Contact:create" }
+    requirements: { _method: post }
+
+contact_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "SiteNedraBundle:Contact:edit" }
+
+contact_update:
+    path:     /{id}/update
+    defaults: { _controller: "SiteNedraBundle:Contact:update" }
+    requirements: { _method: post|put }
+
+contact_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "SiteNedraBundle:Contact:delete" }
+    requirements: { _method: post|delete }

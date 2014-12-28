@@ -1,0 +1,7 @@
+parameters:
+#    site_nedra.example.class: Site\NedraBundle\Example
+
+services:
+#    site_nedra.example:
+#        class: %site_nedra.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

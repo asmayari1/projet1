@@ -1,0 +1,30 @@
+services:
+    path:     /
+    defaults: { _controller: "SiteNedraBundle:Services:index" }
+
+services_show:
+    path:     /{id}/show
+    defaults: { _controller: "SiteNedraBundle:Services:show" }
+
+services_new:
+    path:     /new
+    defaults: { _controller: "SiteNedraBundle:Services:new" }
+
+services_create:
+    path:     /create
+    defaults: { _controller: "SiteNedraBundle:Services:create" }
+    requirements: { _method: post }
+
+services_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "SiteNedraBundle:Services:edit" }
+
+services_update:
+    path:     /{id}/update
+    defaults: { _controller: "SiteNedraBundle:Services:update" }
+    requirements: { _method: post|put }
+
+services_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "SiteNedraBundle:Services:delete" }
+    requirements: { _method: post|delete }

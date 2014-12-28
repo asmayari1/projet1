@@ -1,0 +1,30 @@
+media:
+    path:     /
+    defaults: { _controller: "SiteNedraBundle:Media:index" }
+
+media_show:
+    path:     /{id}/show
+    defaults: { _controller: "SiteNedraBundle:Media:show" }
+
+media_new:
+    path:     /new
+    defaults: { _controller: "SiteNedraBundle:Media:new" }
+
+media_create:
+    path:     /create
+    defaults: { _controller: "SiteNedraBundle:Media:create" }
+    requirements: { _method: post }
+
+media_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "SiteNedraBundle:Media:edit" }
+
+media_update:
+    path:     /{id}/update
+    defaults: { _controller: "SiteNedraBundle:Media:update" }
+    requirements: { _method: post|put }
+
+media_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "SiteNedraBundle:Media:delete" }
+    requirements: { _method: post|delete }

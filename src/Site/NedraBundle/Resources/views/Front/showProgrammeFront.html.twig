@@ -1,0 +1,49 @@
+{% extends '::home.html.twig' %}
+{% block body -%}
+    <section id="bannerSection"
+             style="background:url(themes/images/banner/portfolio.png) no-repeat center center  ;">
+        <div class="container">
+            <h1 id="pageTitle" class="style-h1">Portfolio
+                <small class="style-h1">Les évenements</small>
+		<span class="pull-right toolTipgroup">
+			<a href="#" data-placement="top" data-original-title="Find us on via facebook"><img style="width:45px"
+                                                                                                src="{{ asset('themes/images/facebook.png') }}"
+                                                                                                alt="facebook"
+                                                                                                title="facebook"></a>
+			<a href="#" data-placement="top" data-original-title="Find us on via twitter"><img style="width:45px"
+                                                                                               src="{{ asset('themes/images/twitter.png') }}"
+                                                                                               alt="twitter"
+                                                                                               title="twitter"></a>
+			<a href="#" data-placement="top" data-original-title="Find us on via youtube"><img style="width:45px"
+                                                                                               src="{{ asset('themes/images/youtube.png') }}"
+                                                                                               alt="youtube"
+                                                                                               title="youtube"></a>
+		</span>
+            </h1>
+        </div>
+
+    </section>
+    <br>
+    <div class=" row">
+        <div class="span4">
+            <div class="thumbnail">
+                <img class="img-responsive" src="{{ asset('img/nedra.jpg') }}" alt="">
+                <p>
+         publiée le:{% if entity.date %}{{ entity.date|date('Y-m-d H:i:s')}}{% endif %}
+
+        </p>
+                <p>{{ entity.description |raw </p>
+                <p>
+                    <button type="button" class="btn btn-warning"><a href="{{ path('news_show', { 'id': entity.id }) }}"
+                                                                     class="btn-warning">Lire la suite</a></button>
+
+                </p>
+                <div class="btn-group toolTipgroup">
+                    <a class="btn" href="#" data-placement="top" data-original-title="do you like?"><i class="icon-thumbs-up"></i></a>
+                    <a class="btn" href="#" data-placement="top" data-original-title="dont like?"><i class="icon-thumbs-down"></i></a>
+                </div>
+            </div>
+
+    </div>
+        </div>
+{% endblock %}

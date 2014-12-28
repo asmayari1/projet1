@@ -1,0 +1,30 @@
+temoignages:
+    path:     /
+    defaults: { _controller: "SiteNedraBundle:Temoignages:index" }
+
+temoignages_show:
+    path:     /{id}/show
+    defaults: { _controller: "SiteNedraBundle:Temoignages:show" }
+
+temoignages_new:
+    path:     /new
+    defaults: { _controller: "SiteNedraBundle:Temoignages:new" }
+
+temoignages_create:
+    path:     /create
+    defaults: { _controller: "SiteNedraBundle:Temoignages:create" }
+    requirements: { _method: post }
+
+temoignages_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "SiteNedraBundle:Temoignages:edit" }
+
+temoignages_update:
+    path:     /{id}/update
+    defaults: { _controller: "SiteNedraBundle:Temoignages:update" }
+    requirements: { _method: post|put }
+
+temoignages_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "SiteNedraBundle:Temoignages:delete" }
+    requirements: { _method: post|delete }

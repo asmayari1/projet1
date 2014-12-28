@@ -1,0 +1,30 @@
+introduction:
+    path:     /
+    defaults: { _controller: "SiteNedraBundle:Introduction:index" }
+
+introduction_show:
+    path:     /{id}/show
+    defaults: { _controller: "SiteNedraBundle:Introduction:show" }
+
+introduction_new:
+    path:     /new
+    defaults: { _controller: "SiteNedraBundle:Introduction:new" }
+
+introduction_create:
+    path:     /create
+    defaults: { _controller: "SiteNedraBundle:Introduction:create" }
+    requirements: { _method: post }
+
+introduction_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "SiteNedraBundle:Introduction:edit" }
+
+introduction_update:
+    path:     /{id}/update
+    defaults: { _controller: "SiteNedraBundle:Introduction:update" }
+    requirements: { _method: post|put }
+
+introduction_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "SiteNedraBundle:Introduction:delete" }
+    requirements: { _method: post|delete }
