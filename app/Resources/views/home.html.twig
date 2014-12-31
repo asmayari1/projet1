@@ -145,23 +145,21 @@
                     </a></h1>
                 <div class="nav-collapse collapse">
                     <ul class="nav pull-right">
-                        <li class="active"><a href="path{{ ('apropos') }}">Accueil</a></li>
+                        <li class="active"><a href="{{ path('news_index_front') }}">Accueil</a></li>
 
-                        <li><a href="path{{ ('apropos') }}">Aprops</a></li>
+                        <li><a href="{{ path('introduction_index_front') }}">Aprops</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="elements.html">Coaching </a></li>
-                                <li><a href="comingsoon.html">Formation</a></li>
+                                <li><a href="{{ path('services_index_front') }}">Coaching </a></li>
+                                <li><a href="{{ path('services_index_front') }}">Formation</a></li>
                             </ul>
                         </li>
-                        <li class="programme"><a href="{{ path('programme') }}">Evenement</a></li>
+                        <li class="programme"><a href="{{ path('programme_show_front') }}">Evenement</a></li>
 
-                        <li><a href="{{ path('temoignages') }}">Témoignages</a></li>
-                        <li><a href="about_us.html">Portfollio</a></li>
-
-
-                        <li><a href="path{{ ('contact') }}" class=" glyphicon-envelope">Contact</a></li>
+                        <li><a href="{{ path('temoignages_index_front') }}">Témoignages</a></li>
+                        <li><a href="{{ path('media_index_front') }}">Portfollio</a></li>
+                        <li><a href="{{ path('contact_new') }}" class=" glyphicon-envelope">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -169,14 +167,16 @@
     </div>
 </section>
 <!--Header Ends================================================ -->
-<section id="bodySection">
+<section id="bodySection" style="left: 0px;">
     <div class="container">
         {% block slider %}
         {% endblock %}
 
         {% block body %}
         {% endblock %}
+
     </div>
+
 </section>
 <!-- Footer
  ================================================== -->
@@ -187,7 +187,9 @@
                 <div class="span4">
                     <h4>Newsletter and Subscription</h4>
 
-
+                    <div id="sidebar">
+                        {{ render(controller('SiteNedraBundle:Programme:recentArticles', { 'max': 3 })) }}
+                    </div>
 
                     <form>
                         <div class="input-append">
@@ -209,14 +211,13 @@
                 <div class="span3">
 
 
-                    <a href="" title="services" class="style-h5"><i ></i> Accueil </a><br/>
+                    <a href="" title="services" class="style-h5"><i></i> Accueil </a><br/>
                     <a href="" title="" class="style-h5"> Nedra Ghariani Mahdid </a><br/>
                     <a href="" title="portfolio" class="style-h5"> Coaching </a><br/>
-                    <a href="" title="portfolio"  class="style-h5"> Formation </a><br/>
+                    <a href="" title="portfolio" class="style-h5"> Formation </a><br/>
                     <a href="" title="portfolio" class="style-h5"> Evénements </a><br/>
                     <a href="" title="portfolio" class="style-h5"> Témoignages </a><br/>
                     <a href="" title="portfolio" class="style-h5"> Contact </a><br/>
-
 
 
                     <h5>Find us on</h5>

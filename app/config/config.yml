@@ -59,7 +59,6 @@ doctrine:
 
 # Swiftmailer Configuration
 
-
 swiftmailer:
     transport:  smtp
     encryption: ssl

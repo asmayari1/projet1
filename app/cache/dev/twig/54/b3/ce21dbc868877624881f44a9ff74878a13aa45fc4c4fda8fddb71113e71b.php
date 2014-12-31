@@ -198,37 +198,44 @@ class __TwigTemplate_54b3ce21dbc868877624881f44a9ff74878a13aa45fc4c4fda8fddb7111
                     </a></h1>
                 <div class=\"nav-collapse collapse\">
                     <ul class=\"nav pull-right\">
-                        <li class=\"active\"><a href=\"path";
+                        <li class=\"active\"><a href=\"";
         // line 148
-        echo "apropos";
+        echo $this->env->getExtension('routing')->getPath("news_index_front");
         echo "\">Accueil</a></li>
 
-                        <li><a href=\"path";
+                        <li><a href=\"";
         // line 150
-        echo "apropos";
+        echo $this->env->getExtension('routing')->getPath("introduction_index_front");
         echo "\">Aprops</a></li>
                         <li class=\"dropdown\">
                             <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Services<b class=\"caret\"></b></a>
                             <ul class=\"dropdown-menu\">
-                                <li><a href=\"elements.html\">Coaching </a></li>
-                                <li><a href=\"comingsoon.html\">Formation</a></li>
+                                <li><a href=\"";
+        // line 154
+        echo $this->env->getExtension('routing')->getPath("services_index_front");
+        echo "\">Coaching </a></li>
+                                <li><a href=\"";
+        // line 155
+        echo $this->env->getExtension('routing')->getPath("services_index_front");
+        echo "\">Formation</a></li>
                             </ul>
                         </li>
                         <li class=\"programme\"><a href=\"";
         // line 158
-        echo $this->env->getExtension('routing')->getPath("programme");
+        echo $this->env->getExtension('routing')->getPath("programme_show_front");
         echo "\">Evenement</a></li>
 
                         <li><a href=\"";
         // line 160
-        echo $this->env->getExtension('routing')->getPath("temoignages");
+        echo $this->env->getExtension('routing')->getPath("temoignages_index_front");
         echo "\">Témoignages</a></li>
-                        <li><a href=\"about_us.html\">Portfollio</a></li>
-
-
-                        <li><a href=\"path";
-        // line 164
-        echo "contact";
+                        <li><a href=\"";
+        // line 161
+        echo $this->env->getExtension('routing')->getPath("media_index_front");
+        echo "\">Portfollio</a></li>
+                        <li><a href=\"";
+        // line 162
+        echo $this->env->getExtension('routing')->getPath("contact_new");
         echo "\" class=\" glyphicon-envelope\">Contact</a></li>
                     </ul>
                 </div>
@@ -237,18 +244,20 @@ class __TwigTemplate_54b3ce21dbc868877624881f44a9ff74878a13aa45fc4c4fda8fddb7111
     </div>
 </section>
 <!--Header Ends================================================ -->
-<section id=\"bodySection\">
+<section id=\"bodySection\" style=\"left: 0px;\">
     <div class=\"container\">
         ";
-        // line 174
+        // line 172
         $this->displayBlock('slider', $context, $blocks);
-        // line 176
+        // line 174
         echo "
         ";
-        // line 177
+        // line 175
         $this->displayBlock('body', $context, $blocks);
-        // line 179
-        echo "    </div>
+        // line 177
+        echo "
+    </div>
+
 </section>
 <!-- Footer
  ================================================== -->
@@ -259,7 +268,12 @@ class __TwigTemplate_54b3ce21dbc868877624881f44a9ff74878a13aa45fc4c4fda8fddb7111
                 <div class=\"span4\">
                     <h4>Newsletter and Subscription</h4>
 
-
+                    <div id=\"sidebar\">
+                        ";
+        // line 191
+        echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("SiteNedraBundle:Programme:recentArticles", array("max" => 3)));
+        echo "
+                    </div>
 
                     <form>
                         <div class=\"input-append\">
@@ -281,14 +295,13 @@ class __TwigTemplate_54b3ce21dbc868877624881f44a9ff74878a13aa45fc4c4fda8fddb7111
                 <div class=\"span3\">
 
 
-                    <a href=\"\" title=\"services\" class=\"style-h5\"><i ></i> Accueil </a><br/>
+                    <a href=\"\" title=\"services\" class=\"style-h5\"><i></i> Accueil </a><br/>
                     <a href=\"\" title=\"\" class=\"style-h5\"> Nedra Ghariani Mahdid </a><br/>
                     <a href=\"\" title=\"portfolio\" class=\"style-h5\"> Coaching </a><br/>
-                    <a href=\"\" title=\"portfolio\"  class=\"style-h5\"> Formation </a><br/>
+                    <a href=\"\" title=\"portfolio\" class=\"style-h5\"> Formation </a><br/>
                     <a href=\"\" title=\"portfolio\" class=\"style-h5\"> Evénements </a><br/>
                     <a href=\"\" title=\"portfolio\" class=\"style-h5\"> Témoignages </a><br/>
                     <a href=\"\" title=\"portfolio\" class=\"style-h5\"> Contact </a><br/>
-
 
 
                     <h5>Find us on</h5>
@@ -380,34 +393,34 @@ class __TwigTemplate_54b3ce21dbc868877624881f44a9ff74878a13aa45fc4c4fda8fddb7111
 <!-- Placed at the end of the document so the pages load faster -->
 <script type=\"text/javascript\" src=\"http://platform.twitter.com/widgets.js\"></script>
 <script src=\"";
-        // line 310
+        // line 311
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("themes/js/jquery-1.8.3.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 311
+        // line 312
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("themes/js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 312
+        // line 313
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("themes/js/bootstrap-tooltip.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 313
+        // line 314
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("themes/js/bootstrap-popover.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 314
+        // line 315
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("themes/js/business_ltd_1.0.js"), "html", null, true);
         echo "\"></script>
 
 <!-- Themes switcher section ============================================================================================= -->
 <div id=\"secectionBox\">
     <link rel=\"stylesheet\" href=\"";
-        // line 318
+        // line 319
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("themes/switch/themeswitch.css"), "html", null, true);
         echo "\" type=\"text/css\" media=\"screen\"/>
     <script src=\"";
-        // line 319
+        // line 320
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("themes/switch/theamswitcher.js"), "html", null, true);
         echo "\" type=\"text/javascript\" charset=\"utf-8\"></script>
     <div id=\"themeContainer\">
@@ -428,17 +441,17 @@ class __TwigTemplate_54b3ce21dbc868877624881f44a9ff74878a13aa45fc4c4fda8fddb7111
 </html>";
     }
 
-    // line 174
+    // line 172
     public function block_slider($context, array $blocks = array())
     {
-        // line 175
+        // line 173
         echo "        ";
     }
 
-    // line 177
+    // line 175
     public function block_body($context, array $blocks = array())
     {
-        // line 178
+        // line 176
         echo "        ";
     }
 
@@ -454,6 +467,6 @@ class __TwigTemplate_54b3ce21dbc868877624881f44a9ff74878a13aa45fc4c4fda8fddb7111
 
     public function getDebugInfo()
     {
-        return array (  442 => 178,  439 => 177,  435 => 175,  432 => 174,  411 => 319,  407 => 318,  400 => 314,  396 => 313,  392 => 312,  388 => 311,  384 => 310,  251 => 179,  249 => 177,  246 => 176,  244 => 174,  231 => 164,  224 => 160,  219 => 158,  208 => 150,  203 => 148,  75 => 23,  69 => 20,  65 => 19,  61 => 18,  57 => 17,  53 => 16,  49 => 15,  45 => 14,  41 => 13,  37 => 12,  32 => 10,  21 => 1,);
+        return array (  455 => 176,  452 => 175,  448 => 173,  445 => 172,  424 => 320,  420 => 319,  413 => 315,  409 => 314,  405 => 313,  401 => 312,  397 => 311,  274 => 191,  258 => 177,  256 => 175,  253 => 174,  251 => 172,  238 => 162,  234 => 161,  230 => 160,  225 => 158,  219 => 155,  215 => 154,  208 => 150,  203 => 148,  75 => 23,  69 => 20,  65 => 19,  61 => 18,  57 => 17,  53 => 16,  49 => 15,  45 => 14,  41 => 13,  37 => 12,  32 => 10,  21 => 1,);
     }
 }

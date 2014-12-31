@@ -104,9 +104,12 @@ class NewsController extends Controller
      */
     public function showAction($id)
     {
+
         $em = $this->getDoctrine()->getManager();
 
         $entity = $em->getRepository('SiteNedraBundle:News')->find($id);
+
+
 
         if (!$entity) {
             throw $this->createNotFoundException('Unable to find News entity.');
@@ -117,6 +120,7 @@ class NewsController extends Controller
         return $this->render('SiteNedraBundle:News:show.html.twig', array(
             'entity'      => $entity,
             'delete_form' => $deleteForm->createView(),
+
         ));
     }
 

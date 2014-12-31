@@ -1,7 +1,7 @@
 <?php
 
 namespace Site\NedraBundle\Entity;
-
+use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -16,14 +16,16 @@ class News
 
     /**
      * @ORM\Column(type="string", nullable=true)
-
      */
     public $file;
+
+
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    public $path;
+    private $path;
+
     /**
      * @var integer
      *
@@ -62,20 +64,23 @@ class News
     private $description;
 
 
+
+
+
     public function getAbsolutePath()
     {
-        return null === $this->path ? null : $this->getUploadRootDir().'/'.$this->id.'.'.$this->path;
+        return null === $this->path ? null : $this->getUploadRootDir() . '/' . $this->id . '.' . $this->path;
     }
 
     public function getWebPath()
     {
-        return null === $this->path ? null : $this->getUploadDir().'/'.$this->path;
+        return null === $this->path ? null : $this->getUploadDir() . '/' . $this->path;
     }
 
     protected function getUploadRootDir()
     {
         // le chemin absolu du répertoire où les documents uploadés doivent être sauvegardés
-        return __DIR__.'/../../../../web/upload'.$this->getUploadDir();
+        return __DIR__ . '/../../../../web/upload' . $this->getUploadDir();
     }
 
     protected function getUploadDir()
@@ -84,6 +89,7 @@ class News
         // le document/image dans la vue.
         return '/upload';
     }
+
     /**
      * @ORM\PrePersist()
      * @ORM\PreUpdate()
@@ -121,10 +127,11 @@ class News
         $this->path = $this->file->getClientOriginalName();
         $this->file = null;
     }
+
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -140,14 +147,14 @@ class News
     public function setTitre($titre)
     {
         $this->titre = $titre;
-    
+
         return $this;
     }
 
     /**
      * Get titre
      *
-     * @return string 
+     * @return string
      */
     public function getTitre()
     {
@@ -163,14 +170,14 @@ class News
     public function setDate($date)
     {
         $this->date = $date;
-    
+
         return $this;
     }
 
     /**
      * Get date
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getDate()
     {
@@ -186,14 +193,14 @@ class News
     public function setAuteur($auteur)
     {
         $this->auteur = $auteur;
-    
+
         return $this;
     }
 
     /**
      * Get auteur
      *
-     * @return string 
+     * @return string
      */
     public function getAuteur()
     {
@@ -209,18 +216,24 @@ class News
     public function setDescription($description)
     {
         $this->description = $description;
-    
+
         return $this;
     }
 
     /**
      * Get description
      *
-     * @return string 
+     * @return string
      */
-    public function getDescription()
+    public function getDescription($length = null)
     {
-        return $this->description;
+        if (false === is_null($length) && $length > 0)
+            return substr($this->news, 0, $length);
+        else
+            return $this->description;
     }
+
+
+
 
 }

@@ -49,3 +49,4 @@ temoignages_index_front:
 media_index_front:
     path:     /portfolio
     defaults: { _controller: "SiteNedraBundle:Media:indexfront"}
+

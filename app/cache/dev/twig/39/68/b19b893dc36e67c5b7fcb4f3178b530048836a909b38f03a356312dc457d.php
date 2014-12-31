@@ -48,7 +48,7 @@ class __TwigTemplate_3968b19b893dc36e67c5b7fcb4f3178b530048836a909b38f03a356312d
 
     <label for=\"username\">";
         // line 11
-        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("security.login.username", array(), "FOSUserBundle"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("nom", array(), "FOSUserBundle"), "html", null, true);
         echo "</label>
     <input type=\"text\" id=\"username\" name=\"_username\" value=\"";
         // line 12
@@ -57,19 +57,20 @@ class __TwigTemplate_3968b19b893dc36e67c5b7fcb4f3178b530048836a909b38f03a356312d
 
     <label for=\"password\">";
         // line 14
-        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("security.login.password", array(), "FOSUserBundle"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("mot de passe", array(), "FOSUserBundle"), "html", null, true);
         echo "</label>
     <input type=\"password\" id=\"password\" name=\"_password\" required=\"required\" />
 
     <input type=\"checkbox\" id=\"remember_me\" name=\"_remember_me\" value=\"on\" />
     <label for=\"remember_me\">";
         // line 18
-        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("security.login.remember_me", array(), "FOSUserBundle"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("remember_me", array(), "FOSUserBundle"), "html", null, true);
         echo "</label>
-
+<br>
+    <br>
     <input type=\"submit\" id=\"_submit\" name=\"_submit\" value=\"";
-        // line 20
-        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("security.login.submit", array(), "FOSUserBundle"), "html", null, true);
+        // line 21
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("se connecter", array(), "FOSUserBundle"), "html", null, true);
         echo "\" />
 </form>
 ";
@@ -87,6 +88,6 @@ class __TwigTemplate_3968b19b893dc36e67c5b7fcb4f3178b530048836a909b38f03a356312d
 
     public function getDebugInfo()
     {
-        return array (  72 => 20,  67 => 18,  60 => 14,  55 => 12,  51 => 11,  46 => 9,  42 => 8,  39 => 7,  33 => 5,  31 => 4,  28 => 3,);
+        return array (  73 => 21,  67 => 18,  60 => 14,  55 => 12,  51 => 11,  46 => 9,  42 => 8,  39 => 7,  33 => 5,  31 => 4,  28 => 3,);
     }
 }

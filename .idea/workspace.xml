@@ -1,7 +1,707 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99f86a0e-5c7d-4bb7-b87d-73809e5dd274" name="Default" comment="" />
+    <list default="true" id="99f86a0e-5c7d-4bb7-b87d-73809e5dd274" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\.idea\Projet1.iml___jb_bak___" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\10ca094531eba93d57d1c099ae2f7e367d48dd3a#createAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\10ca094531eba93d57d1c099ae2f7e367d48dd3a#indexAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\10ca094531eba93d57d1c099ae2f7e367d48dd3a#newAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\10ca094531eba93d57d1c099ae2f7e367d48dd3a#showAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\9e28c1de47121b76617b25f7a3222894fc12c848#getDescription.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\9e28c1de47121b76617b25f7a3222894fc12c848#getId.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\9e28c1de47121b76617b25f7a3222894fc12c848#getTitre.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\9e28c1de47121b76617b25f7a3222894fc12c848#setDescription.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\9e28c1de47121b76617b25f7a3222894fc12c848#setTitre.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\aaa33579fa142dd80d691e5039862f5aac6e5e88#editAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\aaa33579fa142dd80d691e5039862f5aac6e5e88#indexAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\aaa33579fa142dd80d691e5039862f5aac6e5e88#updateAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\ab493af373e1a680abb1e67b27a267238ecc2742#getAdresse.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\ab493af373e1a680abb1e67b27a267238ecc2742#getAge.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\ab493af373e1a680abb1e67b27a267238ecc2742#getCoaching.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\ab493af373e1a680abb1e67b27a267238ecc2742#getId.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\ab493af373e1a680abb1e67b27a267238ecc2742#getMessage.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\ab493af373e1a680abb1e67b27a267238ecc2742#getNom.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\ab493af373e1a680abb1e67b27a267238ecc2742#getProfession.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\ab493af373e1a680abb1e67b27a267238ecc2742#getServices.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\ab493af373e1a680abb1e67b27a267238ecc2742#setAdresse.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\ab493af373e1a680abb1e67b27a267238ecc2742#setAge.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\ab493af373e1a680abb1e67b27a267238ecc2742#setCoaching.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\ab493af373e1a680abb1e67b27a267238ecc2742#setMessage.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\ab493af373e1a680abb1e67b27a267238ecc2742#setNom.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\ab493af373e1a680abb1e67b27a267238ecc2742#setProfession.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\ab493af373e1a680abb1e67b27a267238ecc2742#setServices.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\b24076fed2807791a37741b3653d8f057191eaf6#getDescription.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\b24076fed2807791a37741b3653d8f057191eaf6#getId.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\b24076fed2807791a37741b3653d8f057191eaf6#setDescription.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\c648d63db89e431ba5779a880eb8079173c148c2#editAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\c648d63db89e431ba5779a880eb8079173c148c2#indexAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\c648d63db89e431ba5779a880eb8079173c148c2#updateAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\d6fecad83eea479c88a6980eca046330df535985#editAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\d9b582a370f9fb72729cbc9161733b52b6c199c7#getImage.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\d9b582a370f9fb72729cbc9161733b52b6c199c7#setImage.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\d9b582a370f9fb72729cbc9161733b52b6c199c7$image.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\e94b1a0f096153c749c7352ad31d9bb3936fd952#getEmail.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\e94b1a0f096153c749c7352ad31d9bb3936fd952#getId.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\e94b1a0f096153c749c7352ad31d9bb3936fd952#getMessage.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\e94b1a0f096153c749c7352ad31d9bb3936fd952#getNom.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\e94b1a0f096153c749c7352ad31d9bb3936fd952#getSubject.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\e94b1a0f096153c749c7352ad31d9bb3936fd952#setEmail.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\e94b1a0f096153c749c7352ad31d9bb3936fd952#setMessage.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\e94b1a0f096153c749c7352ad31d9bb3936fd952#setNom.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\e94b1a0f096153c749c7352ad31d9bb3936fd952#setSubject.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\ea9851a4af752bd554225bbdae9685c2073f4eb6#createAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\annotations\ea9851a4af752bd554225bbdae9685c2073f4eb6#indexAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\00\19\681900" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\00\f5\f7f500" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\01\6b\b86b01" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\01\79\0e7901" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\01\c1\6ec101" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\01\c5\fbc501" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\01\fe\affe01" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\02\0f\9e0f02" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\02\5e\7c5e02" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\02\b3\71b302" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\02\c4\fcc402" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\03\20\052003" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\03\c2\d3c203" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\03\e8\d6e803" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\04\03\dc0304" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\04\d2\ced204" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\04\f8\cbf804" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\04\ff\60ff04" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\05\08\f60805" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\05\2a\942a05" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\05\7c\7a7c05" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\05\bf\fdbf05" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\05\e1\71e105" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\06\ef\d5ef06" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\07\3b\783b07" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\07\6d\6a6d07" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\07\c5\6dc507" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\09\3d\513d09" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\0a\2c\8f2c0a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\0a\a4\11a40a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\0a\e1\20e10a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\0c\c9\83c90c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\0d\1e\251e0d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\0d\e2\f9e20d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\10\75\fc7510" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\10\e1\5be110" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\11\ca\fcca11" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\12\50\dd5012" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\12\92\e19212" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\13\67\326713" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\13\7d\fe7d13" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\13\d1\d5d113" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\13\dd\3add13" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\13\f8\5df813" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\14\27\b92714" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\15\bc\0dbc15" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\16\aa\8aaa16" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\17\78\c47817" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\17\bc\0abc17" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\17\e7\34e717" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\18\2e\252e18" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\18\4e\f84e18" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\18\f8\c3f818" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\19\10\d01019" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\19\97\949719" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\19\97\b39719" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\19\a9\74a919" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\19\b7\94b719" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\1b\4d\b84d1b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\1c\e8\f7e81c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\1d\5b\4f5b1d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\1d\76\72761d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\1d\bb\16bb1d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\1e\25\68251e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\1e\3e\a83e1e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\1e\4b\464b1e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\1e\5d\f85d1e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\1e\75\4f751e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\1e\98\e7981e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\1f\09\ca091f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\1f\8e\e68e1f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\1f\be\bbbe1f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\20\4b\f34b20" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\20\af\f3af20" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\20\e3\b9e320" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\21\8c\338c21" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\21\b6\5cb621" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\22\28\ff2822" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\23\54\0b5423" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\23\64\5e6423" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\23\e2\d4e223" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\24\39\673924" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\25\1c\dc1c25" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\25\24\602425" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\25\2e\3b2e25" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\25\57\5b5725" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\25\71\e97125" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\25\ad\65ad25" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\26\94\b69426" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\27\41\d54127" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\29\9f\779f29" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\29\a0\b4a029" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\29\a4\b3a429" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\29\df\2adf29" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\2a\b8\e7b82a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\2b\44\60442b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\2b\46\f7462b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\2b\6c\846c2b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\2b\9f\8b9f2b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\2c\21\8b212c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\2c\45\3c452c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\2c\4a\a34a2c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\2d\24\c4242d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\2e\33\ed332e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\2e\d6\54d62e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\2f\66\93662f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\2f\6a\f76a2f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\30\4c\2a4c30" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\30\6f\356f30" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\30\9b\1c9b30" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\31\17\2b1731" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\31\35\293531" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\31\54\6c5431" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\32\96\9d9632" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\32\da\5dda32" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\34\71\be7134" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\35\2f\002f35" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\35\6b\616b35" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\35\7f\d07f35" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\36\0c\b70c36" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\36\8d\708d36" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\36\c6\6dc636" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\37\43\044337" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\37\8d\ae8d37" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\38\17\581738" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\38\19\351938" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\39\3a\cf3a39" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\39\c3\f5c339" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\3a\25\f8253a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\3a\56\32563a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\3a\a4\b2a43a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\3a\ba\baba3a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\3b\7c\0e7c3b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\3b\a0\efa03b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\3c\76\6b763c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\3d\3e\cc3e3d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\3d\c1\44c13d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\3f\25\99253f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\40\24\9c2440" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\40\70\0b7040" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\41\17\e91741" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\41\19\561941" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\41\1b\421b41" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\41\59\bc5941" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\41\e0\22e041" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\42\59\815942" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\42\c1\acc142" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\42\d0\eed042" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\43\44\2c4443" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\43\47\5e4743" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\43\cf\c1cf43" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\44\25\472544" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\44\ac\c3ac44" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\44\bc\d6bc44" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\46\2b\a92b46" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\46\3a\0a3a46" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\46\c3\4fc346" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\47\fa\46fa47" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\48\62\0c6248" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\49\3e\553e49" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\49\78\ef7849" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\4a\ef\99ef4a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\4b\00\cc004b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\4b\2d\d52d4b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\4b\d8\dfd84b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\4c\ee\34ee4c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\4c\fe\f7fe4c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\4d\4c\af4c4d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\4d\9b\689b4d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\4d\e9\96e94d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\4e\e0\98e04e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\4f\1a\f01a4f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\4f\2e\362e4f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\4f\ba\6cba4f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\4f\f9\5af94f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\52\4b\8e4b52" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\52\d4\e1d452" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\53\0b\580b53" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\53\1a\c91a53" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\54\fe\53fe54" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\55\15\801555" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\55\41\ac4155" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\55\ae\4dae55" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\56\a3\f0a356" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\56\c1\87c156" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\57\1e\e91e57" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\57\7e\4b7e57" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\58\b5\dfb558" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\58\e2\a0e258" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\59\16\251659" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\59\51\e95159" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\59\5e\475e59" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\5a\b1\9db15a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\5b\f7\c9f75b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\5c\31\08315c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\5d\27\7e275d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\5d\bd\6abd5d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\5e\10\90105e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\5e\b0\02b05e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\5e\e1\b8e15e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\5f\60\b9605f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\5f\79\50795f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\5f\d5\54d55f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\5f\d9\10d95f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\5f\fd\6afd5f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\60\11\931160" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\61\05\820561" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\61\07\3b0761" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\61\19\aa1961" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\61\1b\531b61" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\61\43\b24361" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\61\ff\15ff61" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\63\0d\f30d63" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\63\41\2a4163" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\64\48\fc4864" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\64\af\feaf64" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\64\cf\d7cf64" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\64\e1\a5e164" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\65\1c\a71c65" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\65\72\fe7265" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\65\90\e39065" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\65\9e\c39e65" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\65\f3\29f365" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\66\88\4b8866" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\67\33\213367" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\67\67\d56767" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\67\d7\f3d767" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\69\33\573369" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\6b\38\a5386b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\6b\66\8c666b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\6b\cd\1ccd6b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\6c\c3\d2c36c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\6d\77\02776d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\6e\21\2b216e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\6e\23\b4236e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\6e\47\59476e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\6e\ce\03ce6e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\6e\d9\07d96e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\6f\a0\13a06f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\6f\df\19df6f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\70\22\fa2270" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\70\2f\a52f70" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\70\51\4c5170" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\70\8a\fb8a70" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\70\e8\b3e870" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\71\a2\cca271" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\71\db\fbdb71" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\72\18\f81872" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\72\75\a07572" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\72\98\c29872" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\72\d6\e5d672" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\73\16\5a1673" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\73\1d\8b1d73" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\73\bf\17bf73" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\74\b3\1eb374" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\74\ff\61ff74" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\76\49\f34976" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\76\4c\4c4c76" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\76\62\a26276" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\76\aa\04aa76" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\77\ff\5aff77" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\78\01\4d0178" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\78\35\a23578" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\78\55\2c5578" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\78\5b\b75b78" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\78\8b\528b78" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\78\8f\948f78" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\79\31\cc3179" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\79\a8\eca879" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\79\e0\07e079" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\79\ec\39ec79" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\79\f6\3af679" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\7a\e2\c1e27a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\7b\39\73397b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\7b\7f\627f7b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\7b\e8\dae87b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\7c\6d\e06d7c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\7d\a3\89a37d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\7e\8f\e88f7e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\7f\98\4b987f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\80\81\868180" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\80\da\fdda80" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\80\e0\99e080" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\81\54\4e5481" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\81\76\597681" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\81\d3\85d381" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\81\ff\45ff81" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\82\ee\7aee82" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\83\51\5d5183" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\83\83\c48383" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\83\b3\87b383" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\84\c8\a4c884" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\84\ee\9eee84" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\85\00\c10085" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\85\8d\938d85" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\86\83\168386" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\86\85\5b8586" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\86\86\ff8686" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\86\8b\dc8b86" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\86\f2\3bf286" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\87\1e\b71e87" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\87\3a\6d3a87" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\87\7e\077e87" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\87\a2\d0a287" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\87\bb\c1bb87" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\87\bc\fdbc87" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\87\e3\01e387" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\89\2c\942c89" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\89\2e\d02e89" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\89\4a\af4a89" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\8a\0b\bf0b8a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\8a\62\ed628a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\8a\7d\177d8a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\8a\a2\87a28a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\8a\ac\fbac8a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\8a\c1\8cc18a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\8b\06\57068b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\8b\50\18508b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\8c\12\fb128c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\8c\de\e1de8c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\8d\5f\1b5f8d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\8d\95\8c958d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\8d\cc\dccc8d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\8d\f7\d4f78d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\8e\7b\667b8e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\8e\ec\abec8e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\8f\65\b6658f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\8f\7c\377c8f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\8f\c7\46c78f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\90\7b\6e7b90" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\90\91\179190" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\90\9d\349d90" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\90\aa\f0aa90" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\90\ff\a0ff90" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\91\78\f97891" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\91\7f\6f7f91" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\92\0e\840e92" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\93\2b\7d2b93" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\93\64\c96493" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\93\ba\23ba93" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\94\82\c38294" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\94\b1\00b194" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\95\72\be7295" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\95\73\877395" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\95\90\fc9095" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\96\2f\f12f96" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\96\80\618096" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\97\42\8f4297" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\97\b4\a0b497" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\97\b9\fbb997" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\98\63\e96398" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\98\97\c29798" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\98\ec\98ec98" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\99\c2\d6c299" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\9a\a3\1ca39a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\9a\de\05de9a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\9a\f8\e4f89a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\9b\34\a3349b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\9b\87\50879b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\9c\de\6bde9c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\9c\ff\15ff9c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\9e\02\42029e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\9e\87\2f879e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\9e\b4\64b49e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\9f\39\b2399f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\9f\5a\395a9f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\9f\b0\90b09f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\9f\cd\60cd9f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\a0\9a\5b9aa0" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\a0\a3\9ba3a0" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\a0\a9\54a9a0" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\a1\46\cc46a1" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\a1\7b\277ba1" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\a1\99\3299a1" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\a1\aa\40aaa1" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\a2\80\0380a2" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\a2\84\7484a2" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\a2\8c\3e8ca2" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\a3\37\5037a3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\a3\a2\71a2a3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\a5\94\1394a5" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\a5\b1\79b1a5" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\a6\43\3b43a6" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\a6\61\2f61a6" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\a6\9c\2e9ca6" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\a7\57\d957a7" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\a8\43\e143a8" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\a8\b3\ceb3a8" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\a9\ed\41eda9" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\aa\31\aa31aa" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\aa\49\9f49aa" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\aa\55\2e55aa" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\aa\56\c956aa" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\aa\93\2393aa" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\aa\e9\79e9aa" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ab\3d\e03dab" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ab\5e\7e5eab" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ab\63\6463ab" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ab\8e\9e8eab" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ac\41\5b41ac" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ac\7d\e47dac" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ac\7f\057fac" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ad\52\9452ad" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ad\58\8b58ad" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ad\85\3885ad" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ae\1b\3f1bae" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ae\74\6274ae" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\af\ce\01ceaf" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\af\d9\84d9af" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b0\4d\b04db0" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b0\f6\40f6b0" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b1\59\a059b1" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b1\e8\49e8b1" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b2\4e\f04eb2" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b3\2f\c72fb3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b3\6b\1e6bb3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b4\90\9d90b4" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b5\9f\ca9fb5" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b5\b2\64b2b5" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b6\0f\2b0fb6" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b6\14\3014b6" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b6\2a\ea2ab6" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b6\32\7a32b6" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b7\8d\6d8db7" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b7\9e\b59eb7" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b8\0a\bb0ab8" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b8\46\4e46b8" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b8\77\8b77b8" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b8\b4\c9b4b8" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b8\c7\52c7b8" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b9\76\9a76b9" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b9\d0\73d0b9" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\b9\fc\eefcb9" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ba\0b\7b0bba" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ba\2f\752fba" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ba\a1\a2a1ba" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ba\a4\79a4ba" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ba\c4\f5c4ba" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ba\fc\6cfcba" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\bb\77\3077bb" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\bb\eb\27ebbb" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\bc\04\1a04bc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\bc\0d\740dbc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\bc\81\3081bc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\bd\40\d740bd" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\bd\75\e375bd" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\be\4e\584ebe" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\be\ff\e1ffbe" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\c0\cf\9dcfc0" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\c1\64\1564c1" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\c1\b0\96b0c1" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\c1\d6\2dd6c1" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\c3\23\4923c3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\c3\7e\0f7ec3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\c4\00\5f00c4" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\c4\35\5635c4" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\c4\37\3137c4" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\c4\c5\0cc5c4" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\c5\85\2285c5" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\c5\c7\1bc7c5" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\c6\cb\9ecbc6" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\c7\37\a037c7" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\c7\77\0377c7" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\c7\d0\ebd0c7" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\c8\3b\083bc8" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\c8\b8\6ab8c8" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\c9\1a\421ac9" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\c9\e5\ede5c9" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ca\8d\b68dca" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\cb\22\8722cb" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\cb\2f\d42fcb" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\cb\a8\a3a8cb" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\cb\ae\e6aecb" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\cb\b2\b4b2cb" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\cc\53\7153cc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ce\0c\630cce" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d0\0f\e70fd0" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d0\7f\c17fd0" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d0\96\a196d0" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d1\45\4245d1" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d1\47\0f47d1" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d2\c2\67c2d2" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d2\fe\affed2" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d3\18\ff18d3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d3\81\8d81d3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d4\1c\2e1cd4" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d4\3f\bd3fd4" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d4\4c\ee4cd4" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d4\7a\037ad4" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d4\c0\57c0d4" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d5\f4\78f4d5" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d6\06\be06d6" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d6\9e\059ed6" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d7\27\0c27d7" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d7\58\3158d7" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d7\6e\ad6ed7" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d7\88\6588d7" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d9\b4\31b4d9" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d9\eb\bfebd9" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\d9\f1\c2f1d9" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\da\1f\bc1fda" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\da\cf\77cfda" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\da\e0\84e0da" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\da\ec\78ecda" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\da\f2\27f2da" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\db\06\e706db" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\db\32\ff32db" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\db\f1\59f1db" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\dc\7f\607fdc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\dc\81\1881dc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\dc\98\d498dc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\dc\d5\65d5dc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\dc\e2\b8e2dc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\dc\e8\a8e8dc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\dd\4e\634edd" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\de\dd\eaddde" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\df\10\c510df" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\e1\29\1f29e1" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\e1\30\0830e1" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\e1\cb\29cbe1" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\e2\1b\b01be2" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\e3\1d\ed1de3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\e3\2e\9c2ee3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\e3\63\4b63e3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\e3\dd\c0dde3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\e4\16\b016e4" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\e4\6a\0b6ae4" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\e4\de\72dee4" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\e4\e7\b5e7e4" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\e5\99\8f99e5" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\e5\ac\deace5" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\e5\c6\42c6e5" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\e8\16\e116e8" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\e9\07\5a07e9" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\e9\6b\3e6be9" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\e9\8c\0d8ce9" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\e9\ab\71abe9" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ea\06\0a06ea" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ea\40\b840ea" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ea\9a\fe9aea" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ea\af\77afea" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ea\d9\5ad9ea" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\eb\e6\18e6eb" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ec\01\2601ec" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ec\31\7031ec" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ec\85\8085ec" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ec\8d\558dec" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ed\16\a416ed" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ed\44\8c44ed" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ed\60\8a60ed" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ed\da\0adaed" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ee\82\9f82ee" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ee\d7\29d7ee" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ef\6a\6d6aef" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ef\9d\5d9def" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f0\30\0c30f0" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f0\37\5737f0" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f0\47\a847f0" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f0\54\9954f0" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f0\6b\646bf0" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f0\b4\c0b4f0" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f0\d3\40d3f0" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f2\3b\243bf2" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f2\4e\f04ef2" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f2\9b\579bf2" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f2\a3\34a3f2" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f2\f5\1bf5f2" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f3\33\8f33f3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f3\65\8765f3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f3\d7\6bd7f3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f3\e6\dae6f3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f4\0f\4c0ff4" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f4\27\3027f4" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f4\cb\42cbf4" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f6\1b\e21bf6" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f7\5e\1b5ef7" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f7\73\0a73f7" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f7\94\1c94f7" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f8\36\e636f8" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f8\aa\47aaf8" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f8\b2\1fb2f8" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f9\47\b747f9" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f9\9c\1a9cf9" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f9\a6\98a6f9" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\f9\bb\7abbf9" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\fa\15\3815fa" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\fa\70\e670fa" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\fa\7e\7b7efa" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\fe\4d\f64dfe" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\fe\d7\7fd7fe" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\fe\fd\46fdfe" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ff\29\be29ff" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ff\4e\474eff" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ff\56\f856ff" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\profiler\ff\5e\2c5eff" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\sessions\sess_2egr3qc14lsu47ekrk78jfddr5" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\sessions\sess_7v5l5n48uil1rb1ip16ndaoo84" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\sessions\sess_d8ssa2kohuk6b8lubrrcchjn95" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\sessions\sess_fdvep8re7c9elbk3q8ma0267n4" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\sessions\sess_gr3miktfl971388tcl50g6v4f3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\sessions\sess_hchkhc3eo5ld77fdpeojo189e7" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\sessions\sess_jdp9n09m96hhik6bkospcb9897" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\sessions\sess_mp4ava551pjlugpnq3gsnpglg7" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\sessions\sess_nr9mu70t0upq0r2kjqfmt4o7b5" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp2\www\Projet1\app\cache\dev\sessions\sess_u643qlv9d985nsc8ecnofd8di7" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/05/b1/133f3ffb20a54383eef733a6dfeff9a71ce281c7b382db606f5e33c8ac9f.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/05/b1/133f3ffb20a54383eef733a6dfeff9a71ce281c7b382db606f5e33c8ac9f.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f1/b1/18d9dc4a56de7c51d0bd4182d4c0b94a1a10320cdf4a7010d3cdc26a25a9.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/f1/b1/18d9dc4a56de7c51d0bd4182d4c0b94a1a10320cdf4a7010d3cdc26a25a9.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c4/cd/3ffb5a7759ffea0af9dba45a5aed5fa6ae5ceddd838ae05af3bf4ada4997.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/c4/cd/3ffb5a7759ffea0af9dba45a5aed5fa6ae5ceddd838ae05af3bf4ada4997.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/a7/8e/41300b8d8918d440917e7bba18b5d33c584e23f80108031247cc9bea893f.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/a7/8e/41300b8d8918d440917e7bba18b5d33c584e23f80108031247cc9bea893f.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/dd/94/434b083cf57c0c15c2c81a12167b0ede9e9ed470418b7b6fc311a42495f1.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/dd/94/434b083cf57c0c15c2c81a12167b0ede9e9ed470418b7b6fc311a42495f1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/4f/3e/46e2d747f8533741160db9916897a6d75d8668cf65218f48ca5a2177450e.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/4f/3e/46e2d747f8533741160db9916897a6d75d8668cf65218f48ca5a2177450e.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/0a/9d/48bdbce030d6a05db60d21781cf1f8801058f54eb82e4ef8fd769362ffbf.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/0a/9d/48bdbce030d6a05db60d21781cf1f8801058f54eb82e4ef8fd769362ffbf.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/2a/61/5f853ddb189dbd21ae15d5331dceab827d9c72c2d8455ea965ad33a0a042.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/2a/61/5f853ddb189dbd21ae15d5331dceab827d9c72c2d8455ea965ad33a0a042.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/15/af/65423f9c5851cc9230422306b7c0dc9b19d24a502a7eb6323afc19483376.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/15/af/65423f9c5851cc9230422306b7c0dc9b19d24a502a7eb6323afc19483376.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/64/0f/78fadf51785aa902374dc79ca88f2c965214b50aac52d6fd981b1f28dcd0.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/64/0f/78fadf51785aa902374dc79ca88f2c965214b50aac52d6fd981b1f28dcd0.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/af/c3/835d29881a3113eeb13ef9b0bde71955f4f98c1b09a0454fd4bbc17ccef8.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/af/c3/835d29881a3113eeb13ef9b0bde71955f4f98c1b09a0454fd4bbc17ccef8.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/09/5e/877ee5323f73d44d1f0171a85d26bc6e5ea33e97effd66c228af250766db.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/09/5e/877ee5323f73d44d1f0171a85d26bc6e5ea33e97effd66c228af250766db.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/fa/cf/9e6ded7805176759ed5f217cbc951500881204924695ac01ac293b5ae413.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/fa/cf/9e6ded7805176759ed5f217cbc951500881204924695ac01ac293b5ae413.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/66/9c/9f06b9a2863826eb245eaefbe0bae0a9b08b0f061b137388eea9234ec489.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/66/9c/9f06b9a2863826eb245eaefbe0bae0a9b08b0f061b137388eea9234ec489.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Site/NedraBundle/Entity/News.php" afterPath="$PROJECT_DIR$/src/Site/NedraBundle/Entity/News.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Site/NedraBundle/Controller/NewsController.php" afterPath="$PROJECT_DIR$/src/Site/NedraBundle/Controller/NewsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Site/NedraBundle/Controller/ProgrammeController.php" afterPath="$PROJECT_DIR$/src/Site/NedraBundle/Controller/ProgrammeController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Form/Type/RegistrationFormType.php" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Form/Type/RegistrationFormType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/39/68/b19b893dc36e67c5b7fcb4f3178b530048836a909b38f03a356312dc457d.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/39/68/b19b893dc36e67c5b7fcb4f3178b530048836a909b38f03a356312dc457d.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/bb/60/b243089807b0e2446f682cdec99f5670c894827c1f17f95a85144c9ae1a6.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/bb/60/b243089807b0e2446f682cdec99f5670c894827c1f17f95a85144c9ae1a6.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/3c/49/bc880607590751f633532aac9fb851724b8475c5641c0c6e870b7139dbc5.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/3c/49/bc880607590751f633532aac9fb851724b8475c5641c0c6e870b7139dbc5.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/4a/07/cdb75b229afecf0f5fc86ad32632fe214a5a19883557bee2ef18c39bd8d2.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/4a/07/cdb75b229afecf0f5fc86ad32632fe214a5a19883557bee2ef18c39bd8d2.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/54/b3/ce21dbc868877624881f44a9ff74878a13aa45fc4c4fda8fddb71113e71b.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/54/b3/ce21dbc868877624881f44a9ff74878a13aa45fc4c4fda8fddb71113e71b.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/52/cf/d7abfb6421e7e60460ee3b921915e69d678a17c28f8999276139933fab79.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/52/cf/d7abfb6421e7e60460ee3b921915e69d678a17c28f8999276139933fab79.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/9a/aa/fbe6f9de9a7b257f7e2033873de7988028dc85d65f1124c7ec9e6c5de1b1.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/9a/aa/fbe6f9de9a7b257f7e2033873de7988028dc85d65f1124c7ec9e6c5de1b1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/home.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/home.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Comment/index.html.twig" afterPath="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Comment/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Security/login.html.twig" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Security/login.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/News/new.html.twig" afterPath="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/News/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Registration/register_content.html.twig" afterPath="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Registration/register_content.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Site/NedraBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Site/NedraBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/News/show.html.twig" afterPath="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/News/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showNewsFront.html.twig" afterPath="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showNewsFront.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showProgrammeFront.html.twig" afterPath="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showProgrammeFront.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Projet1.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,105 +723,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="News.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Entity/News.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="14" selection-start="217" selection-end="217" vertical-scroll-proportion="-3.6666667" vertical-offset="0" max-vertical-offset="4301">
+              <folding>
+                <element signature="e#42#96#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Controller/NewsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="236" column="9" selection-start="6333" selection-end="6333" vertical-scroll-proportion="-4.8235292" vertical-offset="3698" max-vertical-offset="4097">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/News/new.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="11" selection-start="304" selection-end="304" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="527">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.twig" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/News/show.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="35" selection-start="834" selection-end="834" vertical-scroll-proportion="0.78494626" vertical-offset="123" max-vertical-offset="918">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="home.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/home.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="191" column="9" selection-start="7978" selection-end="7978" vertical-scroll-proportion="-4.5882354" vertical-offset="3013" max-vertical-offset="5780">
+            <state line="188" column="0" selection-start="8096" selection-end="8096" vertical-scroll-proportion="-10.576923" vertical-offset="2921" max-vertical-offset="5797">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showTemoignagesFront.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showTemoignagesFront.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="45" selection-start="1872" selection-end="1959" vertical-scroll-proportion="-2.4509804" vertical-offset="385" max-vertical-offset="952">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showNewsFront.html.twig" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showNewsFront.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="14" selection-start="3883" selection-end="3883" vertical-scroll-proportion="0.56063616" vertical-offset="1044" max-vertical-offset="1564">
-              <folding>
-                <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showMediaFront.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showMediaFront.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="9" selection-start="1881" selection-end="3219" vertical-scroll-proportion="-15.423077" vertical-offset="330" max-vertical-offset="2584">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="10" selection-start="4388" selection-end="4388" vertical-scroll-proportion="0.0" vertical-offset="776" max-vertical-offset="1411">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/config/routing.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="64" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="952">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showCoachingFront.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showCoachingFront.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="2068" selection-end="2068" vertical-scroll-proportion="-18.846153" vertical-offset="156" max-vertical-offset="748">
-              <folding>
-                <element signature="n#style#0;n#img#0;n#a#0;n#span#0;n#h1#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#1;n#span#0;n#h1#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#2;n#span#0;n#h1#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showFormationFront.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showFormationFront.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="45" selection-start="2022" selection-end="2022" vertical-scroll-proportion="-10.846154" vertical-offset="228" max-vertical-offset="1003">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="331" column="7" selection-start="21624" selection-end="21624" vertical-scroll-proportion="-7.423077" vertical-offset="5434" max-vertical-offset="5984">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showIntroductionFront.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showIntroductionFront.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="15" selection-start="154" selection-end="154" vertical-scroll-proportion="-2.8431373" vertical-offset="25" max-vertical-offset="748">
-              <folding>
-                <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#2;n#div#0;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#div#0;n#div#2;n#div#0;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#2;n#div#0;n#div#2;n#div#0;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#3;n#div#0;n#div#2;n#div#0;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#4;n#div#0;n#div#2;n#div#0;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -150,6 +801,11 @@
       <command text="s doctrine:schema:update --fore" />
       <command text="s doctrine:schema:update --force " />
       <command text="s doctrine:schema:update --force" />
+      <command text="s doctrine:schema:update " />
+      <command text="s doctrine:generate:form " />
+      <command text="s doctrine:generate:form SiteNedraBundle:Comment" />
+      <command text="s cache:clear" />
+      <command text="s doctrine:schema:update --force" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -161,29 +817,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/config/routing/introduction.yml" />
-        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Form/TemoignagesType.php" />
-        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Temoignages/new.html.twig" />
-        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Temoignages/index.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/security.yml" />
-        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Programme/show.html.twig" />
-        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showProgrammeFront.html" />
-        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Controller/ProgrammeController.php" />
-        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Controller/IntroductionController.php" />
-        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showServicesFront.html.twig" />
-        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showTémoignagesFront.html.twig" />
-        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Controller/TemoignagesController.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Introduction/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Controller/MediaController.php" />
-        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Controller/CoachingController.php" />
-        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Controller/ServicesController.php" />
-        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Site/NedraBundle/Form/IntroductionType.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/Site/NedraBundle/Form/MediaType.php" />
         <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showMediaFront.html.twig" />
         <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Message/email.txt.twig" />
@@ -193,25 +828,46 @@
         <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Introduction/show.html.twig" />
         <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/News/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Site/NedraBundle/Controller/FileUploadController.php" />
-        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/News/new.html.twig" />
-        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Controller/NewsController.php" />
-        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Entity/News.php" />
         <option value="$PROJECT_DIR$/src/Site/NedraBundle/Form/NewsType.php" />
-        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/News/show.html.twig" />
         <option value="$PROJECT_DIR$/src/Site/NedraBundle/Entity/Contact.php" />
         <option value="$PROJECT_DIR$/src/Site/NedraBundle/Form/ContactType.php" />
         <option value="$PROJECT_DIR$/src/Site/NedraBundle/Controller/ContactController.php" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showFormationFront.html.twig" />
-        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showProgrammeFront.html.twig" />
         <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showTemoignagesFront.html.twig" />
         <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Contact/new.html.twig" />
         <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showCoachingFront.html.twig" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
-        <option value="$PROJECT_DIR$/app/Resources/views/home.html.twig" />
         <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showIntroductionFront.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Entity/Coment.php" />
+        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Comment/index.html.twig.html" />
+        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Comment/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Comment/form.html.twig" />
+        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Comment/create.html.twig" />
+        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Form/CommentType.php" />
+        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Controller/CommentController.php" />
+        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Entity/Comment.php" />
+        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/web/css/login.css" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/RecentProgramme.html.twig" />
+        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Controller/ProgrammeController.php" />
+        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showProgrammeFront.html.twig" />
+        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Programme/RecentProgramme.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Registration/register_content.html.twig" />
+        <option value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Security/login.html.twig" />
+        <option value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Registration/register.html.twig" />
+        <option value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Form/Type/RegistrationFormType.php" />
+        <option value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showNewsFront.html.twig" />
+        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/News/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Entity/News.php" />
+        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Controller/NewsController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/home.html.twig" />
+        <option value="$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/News/show.html.twig" />
       </list>
     </option>
   </component>
@@ -298,114 +954,8 @@
               <option name="myItemId" value="upload" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Projet1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projet1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projet1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projet1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projet1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projet1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projet1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projet1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carousel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projet1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projet1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="upload" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -505,7 +1055,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Front" />
+              <option name="myItemId" value="News" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -557,11 +1107,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -598,6 +1144,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Projet1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Projet1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -617,14 +1181,18 @@
     <property name="LayoutCode.rearrangeEntriesTwig" value="false" />
     <property name="LayoutCode.rearrangeEntriesYaml" value="false" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
+    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp2\www\Projet1\src\Site\NedraBundle\Resources\views" />
-      <recent name="C:\wamp2\www\Projet1\web\js" />
-      <recent name="C:\wamp2\www\Projet1\src\Site\NedraBundle\Resources\views\Front" />
       <recent name="C:\wamp2\www\Projet1\web\img" />
-      <recent name="C:\wamp3\www\Projet1\src\Site\NedraBundle\Entity" />
+      <recent name="C:\wamp2\www\Projet1\web\css" />
+      <recent name="C:\wamp2\www\Projet1\web\js" />
+      <recent name="C:\wamp2\www\Projet1\app\Resources\views" />
+      <recent name="C:\wamp2\www\Projet1\app\Resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp2\www\Projet1\src\Site\NedraBundle\Resources\views\Programme" />
     </key>
   </component>
   <component name="RunManager">
@@ -671,48 +1239,48 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.60655737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30491802" sideWeight="0.5415408" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34214503" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36858007" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2852459" sideWeight="0.45090634" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23770492" sideWeight="0.45090634" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2852459" sideWeight="0.54909366" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38688526" sideWeight="0.54909366" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17213115" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17213115" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.60655737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30491802" sideWeight="0.5415408" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17213115" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2852459" sideWeight="0.45090634" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23770492" sideWeight="0.45090634" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34214503" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36858007" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2852459" sideWeight="0.54909366" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38688526" sideWeight="0.54909366" order="10" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -727,214 +1295,235 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="changement au niveau du template et qq fonctionalités" />
+    <option name="LAST_COMMIT_MESSAGE" value="changement au niveau du template et qq fonctionalités" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+    <entry file="file://$PROJECT_DIR$/web/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544" />
+        <state line="132" column="0" selection-start="2359" selection-end="2359" vertical-scroll-proportion="0.0" vertical-offset="2060" max-vertical-offset="2465" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Entity/Image.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+        <state line="13" column="18" selection-start="370" selection-end="455" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="340" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="49" selection-start="963" selection-end="963" vertical-scroll-proportion="-5.1923075" vertical-offset="273" max-vertical-offset="1122" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Controller/ProgrammeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="245" column="1" selection-start="6983" selection-end="6983" vertical-scroll-proportion="0.0" vertical-offset="4165" max-vertical-offset="4284">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Introduction/show.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Programme/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="17" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0" vertical-offset="65" max-vertical-offset="816">
+        <state line="17" column="36" selection-start="420" selection-end="460" vertical-scroll-proportion="0.0" vertical-offset="125" max-vertical-offset="1598" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/fos.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="323" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="52" selection-start="535" selection-end="535" vertical-scroll-proportion="0.05029586" vertical-offset="204" max-vertical-offset="4403" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="1008" selection-end="1028" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="986">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Entity/Introduction.php">
+    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showProgrammeFront.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="6" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1700">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Controller/IntroductionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="237" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="4097">
-          <folding>
-            <element signature="e#47#92#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Introduction/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
-          <folding>
-            <marker date="1419020477724" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1419020477724" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1419020477724" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1419020477724" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1419020477724" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1419020477724" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1419020477724" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1419020477724" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1419020477724" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Controller/NewsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="0" selection-start="1345" selection-end="1345" vertical-scroll-proportion="-0.3454039" vertical-offset="1008" max-vertical-offset="4029">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Entity/News.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="5" selection-start="1803" selection-end="1803" vertical-scroll-proportion="-9.576923" vertical-offset="1196" max-vertical-offset="3927">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/News/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="25" selection-start="286" selection-end="286" vertical-scroll-proportion="0.390625" vertical-offset="71" max-vertical-offset="884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/News/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="-1.5769231" vertical-offset="61" max-vertical-offset="425">
-          <folding>
-            <marker date="1419760141885" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1419760141885" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1419760141885" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Form/NewsType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="47" selection-start="798" selection-end="798" vertical-scroll-proportion="-5.923077" vertical-offset="254" max-vertical-offset="918">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/upload/upload/10884569_801380236589069_2121201174_n.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/News/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="12" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.8255208" vertical-offset="363" max-vertical-offset="867">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Entity/Contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="881" selection-end="881" vertical-scroll-proportion="-7.576923" vertical-offset="704" max-vertical-offset="2669">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Form/ContactType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="12" selection-start="632" selection-end="632" vertical-scroll-proportion="-5.730769" vertical-offset="140" max-vertical-offset="816">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Controller/ContactController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1257" selection-end="1257" vertical-scroll-proportion="-12.653846" vertical-offset="470" max-vertical-offset="4199">
+        <state line="40" column="0" selection-start="2414" selection-end="2414" vertical-scroll-proportion="0.0" vertical-offset="528" max-vertical-offset="850">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="2" selection-start="1696" selection-end="1696" vertical-scroll-proportion="0.0" vertical-offset="925" max-vertical-offset="1343">
+        <state line="59" column="27" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1326">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Programme/RecentProgramme.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <folding />
-        </state>
+        <state line="4" column="12" selection-start="158" selection-end="158" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="170" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/jquery.cleditor.css">
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Resetting/email.txt.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="17" selection-start="927" selection-end="927" vertical-scroll-proportion="0.0" vertical-offset="155" max-vertical-offset="510">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="384" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/elfinder.min.css">
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Resetting/reset_content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="355">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="384" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Registration/confirmed.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="510" selection-end="510" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="255" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Form/Handler/RegistrationFormHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="0" selection-start="2250" selection-end="2250" vertical-scroll-proportion="-12.461538" vertical-offset="917" max-vertical-offset="1343" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Form/Handler/ResettingFormHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="36" selection-start="1457" selection-end="1457" vertical-scroll-proportion="-8.384615" vertical-offset="598" max-vertical-offset="1037" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/ChangePassword/changePassword_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="384" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Profile/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="397" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Registration/checkEmail.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="397" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Registration/register_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="281" selection-end="281" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/ckeditor/plugins/image/images/noimage.png">
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Registration/register.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="180" selection-end="180" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="187" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Form/Type/RegistrationFormType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="5" selection-start="1480" selection-end="1480" vertical-scroll-proportion="-11.115385" vertical-offset="323" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/gallery/thumbs/1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/ckeditor/plugins/image/dialogs/image.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/web/img/gallery/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jqueryPagination.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="37675" selection-start="55268" selection-end="55269" vertical-scroll-proportion="-9.96" vertical-offset="57" max-vertical-offset="408">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/web/images/gallery/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showProgrammeFront.html.twig">
+    <entry file="file://$PROJECT_DIR$/web/images/bg-article.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/ajax-loaders/ajax-loader-7.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/ajax-loaders/ajax-loader-8.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/ajax-loaders/ajax-loader-5.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/ajax-loaders/ajax-loader-3.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/ajax-loaders/ajax-loader-2.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="18" selection-start="2080" selection-end="2080" vertical-scroll-proportion="-4.576923" vertical-offset="408" max-vertical-offset="935">
+        <state line="53" column="0" selection-start="1243" selection-end="1243" vertical-scroll-proportion="-0.75" vertical-offset="1201" max-vertical-offset="2907">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/images/banner/contact.png">
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Security/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Controller/ContactController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="5" selection-start="1728" selection-end="1728" vertical-scroll-proportion="0.57347673" vertical-offset="666" max-vertical-offset="4199" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/images/gallery/14.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/ajax-loaders/ajax-loader-1.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/arrows-active.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/bg-input.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/border.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/iphone-style-checkboxes/slider_center.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/iphone-style-checkboxes/off.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/themes/images/banner/aboutus.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/images/banner/services.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/images/banner/portfolio.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/images/banner/details.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -949,142 +1538,60 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/images/carousel/business_website_templates_2.jpg">
+    <entry file="file://$PROJECT_DIR$/web/themes/images/banner/contact.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/images/carousel/business_website_templates_5.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/images/carousel/business_website_templates_4.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/images/carousel/business_website_templates_3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/images/portfolio/1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/images/portfolio/coming_soon.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/images/portfolio/mywebsolution.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/images/portfolio/9.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/images/portfolio/2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Contact/new.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showNewsFront.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="14" selection-start="2154" selection-end="2154" vertical-scroll-proportion="-7.230769" vertical-offset="390" max-vertical-offset="969">
+        <state line="107" column="38" selection-start="5027" selection-end="5027" vertical-scroll-proportion="0.055016182" vertical-offset="1802" max-vertical-offset="2499">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/News/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="11" selection-start="304" selection-end="304" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Entity/News.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="14" selection-start="217" selection-end="217" vertical-scroll-proportion="-3.6666667" vertical-offset="0" max-vertical-offset="4301">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#42#96#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Controller/NewsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="64" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="952">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="331" column="7" selection-start="21624" selection-end="21624" vertical-scroll-proportion="-7.423077" vertical-offset="5434" max-vertical-offset="5984">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="10" selection-start="4388" selection-end="4388" vertical-scroll-proportion="0.0" vertical-offset="776" max-vertical-offset="1411">
+        <state line="236" column="9" selection-start="6333" selection-end="6333" vertical-scroll-proportion="-4.8235292" vertical-offset="3698" max-vertical-offset="4097">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/home.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="9" selection-start="7978" selection-end="7978" vertical-scroll-proportion="-4.5882354" vertical-offset="3013" max-vertical-offset="5780">
+        <state line="188" column="0" selection-start="8096" selection-end="8096" vertical-scroll-proportion="-10.576923" vertical-offset="2921" max-vertical-offset="5797">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#2;n#div#0;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#div#2;n#div#0;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#2;n#div#0;n#div#2;n#div#0;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#3;n#div#0;n#div#2;n#div#0;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#4;n#div#0;n#div#2;n#div#0;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#footer#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showTemoignagesFront.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/News/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="45" selection-start="1872" selection-end="1959" vertical-scroll-proportion="-2.4509804" vertical-offset="385" max-vertical-offset="952">
+        <state line="33" column="35" selection-start="834" selection-end="834" vertical-scroll-proportion="0.78494626" vertical-offset="123" max-vertical-offset="918">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showCoachingFront.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="2068" selection-end="2068" vertical-scroll-proportion="-18.846153" vertical-offset="156" max-vertical-offset="748">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#span#0;n#h1#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#1;n#span#0;n#h1#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#2;n#span#0;n#h1#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showFormationFront.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="45" selection-start="2022" selection-end="2022" vertical-scroll-proportion="-10.846154" vertical-offset="228" max-vertical-offset="1003">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showMediaFront.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="9" selection-start="1881" selection-end="3219" vertical-scroll-proportion="-15.423077" vertical-offset="330" max-vertical-offset="2584">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showIntroductionFront.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="15" selection-start="154" selection-end="154" vertical-scroll-proportion="-2.8431373" vertical-offset="25" max-vertical-offset="748">
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Site/NedraBundle/Resources/views/Front/showNewsFront.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="14" selection-start="3883" selection-end="3883" vertical-scroll-proportion="0.56063616" vertical-offset="1044" max-vertical-offset="1564">
-          <folding>
-            <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

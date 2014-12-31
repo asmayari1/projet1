@@ -29,6 +29,7 @@ class ProgrammeController extends Controller
             'entities' => $entities,
         ));
     }
+
     /**
      * Creates a new Programme entity.
      *
@@ -234,5 +235,12 @@ class ProgrammeController extends Controller
             ->add('submit', 'submit', array('label' => 'Delete'))
             ->getForm()
         ;
+    }
+
+    public function recentArticlesAction($max = 3)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $programmes = $em->getRepository('SiteNedraBundle:Programme')->findAll();
+        return $this->render('SiteNedraBundle:Programme:RecentProgramme.html.twig', array('programmes' => $programmes));
     }
 }
