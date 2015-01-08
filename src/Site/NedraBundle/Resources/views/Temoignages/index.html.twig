@@ -1,63 +1,77 @@
 {% extends '::base.html.twig' %}
 
 {% block body -%}
-    <h1>Listes des  Temoignages </h1>
+
+    <div class="row-fluid">
+
+        <div class="span12">
+
+            <div class="box gradient">
+
+                <div class="title">
+                    <h4>
+                        <span>Liste Des Témoignages</span>
+                    </h4>
+                </div>
+                <div class="content noPad clearfix">
+                    <table cellpadding="0" cellspacing="0" border="0"
+                           class="responsive dynamicTable display table table-bordered" width="100%">
+                        <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Age</th>
+                            <th>Adresse</th>
+                            <th>Message</th>
+                            <th>Profession</th>
+                            <th>Actions</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        {% for entity in entities %}
+                            <tr>
+                                <td>{{ entity.nom }}</td>
+                                <td>{{ entity.age }}</td>
+                                <td>{{ entity.adresse }}</td>
+                                <td>{{ entity.message |raw }}</td>
+                                <td>{{ entity.profession }}</td>
 
 
+                                <td>
+                                    <a class="btn btn-success" href="{{ path('temoignages_show', { 'id': entity.id }) }}">
+                                        <i class="glyphicon glyphicon-zoom-in icon-white"></i>
+                                        View
+                                    </a>
+                                    <a class="btn btn-info" href="{{ path('temoignages_edit', { 'id': entity.id }) }}">
+                                        <i class="glyphicon glyphicon-edit icon-white"></i>
+                                        Edit
+                                    </a>
+                                    <a class="btn btn-danger" href="{{ path('temoignages_delete', { 'id': entity.id }) }}">
+                                        <i class="glyphicon glyphicon-trash icon-white"></i>
+                                        Delete
+                                    </a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
 
-    <div class="box-inner">
-
-        <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
-            <thead>
-            <tr>
-                <th>Nom</th>
-                <th>Age</th>
-                <th>Adresse</th>
-                <th>Message</th>
-                <th>Profession</th>
-                <th>Actions</th>
-            </tr>
-            </thead>
-            <tbody>
-            {% for entity in entities %}
-
-                <tr>
-                    <td>{{ entity.nom }}</td>
-                    <td>{{ entity.age }}</td>
-                    <td>{{ entity.adresse }}</td>
-                    <td>{{ entity.message }}</td>
-                    <td>{{ entity.profession }}</td>
+                    </table>
 
 
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="{{ path('programme_new') }}">
+                        Create a new entry
+                    </a>
+                </li>
+            </ul>
 
-                    <td>
-                        <a class="btn btn-success" href="{{ path('temoignages_show', { 'id': entity.id }) }}">
-                            <i class="glyphicon glyphicon-zoom-in icon-white"></i>
-                            View
-                        </a>
-                        <a class="btn btn-info" href="{{ path('temoignages_edit', { 'id': entity.id }) }}">
-                            <i class="glyphicon glyphicon-edit icon-white"></i>
-                            Edit
-                        </a>
-                        <a class="btn btn-danger" href="{{ path('temoignages_delete', { 'id': entity.id }) }}">
-                            <i class="glyphicon glyphicon-trash icon-white"></i>
-                            Delete
-                        </a>
-                    </td>
-
-                </tr>
-
-
-            {% endfor %}
-            </tbody>
-        </table>
-        <ul>
-            <li>
-                <a href="{{ path('temoignages_new') }}">
-                    Create a new entry
-                </a>
-            </li>
-        </ul>
+        </div>
     </div>
+
+
 
 {% endblock %}

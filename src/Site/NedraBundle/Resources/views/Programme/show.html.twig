@@ -1,4 +1,4 @@
-{% extends '::home.html.twig' %}
+{% extends '::base.html.twig' %}
 
 {% block body -%}
     <h1>Programme</h1>
@@ -19,10 +19,11 @@
             </tr>
             <tr>
                 <th>Description</th>
-                <td>{{ entity.description }}</td>
+                <td>{{ entity.description |raw}}</td>
             </tr>
         </tbody>
     </table>
+    <img src="{{ asset('upload/programme/'~entity.id~'.'~entity.path) }}" alt="" height="525" width="666"/>
 
         <ul class="record_actions">
     <li>

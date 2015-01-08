@@ -16,6 +16,7 @@ class ProgrammeType extends AbstractType
     {
         $builder
             ->add('titre')
+        ->add('file')
             ->add('date')
             ->add('description', 'textarea', array('attr' => array('class' => 'ckeditor')))
 

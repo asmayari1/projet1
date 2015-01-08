@@ -39,6 +39,7 @@ class ServicesController extends Controller
             'entities' => $entities,
         ));
     }
+
     /**
      * Creates a new Services entity.
      *
@@ -59,7 +60,7 @@ class ServicesController extends Controller
 
         return $this->render('SiteNedraBundle:Services:new.html.twig', array(
             'entity' => $entity,
-            'form'   => $form->createView(),
+            'form' => $form->createView(),
         ));
     }
 
@@ -89,11 +90,11 @@ class ServicesController extends Controller
     public function newAction()
     {
         $entity = new Services();
-        $form   = $this->createCreateForm($entity);
+        $form = $this->createCreateForm($entity);
 
         return $this->render('SiteNedraBundle:Services:new.html.twig', array(
             'entity' => $entity,
-            'form'   => $form->createView(),
+            'form' => $form->createView(),
         ));
     }
 
@@ -114,7 +115,22 @@ class ServicesController extends Controller
         $deleteForm = $this->createDeleteForm($id);
 
         return $this->render('SiteNedraBundle:Services:show.html.twig', array(
-            'entity'      => $entity,
+            'entity' => $entity,
+            'delete_form' => $deleteForm->createView(),
+        ));
+    }
+
+    public function showFormationAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $entity = $em->getRepository('SiteNedraBundle:Services')->find($id);
+        if (!$entity) {
+            throw $this->createNotFoundException('Unable to find Services entity.');
+        }
+        $deleteForm = $this->createDeleteForm($id);
+
+        return $this->render('SiteNedraBundle:Front:formation.html.twig', array(
+            'entity' => $entity,
             'delete_form' => $deleteForm->createView(),
         ));
     }
@@ -137,19 +153,19 @@ class ServicesController extends Controller
         $deleteForm = $this->createDeleteForm($id);
 
         return $this->render('SiteNedraBundle:Services:edit.html.twig', array(
-            'entity'      => $entity,
-            'edit_form'   => $editForm->createView(),
+            'entity' => $entity,
+            'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
     }
 
     /**
-    * Creates a form to edit a Services entity.
-    *
-    * @param Services $entity The entity
-    *
-    * @return \Symfony\Component\Form\Form The form
-    */
+     * Creates a form to edit a Services entity.
+     *
+     * @param Services $entity The entity
+     *
+     * @return \Symfony\Component\Form\Form The form
+     */
     private function createEditForm(Services $entity)
     {
         $form = $this->createForm(new ServicesType(), $entity, array(
@@ -161,6 +177,7 @@ class ServicesController extends Controller
 
         return $form;
     }
+
     /**
      * Edits an existing Services entity.
      *
@@ -186,11 +203,12 @@ class ServicesController extends Controller
         }
 
         return $this->render('SiteNedraBundle:Services:edit.html.twig', array(
-            'entity'      => $entity,
-            'edit_form'   => $editForm->createView(),
+            'entity' => $entity,
+            'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
     }
+
     /**
      * Deletes a Services entity.
      *
@@ -228,7 +246,16 @@ class ServicesController extends Controller
             ->setAction($this->generateUrl('services_delete', array('id' => $id)))
             ->setMethod('DELETE')
             ->add('submit', 'submit', array('label' => 'Delete'))
-            ->getForm()
-        ;
+            ->getForm();
+    }
+
+
+    public function derniereFormationAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $query7 = $em->createQuery("SELECT u  FROM Site\NedraBundle\Entity\Services u  ORDER BY u.id DESC");
+        $formations = $query7->getResult();
+
+        return $this->render('SiteNedraBundle:Services:DerniereFormation.html.twig', array('formations' => $formations));
     }
 }

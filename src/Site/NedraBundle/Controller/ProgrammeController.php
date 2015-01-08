@@ -6,6 +6,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 use Site\NedraBundle\Entity\Programme;
+use Site\NedraBundle\Entity\Email;
 use Site\NedraBundle\Form\ProgrammeType;
 
 /**
@@ -29,11 +30,39 @@ class ProgrammeController extends Controller
             'entities' => $entities,
         ));
     }
+    public function indexfrontAction()
+    {
+        $em = $this->getDoctrine()->getManager();
 
+        $entities = $em->getRepository('SiteNedraBundle:Programme')->findAll();
+
+        return $this->render('SiteNedraBundle:Front:showProgrammeFront.html.twig', array(
+            'entities' => $entities,
+        ));
+    }
     /**
      * Creates a new Programme entity.
      *
      */
+    public function sendemailAction(){
+        $em = $this->getDoctrine()->getManager();
+
+        $email = new Email();
+        $request = $this->get('request');
+
+        if ($request->getMethod() == 'POST') {
+            $emai = $request->request->get("email");
+            $email->setEmail($emai);
+            $em->persist($email);
+            $em->flush();
+        }
+
+        $entities = $em->getRepository('SiteNedraBundle:Programme')->findAll();
+
+        return $this->render('SiteNedraBundle:Front:showProgrammeFront.html.twig', array(
+            'entities' => $entities,
+        ));
+        }
     public function createAction(Request $request)
     {
         $entity = new Programme();
@@ -42,8 +71,31 @@ class ProgrammeController extends Controller
 
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
+
             $em->persist($entity);
             $em->flush();
+            $entity->upload();
+            $em->merge($entity);
+            $em->flush();
+
+
+        $Email = $em->getRepository('SiteNedraBundle:Email')->findAll();
+
+            foreach ($Email as $key => $value) {
+                $message = \Swift_Message::newInstance()
+                    ->setSubject($entity->getTitre())
+
+                    ->setTo($value->getEmail())
+                    ->setFrom("asma.ayari@esprit.tn")
+                    ->setBody(
+                        $this->renderView(
+                            'SiteNedraBundle:Message:emailev.html.twig', array(
+                                'email'=>$entity,
+                            )
+                        )
+                    );
+                $this->get('mailer')->send($message);
+            }
 
             return $this->redirect($this->generateUrl('programme_show', array('id' => $entity->getId())));
         }
@@ -109,16 +161,20 @@ class ProgrammeController extends Controller
             'delete_form' => $deleteForm->createView(),
         ));
     }
-    public function showfrontAction()
+
+    public function showProgrammeAction($id)
     {
         $em = $this->getDoctrine()->getManager();
 
-        $entity = $em->getRepository('SiteNedraBundle:Programme')->find(1);
+        $entity = $em->getRepository('SiteNedraBundle:Programme')->find($id);
 
+        if (!$entity) {
+            throw $this->createNotFoundException('Unable to find Programme entity.');
+        }
 
-        $deleteForm = $this->createDeleteForm(1);
+        $deleteForm = $this->createDeleteForm($id);
 
-        return $this->render('SiteNedraBundle:Front:showProgrammeFront.html.twig', array(
+        return $this->render('SiteNedraBundle:Front:programmes.html.twig', array(
             'entity'      => $entity,
             'delete_form' => $deleteForm->createView(),
         ));
@@ -186,7 +242,9 @@ class ProgrammeController extends Controller
 
         if ($editForm->isValid()) {
             $em->flush();
-
+            $entity->upload();
+            $em->merge($entity);
+            $em->flush();
             return $this->redirect($this->generateUrl('programme_edit', array('id' => $id)));
         }
 
@@ -237,10 +295,13 @@ class ProgrammeController extends Controller
         ;
     }
 
-    public function recentArticlesAction($max = 3)
+    public function recentProgrammeAction($max = 3)
     {
         $em = $this->getDoctrine()->getManager();
-        $programmes = $em->getRepository('SiteNedraBundle:Programme')->findAll();
+       // $programmes = $em->getRepository('SiteNedraBundle:Programme')->findAll();
+        $query7 = $em->createQuery("SELECT u  FROM Site\NedraBundle\Entity\Programme u  ORDER BY u.id DESC");
+        $programmes = $query7->getResult();
+
         return $this->render('SiteNedraBundle:Programme:RecentProgramme.html.twig', array('programmes' => $programmes));
     }
 }

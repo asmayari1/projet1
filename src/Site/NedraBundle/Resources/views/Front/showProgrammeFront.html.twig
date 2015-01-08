@@ -1,10 +1,10 @@
 {% extends '::home.html.twig' %}
 {% block body -%}
     <section id="bannerSection"
-             style="background:url(themes/images/banner/portfolio.png) no-repeat center center  ;">
+             style="background:url({{ asset('themes/images/banner/portfolio.png) no-repeat center center') }} ">
         <div class="container">
-            <h1 id="pageTitle" class="style-h1">Portfolio
-                <small class="style-h1">Les évenements</small>
+            <h1 id="pageTitle" class="style-h1">
+                <small class="style-h1">Les Programmes</small>
 		<span class="pull-right toolTipgroup">
 			<a href="#" data-placement="top" data-original-title="Find us on via facebook"><img style="width:45px"
                                                                                                 src="{{ asset('themes/images/facebook.png') }}"
@@ -21,24 +21,130 @@
 		</span>
             </h1>
         </div>
-
     </section>
     <br>
-<div class="span8">
-    <div id='content'>
-            <p><img class="img-responsive" src="{{ asset('img/nedra.jpg') }}" alt=""></p>
-            <P>{{ entity.titre }}</P>
-            <p>
-         publiée le:{% if entity.date %}{{ entity.date| date("Y-m-d ")}}{% endif %}
+    <input type='hidden' id='current_page'/>
+    <input type='hidden' id='show_per_page'/>
+    <div class="row">
+        <div class="span8">
+            <div id='content'>
+                {% for entity in entities %}
+                    <p><br></p>
+                    <p><img class="img-responsive" src="{{ asset('img/nedra.jpg') }}" alt=""></p>
+                    <p>{{ entity.titre |raw}}</p>
+                    <p>
+     publiée le:{% if entity.date %}{{ entity.date| date("Y-m-d ")}}{% endif %}
         </p>
-            <p>{{ entity.description |raw }}</p>
-            <P>
-                <button type="button" class="btn btn-warning"><a href="{{ path('programme_show', { 'id': entity.id }) }}"
-                            >Lire la suite</a></button>
-            </P>
+
+                    <p>
+
+                    <div class="jumbotron">
+                        {{ entity.description | raw }}
+                    </div>
+                    </p>
+                {% endfor %}
+            </div>
 
 
+            <!-- An empty div which will be populated using jQuery -->
+            <div id='page_navigation'></div>
 
-    </div>
+        </div>
+
+        <div class="span4">
+            <div class="well well-small">
+                <h4 class="style-h1">Statut aujourd'hui</h4>
+                <ul class="nav nav-tabs nav-stacked">
+                    <li class="active">
+                        <a href="#">November 2012 (10)</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="well well-small">
+                <h4 class="style-h1">Derniers Programmes</h4>
+                <ul class="nav nav-tabs nav-stacked">
+                    <li>
+                        {{ render(controller('SiteNedraBundle:Programme:recentProgramme', { 'max': 3 })) }}
+                    </li>
+                </ul>
+            </div>
+            <div class="well well-small">
+                <h4 class="style-h1">Derniers Articles</h4>
+                <ul class="nav nav-tabs nav-stacked">
+                    <li class="active">
+                        <a href="#">November 2012 (10)</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="well well-small">
+                <h4 class="style-h1">Dalila Ghariani</h4>
+                <ul class="nav nav-tabs nav-stacked">
+                    <p>
+                        <img class="img-responsive" src="{{ asset('img/dalila.jpg') }}" alt="">
+
+                        Professeur-Conférencière -formatrice, experte en développement Personnel, fondatrice de l'école de la vie,  Diplômée en team building and team motivating du NLP Scotland school et Formatrice et enseignante du yoga du rire diplômée du DR Kararia’s School of laughter Yoga London, elle est  la cofondatrice et la formatrice de la  méthode" comment transformer sa vie   en un mois? "cette méthode révolutionnaire qui a radicalement changé la vie des gens qui l'ont appliqué.
+                        Vous pouvez voir  tous ses passages tv sur You tube ou  bien la suivre  tous les samedis matin sur Hannibal TV.
+                    <div style="font-size:2.5em;">
+                        <a href="#facebook" role="button" data-toggle="modal" style="display:inline-block; width:1em">
+                            <i class="icon-facebook-sign"> </i> </a>
+                        <a href="#twitter" role="button" data-toggle="modal" title=""
+                           style="display:inline-block; width:1em"> <i class="icon-twitter-sign"> </i> </a>
+                        <a href="#youtube" role="button" data-toggle="modal" style="display:inline-block;width:1em"> <i
+                                    class="icon-facetime-video"> </i> </a>
+
+                        <!-- Facebook -->
+                        <div id="facebook" class="modal hide fade" tabindex="-1" role="dialog"
+                             aria-labelledby="facebook" aria-hidden="true">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h3>Ma page FaceBook</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>"Our aim is simple - to provide affordable web design and development services for Mobile and Computer by creating websites that fully meet your requirements a professional look that inspire confidence in your customer."</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                                <button class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        <!-- Twitter -->
+                        <div id="twitter" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="twitter"
+                             aria-hidden="true">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h3>Twitter Header</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>"Our aim is simple - to provide affordable web design and development services for Mobile and Computer by creating websites that fully meet your requirements a professional look that inspire confidence in your customer."</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                                <button class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        <!-- Rss feed -->
+
+                        <!-- Youtube -->
+                        <div id="youtube" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="youtube"
+                             aria-hidden="true">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h3>Youtube Vedio</h3>
+                            </div>
+                            <div class="modal-body">
+                                Vedios here
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                                <button class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    </p>
+                </ul>
+            </div>
+        </div>
     </div>
 {% endblock %}

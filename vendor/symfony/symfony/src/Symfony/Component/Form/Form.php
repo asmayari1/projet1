@@ -351,20 +351,20 @@ class Form implements \IteratorAggregate, FormInterface
                 $expectedType = 'scalar, array or an instance of \ArrayAccess';
 
                 throw new LogicException(
-                    'The form\'s view data is expected to be of type '.$expectedType.', ' .
-                    'but is '.$actualType.'. You ' .
-                    'can avoid this error by setting the "data_class" option to ' .
-                    '"'.get_class($viewData).'" or by adding a view transformer ' .
+                    'The form\'s view data is expected to be of type '.$expectedType.', '.
+                    'but is '.$actualType.'. You '.
+                    'can avoid this error by setting the "data_class" option to '.
+                    '"'.get_class($viewData).'" or by adding a view transformer '.
                     'that transforms '.$actualType.' to '.$expectedType.'.'
                 );
             }
 
             if (null !== $dataClass && !$viewData instanceof $dataClass) {
                 throw new LogicException(
-                    'The form\'s view data is expected to be an instance of class ' .
-                    $dataClass.', but is '. $actualType.'. You can avoid this error ' .
-                    'by setting the "data_class" option to null or by adding a view ' .
-                    'transformer that transforms '.$actualType.' to an instance of ' .
+                    'The form\'s view data is expected to be an instance of class '.
+                    $dataClass.', but is '.$actualType.'. You can avoid this error '.
+                    'by setting the "data_class" option to null or by adding a view '.
+                    'transformer that transforms '.$actualType.' to an instance of '.
                     $dataClass.'.'
                 );
             }
@@ -782,7 +782,7 @@ class Form implements \IteratorAggregate, FormInterface
      *
      * This method should only be used to help debug a form.
      *
-     * @param int     $level The indentation level (used internally)
+     * @param int $level The indentation level (used internally)
      *
      * @return string A string representation of all errors
      */
@@ -992,7 +992,7 @@ class Form implements \IteratorAggregate, FormInterface
     /**
      * Returns the number of form children (implements the \Countable interface).
      *
-     * @return int     The number of embedded form children
+     * @return int The number of embedded form children
      */
     public function count()
     {

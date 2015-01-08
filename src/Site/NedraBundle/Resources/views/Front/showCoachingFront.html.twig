@@ -23,16 +23,117 @@
         </div>
 
     </section>
-    <br>
-    <table class="records_list">
 
-        <tbody>
-        {% for entity in entities %}
-            <div class="jumbotron">
-                <p>{{ entity.description | raw }}</p>
+
+    <div class="row">
+        <div class="span8">
+            <div id='content'>
+
+                {% for entity in entities %}
+
+                    <div class="jumbotron">
+                        <p>{{ entity.description | raw }}</p>
+                    </div>
+                {% endfor %}
+
             </div>
-        {% endfor %}
-        </tbody>
-    </table>
 
+        </div>
+        <div class="span4">
+
+
+            <div class="well well-small">
+                <h4 class="style-h1">Derniers Programmes</h4>
+                <ul class="nav nav-tabs nav-stacked">
+                    <li>
+                        {{ render(controller('SiteNedraBundle:Programme:recentProgramme', { 'max': 3 })) }}
+
+                    </li>
+                </ul>
+            </div>
+            <div class="well well-small">
+                <h4 class="style-h1">Derniers Articles</h4>
+                <ul class="nav nav-tabs nav-stacked">
+                    <li class="active">
+                        {{ render(controller('SiteNedraBundle:Services:derniereFormation', { 'max': 3 })) }}
+
+                    </li>
+                </ul>
+            </div>
+            <div class="well well-small">
+                <h4 class="style-h1">Dalila Ghariani</h4>
+                <ul class="nav nav-tabs nav-stacked">
+                    <p>
+                        <img class="img-responsive" src="{{ asset('img/dalila.jpg') }}" alt="">
+
+                        Professeur-Conférencière -formatrice, experte en développement Personnel, fondatrice de l'école
+                        de la vie, Diplômée en team building and team motivating du NLP Scotland school et Formatrice et
+                        enseignante du yoga du rire diplômée du DR Kararia’s School of laughter Yoga London, elle est la
+                        cofondatrice et la formatrice de la méthode" comment transformer sa vie en un mois? "cette
+                        méthode révolutionnaire qui a radicalement changé la vie des gens qui l'ont appliqué.
+                        Vous pouvez voir tous ses passages tv sur You tube ou bien la suivre tous les samedis matin sur
+                        Hannibal TV.
+
+                    <div style="font-size:2.5em;">
+                        <a href="#facebook" role="button" data-toggle="modal" style="display:inline-block; width:1em">
+                            <i class="icon-facebook-sign"> </i> </a>
+                        <a href="#twitter" role="button" data-toggle="modal" title=""
+                           style="display:inline-block; width:1em"> <i class="icon-twitter-sign"> </i> </a>
+                        <a href="#youtube" role="button" data-toggle="modal" style="display:inline-block;width:1em"> <i
+                                    class="icon-facetime-video"> </i> </a>
+
+                        <!-- Facebook -->
+                        <div id="facebook" class="modal hide fade" tabindex="-1" role="dialog"
+                             aria-labelledby="facebook" aria-hidden="true">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h3>Ma page FaceBook</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>"Our aim is simple - to provide affordable web design and development services for Mobile and Computer by creating websites that fully meet your requirements a professional look that inspire confidence in your customer."</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                                <button class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        <!-- Twitter -->
+                        <div id="twitter" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="twitter"
+                             aria-hidden="true">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h3>Twitter Header</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>"Our aim is simple - to provide affordable web design and development services for Mobile and Computer by creating websites that fully meet your requirements a professional look that inspire confidence in your customer."</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                                <button class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        <!-- Rss feed -->
+
+                        <!-- Youtube -->
+                        <div id="youtube" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="youtube"
+                             aria-hidden="true">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h3>Youtube Vedio</h3>
+                            </div>
+                            <div class="modal-body">
+                                Vedios here
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                                <button class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    </p>
+                </ul>
+            </div>
+        </div>
+    </div>
 {% endblock %}

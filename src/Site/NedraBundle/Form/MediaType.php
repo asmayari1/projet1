@@ -17,6 +17,7 @@ class MediaType extends AbstractType
         $builder
             ->add('photos')
             ->add('videos')
+            ->add('file')
 
         ;
     }

@@ -7,7 +7,15 @@ class __TwigTemplate_b458bd7fbab9b7ca2c309bab7e91641e98a798e25ab3bf58ac3ac127a52
     {
         parent::__construct($env);
 
-        $this->parent = $this->env->loadTemplate("::home.html.twig");
+        // line 1
+        try {
+            $this->parent = $this->env->loadTemplate("::home.html.twig");
+        } catch (Twig_Error_Loader $e) {
+            $e->setTemplateFile($this->getTemplateName());
+            $e->setTemplateLine(1);
+
+            throw $e;
+        }
 
         $this->blocks = array(
             'body' => array($this, 'block_body'),
@@ -29,7 +37,10 @@ class __TwigTemplate_b458bd7fbab9b7ca2c309bab7e91641e98a798e25ab3bf58ac3ac127a52
     {
         // line 4
         echo "<section id=\"bannerSection\"
-             style=\"background:url(themes/images/banner/portfolio.png) no-repeat center center  ;\">
+             style=\"background:url(";
+        // line 5
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("themes/images/banner/portfolio.png"), "html", null, true);
+        echo ") no-repeat center center  ;\">
         <div class=\"container\">
             <h1 id=\"pageTitle\" class=\"style-h1\">
                 <small class=\"style-h1\">Contactez-moi</small>
@@ -62,17 +73,18 @@ class __TwigTemplate_b458bd7fbab9b7ca2c309bab7e91641e98a798e25ab3bf58ac3ac127a52
     </section>
     <br>
     <div  class=\"row\">
-        <div class=\"alert alert-success\" role=\"alert\">
-            ";
-        // line 30
+        ";
+        // line 29
         $context['_parent'] = (array) $context;
-        $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session"), "flashbag"), "get", array(0 => "notice"), "method"));
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "flashbag", array()), "get", array(0 => "notice"), "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["flashMessage"]) {
-            // line 31
-            echo "                <div class=\"flash-notice\">
+            // line 30
+            echo "
+        <div class=\"alert alert-success\" role=\"alert\">
+               <div class=\"flash-notice\">
                     ";
-            // line 32
-            echo twig_escape_filter($this->env, (isset($context["flashMessage"]) ? $context["flashMessage"] : $this->getContext($context, "flashMessage")), "html", null, true);
+            // line 33
+            echo twig_escape_filter($this->env, $context["flashMessage"], "html", null, true);
             echo "
                 </div>
             ";
@@ -80,18 +92,17 @@ class __TwigTemplate_b458bd7fbab9b7ca2c309bab7e91641e98a798e25ab3bf58ac3ac127a52
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['flashMessage'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 35
+        // line 36
         echo "        </div>
         <div  class=\"span6\">
-    ";
-        // line 37
+      ";
+        // line 38
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form');
         echo "
 
+     </div>
 
-
-        </div>
-        <div  class=\"span6\">
+        <div  class=\"span4\">
                 <div id=\"myMap\" style=\"height:500px\">
                     <h4 style=\"text-align: center \">Retrouvez la librairie la plus proche de vous </h4>
                     <iframe src=\"https://mapsengine.google.com/map/embed?mid=zhi9TRL4bKTM.k588PHJEw4TY\" width=\"480\" height=\"400\"></iframe>
@@ -99,7 +110,9 @@ class __TwigTemplate_b458bd7fbab9b7ca2c309bab7e91641e98a798e25ab3bf58ac3ac127a52
                 </div>
 
         </div>
-    </div>
+        </div>
+
+
 ";
     }
 
@@ -115,6 +128,6 @@ class __TwigTemplate_b458bd7fbab9b7ca2c309bab7e91641e98a798e25ab3bf58ac3ac127a52
 
     public function getDebugInfo()
     {
-        return array (  88 => 37,  84 => 35,  75 => 32,  72 => 31,  68 => 30,  54 => 19,  47 => 15,  40 => 11,  31 => 4,  28 => 3,);
+        return array (  100 => 38,  96 => 36,  87 => 33,  82 => 30,  78 => 29,  65 => 19,  58 => 15,  51 => 11,  42 => 5,  39 => 4,  36 => 3,  11 => 1,);
     }
 }

@@ -1,253 +1,274 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Nedra Ghariani Mahdid</title>
+<head>
+    <title>Nedra Ghariani Mahdid</title>
 
-        <meta charset="UTF-8" />
-        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
 
-        {% block css %}
+    {% block css %}
 
-            <link  href="{{ asset('css/bootstrap/bootstrap.css') }}" rel="stylesheet"  />
-            <link  href="{{ asset('css/jtree.css') }}" rel="stylesheet"  />
-            <link href="{{ asset('css/bootstrap/bootstrap-responsive.css') }}" rel="stylesheet"  />
-            <link href="{{ asset('css/supr-theme/jquery.ui.supr.css') }}" rel="stylesheet"  />
-            <link href="{{ asset('css/icons.css') }}" rel="stylesheet"  />
-            <link href="{{ asset('css/jquery.cleditor.css') }}" rel="stylesheet"  />
-            <!-- Plugin stylesheets -->
-            <link href="{{ asset('plugins/qtip/jquery.qtip.css') }}" rel="stylesheet"  />
-            <link href="{{ asset('plugins/fullcalendar/fullcalendar.css') }}" rel="stylesheet"  />
-            <link href="{{ asset('plugins/jpages/jPages.css') }}" rel="stylesheet"  />
-            <link href="{{ asset('plugins/prettify/prettify.css') }}" rel="stylesheet" />
-            <link href="{{ asset('plugins/inputlimiter/jquery.inputlimiter.css') }}" rel="stylesheet" />
-            <link href="{{ asset('plugins/ibutton/jquery.ibutton.css') }}" rel="stylesheet" />
-            <link href="{{ asset('plugins/uniform/uniform.default.css') }}" rel="stylesheet" />
-            <link href="{{ asset('plugins/color-picker/color-picker.css') }}" rel="stylesheet" />
-            <link href="{{ asset('plugins/select/select2.css') }}" rel="stylesheet" />
-            <link href="{{ asset('plugins/validate/validate.css') }}" rel="stylesheet" />
-            <link href="{{ asset('plugins/pnotify/jquery.pnotify.default.css') }}" rel="stylesheet" />
-            <link href="{{ asset('plugins/pretty-photo/prettyPhoto.css') }}" rel="stylesheet" />
-            <link href="{{ asset('plugins/smartWizzard/smart_wizard.css') }}" rel="stylesheet" />
-            <link href="{{ asset('plugins/dataTables/jquery.dataTables.css') }}" rel="stylesheet" />
-            <link href="{{ asset('plugins/elfinder/elfinder.css') }}" rel="stylesheet" />
-            <link href="{{ asset('plugins/plupload/jquery.ui.plupload/css/jquery.ui.plupload.css') }}" rel="stylesheet" />
-            <link href="{{ asset('plugins/search/tipuesearch.css') }}" rel="stylesheet" />
+        <link href="{{ asset('css/bootstrap/bootstrap.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('css/jtree.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('css/bootstrap/bootstrap-responsive.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('css/supr-theme/jquery.ui.supr.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('css/icons.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('css/jquery.cleditor.css') }}" rel="stylesheet"/>
+        <!-- Plugin stylesheets -->
+        <link href="{{ asset('plugins/qtip/jquery.qtip.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('plugins/fullcalendar/fullcalendar.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('plugins/jpages/jPages.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('plugins/prettify/prettify.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('plugins/inputlimiter/jquery.inputlimiter.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('plugins/ibutton/jquery.ibutton.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('plugins/uniform/uniform.default.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('plugins/color-picker/color-picker.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('plugins/select/select2.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('plugins/validate/validate.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('plugins/pnotify/jquery.pnotify.default.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('plugins/pretty-photo/prettyPhoto.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('plugins/smartWizzard/smart_wizard.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('plugins/dataTables/jquery.dataTables.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('plugins/elfinder/elfinder.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('plugins/plupload/jquery.ui.plupload/css/jquery.ui.plupload.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('plugins/search/tipuesearch.css') }}" rel="stylesheet"/>
 
-            <!-- Main stylesheets -->
-            <link href="{{ asset('css/main.css') }}" rel="stylesheet"  /> 
+        <!-- Main stylesheets -->
+        <link href="{{ asset('css/main.css') }}" rel="stylesheet"/>
 
 
 
-        {% endblock %}
+    {% endblock %}
 
-        <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}" />
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('images/apple-touch-icon-144-precomposed.png') }}" />
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('images/apple-touch-icon-114-precomposed.png') }}" />
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('images/apple-touch-icon-72-precomposed.png') }}" />
-        <link rel="apple-touch-icon-precomposed" href="{{ asset('images/apple-touch-icon-57-precomposed.png') }}" />
+    <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="{{ asset('images/apple-touch-icon-144-precomposed.png') }}"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="{{ asset('images/apple-touch-icon-114-precomposed.png') }}"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="{{ asset('images/apple-touch-icon-72-precomposed.png') }}"/>
+    <link rel="apple-touch-icon-precomposed" href="{{ asset('images/apple-touch-icon-57-precomposed.png') }}"/>
 
-        {% block stylesheets %}
+    {% block stylesheets %}
 
-        {% endblock %}
-<!--  <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+    {% endblock %}
+    <!--  <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
         -->
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
 
-    <script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
-    <body>
-        <!-- loading animation -->
-        <div id="qLoverlay"></div>
-        <div id="qLbar"></div>
+<script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
+<body>
+<!-- loading animation -->
+<div id="qLoverlay"></div>
+<div id="qLbar"></div>
 
-        <div id="header">
+<div id="header">
 
-            <div class="navbar">
-                <div class="navbar-inner">
-                    <div class="container-fluid">
-                        <a class="brand" href="#">&nbsp;<span class="slogan"><FONT color="blue" width="100" Size="3"></Font></span></a>
-                        <div class="btn-group pull-right">
-                            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                <i class=" glyphicon glyphicon-user"></i>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="brand" href="#">
+                    Admin.
+                    <span class="slogan">NedraGhariani</span>
+                </a>
+
+                <div class="btn-group pull-right">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <i class=" glyphicon glyphicon-user"></i>
 
 
-                                <span class="hidden-sm hidden-xs">admin:{{app.user.username}}</span>
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
+                        <span class="hidden-sm hidden-xs">admin:{{ app.user.username }}</span>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
 
-                                <li class="divider"></li>
-                                <li>
-                                    <a href="path{{('fos_user_security_logout')}}">Logout</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div><!-- /navbar-inner -->
-            </div><!-- /navbar --> 
-
-        </div><!-- End #header -->
-
-        <div id="wrapper">
-
-            <!--Responsive navigation button-->  
-            <div class="resBtn">
-                <a href="#"><span class="icon16 minia-icon-list-3"></span></a>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="path{{ ('fos_user_security_logout') }}">Logout</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <!--Sidebar collapse button-->  
-            <div class="collapseBtn">
-                <a href="#" class="tipR" title="Hide sidebar"><span class="icon12 minia-icon-layout"></span></a>
+        </div>
+        <!-- /navbar-inner -->
+    </div>
+    <!-- /navbar -->
+
+</div>
+<!-- End #header -->
+
+<div id="wrapper">
+
+    <!--Responsive navigation button-->
+    <div class="resBtn">
+        <a href="#"><span class="icon16 minia-icon-list-3"></span></a>
+    </div>
+
+    <!--Sidebar collapse button-->
+    <div class="collapseBtn">
+        <a href="#" class="tipR" title="Hide sidebar"><span class="icon12 minia-icon-layout"></span></a>
+    </div>
+
+    <!--Sidebar background-->
+    <div id="sidebarbg">
+
+    </div>
+    <!--Sidebar content-->
+    <div id="sidebar">
+
+        <div class="shortcuts">
+            <ul>
+
+            </ul>
+        </div>
+        <!-- End search -->
+
+        <div class="sidenav">
+
+            <div class="sidebar-widget" style="margin: -1px 0 0 0;">
+                <h5 class="title" style="margin-bottom:0">Menu</h5>
             </div>
+            <!-- End .sidenav-widget -->
 
-            <!--Sidebar background-->
-            <div id="sidebarbg">
+            <div class="mainnav">
+                <ul>
+                    <li><a href="{{ path('introduction') }}"><span class="brocco-icon-heart "></span>Apropos</a></li>
 
+
+                    <li>
+                        <a href="{{ path('coaching') }}"><span class="entypo-icon-users "></span>Coaching </a>
+
+                    </li>
+
+                    <li><a href="{{ path('portfolio') }}"><span class="silk-icon-pictures "></span> Portfollios </a></li>
+
+
+                    <li>
+                        <a href="{{ path('news') }}"><span class="eco-article "></span>Articles </a>
+                    </li>
+
+
+                    <li><a href="{{ path('programme') }}"><span class=" entypo-icon-screen"></span>Programmes</a></li>
+                    <li>
+                        <a href="{{ path('services') }}"><span class="icon16 icomoon-icon-paper"></span> Formations</a>
+
+                    </li>
+                    <li><a href="{{ path('temoignages') }}"><span class="  icomoon-icon-pencil-2"></span>Statuts</a>
+                    </li>
+
+                    <li><a href="{{ path('temoignages') }}"><span class="eco-users "></span> Temoignages</a></li>
+
+                </ul>
             </div>
-            <!--Sidebar content-->
-            <div id="sidebar">
+        </div>
+        <!-- End sidenav -->
 
-                <div class="shortcuts">
-                    <ul>
+    </div>
+    <!-- End #sidebar -->
 
-                     </ul>
-                </div><!-- End search -->            
+    <!--Body content-->
+    <div id="content" class="clearfix">
+        <div class="contentwrapper"><!--Content wrapper-->
 
-                <div class="sidenav">
-
-                    <div class="sidebar-widget" style="margin: -1px 0 0 0;">
-                        <h5 class="title" style="margin-bottom:0">Navigation</h5>
-                    </div><!-- End .sidenav-widget -->
-
-                    <div class="mainnav">
-                        <ul>
-                           
-                            <li>
-                                <a href="{{path('coaching')}}"><span class="icon16 minia-icon-list-4"></span>Coaching  </a>
-                               
-                            </li>
-                            <li><a href="{{path('introduction')}}"><span class="icon16 icomoon-icon-stats-up"></span>Apropos</a></li>
-
-                            <li><a href="{{path('media')}}"><span class="icon16 icomoon-icon-font"></span> Portfollios </a></li>
-                           
+            <div class="heading">
+                {% block bodyy %}
 
 
-                            <li>
-                                <a href="{{path('news')}}"><span class="icon16  brocco-icon-envelope"></span>Articles </a>
-                            </li>
-
-                            
-                            <li><a href="{{path('programme')}}"><span class="icon24 iconic-icon-chart"></span> Events:TV/Radio/autres</a></li>
-                            <li>
-                                <a href="{{path('services')}}"><span class="icon16 icomoon-icon-paper"></span> Formations</a>
-                                
-                            </li>
-                            <li><a href="{{path('temoignages')}}"><span class="icon16 brocco-icon-calendar"></span> Temoignages</a></li>
-
-                        </ul>
-                    </div>
-                </div><!-- End sidenav -->
-
-            </div><!-- End #sidebar -->
-
-            <!--Body content-->
-            <div id="content" class="clearfix">
-                <div class="contentwrapper"><!--Content wrapper-->
-
-                    <div class="heading">
-                        {% block bodyy %}
+                {% endblock %}
+                <!-- lina il bare  -->
+            </div>
+            <!-- End search -->
+            {% block body %}
 
 
-                        {% endblock %}
-                        <!-- lina il bare  -->
-                    </div><!-- End search -->
-                    {% block body %}
+            {% endblock %}
+        </div>
+        <!-- End .heading-->
+
+    </div>
+    <!-- End .row-fluid -->
 
 
-                    {% endblock %}
-                </div><!-- End .heading-->
-
-            </div><!-- End .row-fluid -->
-
-
-                                                    {% block javascripts %}
-                                                        <script >
-                                                            //adding load class to body and hide page
-                                                            document.documentElement.className += 'loadstate';
-                                                        </script>
+    {% block javascripts %}
+        <script>
+            //adding load class to body and hide page
+            document.documentElement.className += 'loadstate';
+        </script>
 
 
-                                                        <!-- Le javascript
-                                                       ================================================== -->
-                                                        <script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-                                                        <script  src="{{ asset('js/bootstrap/bootstrap.js') }}"></script>  
-                                                        <script  src="{{ asset('js/jquery.cookie.js') }}"></script>
-                                                        <script  src="{{ asset('js/jquery.mousewheel.js') }}"></script>
+        <!-- Le javascript
+       ================================================== -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="{{ asset('js/bootstrap/bootstrap.js') }}"></script>
+        <script src="{{ asset('js/jquery.cookie.js') }}"></script>
+        <script src="{{ asset('js/jquery.mousewheel.js') }}"></script>
 
-                                                        <script src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>
-                                                        <!-- Load plugins -->
-                                                        <script  src="{{ asset('plugins/qtip/jquery.qtip.min.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/flot/jquery.flot.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/flot/jquery.flot.grow.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/flot/jquery.flot.pie.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/flot/jquery.flot.resize.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/flot/jquery.flot.tooltip_0.4.4.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/flot/jquery.flot.orderBars.js') }}"></script>
+        <script src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>
+        <!-- Load plugins -->
+        <script src="{{ asset('plugins/qtip/jquery.qtip.min.js') }}"></script>
+        <script src="{{ asset('plugins/flot/jquery.flot.js') }}"></script>
+        <script src="{{ asset('plugins/flot/jquery.flot.grow.js') }}"></script>
+        <script src="{{ asset('plugins/flot/jquery.flot.pie.js') }}"></script>
+        <script src="{{ asset('plugins/flot/jquery.flot.resize.js') }}"></script>
+        <script src="{{ asset('plugins/flot/jquery.flot.tooltip_0.4.4.js') }}"></script>
+        <script src="{{ asset('plugins/flot/jquery.flot.orderBars.js') }}"></script>
 
-                                                        <script  src="{{ asset('plugins/sparkline/jquery.sparkline.min.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/knob/jquery.knob.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/fullcalendar/fullcalendar.min.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/prettify/prettify.js') }}"></script>
-                                                        <script  src="{{ asset('js/jtree.js') }}"></script>
+        <script src="{{ asset('plugins/sparkline/jquery.sparkline.min.js') }}"></script>
+        <script src="{{ asset('plugins/knob/jquery.knob.js') }}"></script>
+        <script src="{{ asset('plugins/fullcalendar/fullcalendar.min.js') }}"></script>
+        <script src="{{ asset('plugins/prettify/prettify.js') }}"></script>
+        <script src="{{ asset('js/jtree.js') }}"></script>
 
-                                                        {% block js %}
-
-
-                                                        {% endblock %}
-
-                                                        <script  src="{{ asset('plugins/watermark/jquery.watermark.min.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/elastic/jquery.elastic.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/inputlimiter/jquery.inputlimiter.1.3.min.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/maskedinput/jquery.maskedinput-1.3.min.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/ibutton/jquery.ibutton.min.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/uniform/jquery.uniform.min.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/stepper/ui.stepper.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/color-picker/colorpicker.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/timeentry/jquery.timeentry.min.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/select/select2.min.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/dualselect/jquery.dualListBox-1.3.min.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/tiny_mce/jquery.tinymce.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/validate/jquery.validate.min.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/search/tipuesearch_set.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/search/tipuesearch_data.js') }}"></script><!-- JSON for searched results -->
-                                                        <script  src="{{ asset('plugins/search/tipuesearch.js') }}"></script>
-
-                                                        <script  src="{{ asset('plugins/animated-progress-bar/jquery.progressbar.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/pnotify/jquery.pnotify.min.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/lazy-load/jquery.lazyload.min.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/jpages/jPages.min.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/pretty-photo/jquery.prettyPhoto.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/smartWizzard/jquery.smartWizard-2.0.min.js') }}"></script>
-
-                                                        <script  src="{{ asset('plugins/touch-punch/jquery.ui.touch-punch.min.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/ios-fix/ios-orientationchange-fix.js') }}"></script>
-
-                                                        <script  src="{{ asset('plugins/dataTables/jquery.dataTables.min.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/elfinder/elfinder.min.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/plupload/plupload.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/plupload/plupload.html4.js') }}"></script>
-                                                        <script  src="{{ asset('plugins/plupload/jquery.plupload.queue/jquery.plupload.queue.js') }}"></script>
+        {% block js %}
 
 
-                                                        <!-- Init plugins -->
+        {% endblock %}
 
-                                                        <!-- Important Place before main.js  -->
-                                                        <script  src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
-                                                        <script src="{{ asset('js/main.js') }}"></script>
+        <script src="{{ asset('plugins/watermark/jquery.watermark.min.js') }}"></script>
+        <script src="{{ asset('plugins/elastic/jquery.elastic.js') }}"></script>
+        <script src="{{ asset('plugins/inputlimiter/jquery.inputlimiter.1.3.min.js') }}"></script>
+        <script src="{{ asset('plugins/maskedinput/jquery.maskedinput-1.3.min.js') }}"></script>
+        <script src="{{ asset('plugins/ibutton/jquery.ibutton.min.js') }}"></script>
+        <script src="{{ asset('plugins/uniform/jquery.uniform.min.js') }}"></script>
+        <script src="{{ asset('plugins/stepper/ui.stepper.js') }}"></script>
+        <script src="{{ asset('plugins/color-picker/colorpicker.js') }}"></script>
+        <script src="{{ asset('plugins/timeentry/jquery.timeentry.min.js') }}"></script>
+        <script src="{{ asset('plugins/select/select2.min.js') }}"></script>
+        <script src="{{ asset('plugins/dualselect/jquery.dualListBox-1.3.min.js') }}"></script>
+        <script src="{{ asset('plugins/tiny_mce/jquery.tinymce.js') }}"></script>
+        <script src="{{ asset('plugins/validate/jquery.validate.min.js') }}"></script>
+        <script src="{{ asset('plugins/search/tipuesearch_set.js') }}"></script>
+        <script src="{{ asset('plugins/search/tipuesearch_data.js') }}"></script><!-- JSON for searched results -->
+        <script src="{{ asset('plugins/search/tipuesearch.js') }}"></script>
+
+        <script src="{{ asset('plugins/animated-progress-bar/jquery.progressbar.js') }}"></script>
+        <script src="{{ asset('plugins/pnotify/jquery.pnotify.min.js') }}"></script>
+        <script src="{{ asset('plugins/lazy-load/jquery.lazyload.min.js') }}"></script>
+        <script src="{{ asset('plugins/jpages/jPages.min.js') }}"></script>
+        <script src="{{ asset('plugins/pretty-photo/jquery.prettyPhoto.js') }}"></script>
+        <script src="{{ asset('plugins/smartWizzard/jquery.smartWizard-2.0.min.js') }}"></script>
+
+        <script src="{{ asset('plugins/touch-punch/jquery.ui.touch-punch.min.js') }}"></script>
+        <script src="{{ asset('plugins/ios-fix/ios-orientationchange-fix.js') }}"></script>
+
+        <script src="{{ asset('plugins/dataTables/jquery.dataTables.min.js') }}"></script>
+        <script src="{{ asset('plugins/elfinder/elfinder.min.js') }}"></script>
+        <script src="{{ asset('plugins/plupload/plupload.js') }}"></script>
+        <script src="{{ asset('plugins/plupload/plupload.html4.js') }}"></script>
+        <script src="{{ asset('plugins/plupload/jquery.plupload.queue/jquery.plupload.queue.js') }}"></script>
 
 
-                                                    {% endblock %}
+        <!-- Init plugins -->
+
+        <!-- Important Place before main.js  -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+        <script src="{{ asset('js/main.js') }}"></script>
 
 
-                                                    </body>
-                                                    </html>
+    {% endblock %}
+
+
+</body>
+</html>

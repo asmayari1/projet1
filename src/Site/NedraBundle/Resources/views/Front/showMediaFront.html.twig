@@ -1,7 +1,7 @@
 {% extends '::home.html.twig' %}
 {% block body -%}
     <section id="bannerSection"
-             style="background:url(themes/images/banner/portfolio.png) no-repeat center center ;">
+             style="background:url({{ asset('themes/images/banner/portfolio.png) no-repeat center center') }} ">
         <div class="container">
             <h1 id="pageTitle" class="style-h1">Portfolio
                 <small class="style-h1">Potfolio</small>
@@ -42,78 +42,6 @@
             </div>
         </div>
     </li>
-    <li class="span3">
-        <div class="thumbnail">
-            <div class="blockDtl">
-                <h4>My web solutions</h4>
-                <a href="http://mywebsolution.info" target="_blank" ><img src="{{ asset('img/nedra.jpg') }}" alt="bootstrap business templates"/></a>
-                <p>Our aim is simple - to provide affordable web design and development services for different devices. </p>
-                <div class="btn-toolbar">
-                    <div class="btn-group toolTipgroup">
-                        <a class="btn" href="mailto:developer.sba@gmail.com" data-placement="right" data-original-title="send email"><i class="icon-envelope"></i></a>
-                        <a class="btn" href="#" data-placement="top" data-original-title="do you like?"><i class="icon-thumbs-up"></i></a>
-                        <a class="btn" href="#" data-placement="top" data-original-title="dont like?"><i class="icon-thumbs-down"></i></a>
-                        <a class="btn" href="#" data-placement="top" data-original-title="share"><i class="icon-link"></i></a>
-                        <a href="" target="_blank" class="btn" data-placement="left" data-original-title="browse"><i class="icon-globe"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-        <li class="span3">
-            <div class="thumbnail">
-                <div class="blockDtl">
-                    <h4>My web solutions</h4>
-                    <a href="http://mywebsolution.info" target="_blank" ><img src="{{ asset('img/nedra.jpg') }}" alt="bootstrap business templates"/></a>
-                    <p>Our aim is simple - to provide affordable web design and development services for different devices. </p>
-                    <div class="btn-toolbar">
-                        <div class="btn-group toolTipgroup">
-                            <a class="btn" href="mailto:developer.sba@gmail.com" data-placement="right" data-original-title="send email"><i class="icon-envelope"></i></a>
-                            <a class="btn" href="#" data-placement="top" data-original-title="do you like?"><i class="icon-thumbs-up"></i></a>
-                            <a class="btn" href="#" data-placement="top" data-original-title="dont like?"><i class="icon-thumbs-down"></i></a>
-                            <a class="btn" href="#" data-placement="top" data-original-title="share"><i class="icon-link"></i></a>
-                            <a href="http://mywebsolution.info" target="_blank" class="btn" data-placement="left" data-original-title="browse"><i class="icon-globe"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </li>
-    <li class="span3">
-        <div class="thumbnail">
-            <div class="blockDtl">
-                <h4>My web solutions</h4>
-                <a href="http://mywebsolution.info" target="_blank" ><img src="{{ asset('img/nedra.jpg') }}" alt="bootstrap business templates"/></a>
-                <p>Our aim is simple - to provide affordable web design and development services for different devices. </p>
-                <div class="btn-toolbar">
-                    <div class="btn-group toolTipgroup">
-                        <a class="btn" href="mailto:developer.sba@gmail.com" data-placement="right" data-original-title="send email"><i class="icon-envelope"></i></a>
-                        <a class="btn" href="#" data-placement="top" data-original-title="do you like?"><i class="icon-thumbs-up"></i></a>
-                        <a class="btn" href="#" data-placement="top" data-original-title="dont like?"><i class="icon-thumbs-down"></i></a>
-                        <a class="btn" href="#" data-placement="top" data-original-title="share"><i class="icon-link"></i></a>
-                        <a href="http://mywebsolution.info" target="_blank" class="btn" data-placement="left" data-original-title="browse"><i class="icon-globe"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li class="span3">
-        <div class="thumbnail">
-            <div class="blockDtl">
-                <h4>My web solutions</h4>
-                <a href="http://mywebsolution.info" target="_blank" ><img src="{{ asset('img/nedra.jpg') }}" alt="bootstrap business templates"/></a>
-                <p>Our aim is simple - to provide affordable web design and development services for different devices. </p>
-                <div class="btn-toolbar">
-                    <div class="btn-group toolTipgroup">
-                        <a class="btn" href="mailto:developer.sba@gmail.com" data-placement="right" data-original-title="send email"><i class="icon-envelope"></i></a>
-                        <a class="btn" href="#" data-placement="top" data-original-title="do you like?"><i class="icon-thumbs-up"></i></a>
-                        <a class="btn" href="#" data-placement="top" data-original-title="dont like?"><i class="icon-thumbs-down"></i></a>
-                        <a class="btn" href="#" data-placement="top" data-original-title="share"><i class="icon-link"></i></a>
-                        <a href="http://mywebsolution.info" target="_blank" class="btn" data-placement="left" data-original-title="browse"><i class="icon-globe"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
 </div>
     </div>
     <br>
@@ -122,9 +50,7 @@
         <tbody>
         {% for entity in entities %}
             <div class="jumbotron">
-                <h1 style="color: mediumvioletred">{{ entity.titre }}</h1>
 
-                <p>{{ entity.description }}</p>
             </div>
             <tr>
 

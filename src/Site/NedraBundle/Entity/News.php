@@ -15,17 +15,41 @@ class News
 {
 
     /**
-     * @ORM\Column(type="string", nullable=true)
+     * @Assert\File(maxSize="6000000")
      */
     public $file;
 
 
+    /**
+     * @var string $image
+     * @Assert\File( maxSize = "1024k", mimeTypesMessage = "Please upload a valid Image")
+     * @ORM\Column(name="image", type="string", length=255)
+     */
+    private $image;
 
+    /**
+     * Set image
+     *
+     * @param string $image
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+    }
+
+    /**
+     * Get image
+     *
+     * @return string
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $path;
-
     /**
      * @var integer
      *
@@ -80,14 +104,14 @@ class News
     protected function getUploadRootDir()
     {
         // le chemin absolu du répertoire où les documents uploadés doivent être sauvegardés
-        return __DIR__ . '/../../../../web/upload' . $this->getUploadDir();
+        return __DIR__ . '/../../../../web/' . $this->getUploadDir();
     }
 
     protected function getUploadDir()
     {
         // on se débarrasse de « __DIR__ » afin de ne pas avoir de problème lorsqu'on affiche
         // le document/image dans la vue.
-        return '/upload';
+        return '/upload/news';
     }
 
     /**
@@ -122,7 +146,7 @@ class News
             return;
         }
 
-        $this->file->move($this->getUploadRootDir(), $this->file->getClientOriginalName());
+        $this->file->move($this->getUploadRootDir(), $this->id.'.'.$this->file->getClientOriginalName());
 
         $this->path = $this->file->getClientOriginalName();
         $this->file = null;
@@ -233,7 +257,63 @@ class News
             return $this->description;
     }
 
+    public function getFullImagePath() {
+        return null === $this->image ? null : $this->getUploadRootDir(). $this->image;
+    }
 
+
+    protected function getTmpUploadRootDir() {
+        // the absolute directory path where uploaded documents should be saved
+        return __DIR__ . '/../../../../web/upload/';
+    }
+    /**
+     * Get path
+     *
+     * @return string
+     */
+    public function getPath() {
+        return $this->path;
+    }
+    /**
+     * @ORM\PrePersist()
+     * @ORM\PreUpdate()
+     */
+    public function uploadImage() {
+        // the file property can be empty if the field is not required
+        if (null === $this->image) {
+            return;
+        }
+        if(!$this->id){
+            $this->image->move($this->getTmpUploadRootDir(), $this->image->getClientOriginalName());
+        }else{
+            $this->image->move($this->getUploadRootDir(), $this->image->getClientOriginalName());
+        }
+        $this->setImage($this->image->getClientOriginalName());
+    }
+
+    /**
+     * @ORM\PostPersist()
+     */
+    public function moveImage()
+    {
+        if (null === $this->image) {
+            return;
+        }
+        if(!is_dir($this->getUploadRootDir())){
+            mkdir($this->getUploadRootDir());
+        }
+        copy($this->getTmpUploadRootDir().$this->image, $this->getFullImagePath());
+        unlink($this->getTmpUploadRootDir().$this->image);
+    }
+
+    /**
+     * @ORM\PreRemove()
+     */
+    public function removeImage()
+    {
+        unlink($this->getFullImagePath());
+        rmdir($this->getUploadRootDir());
+    }
 
 
 }

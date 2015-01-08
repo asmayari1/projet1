@@ -22,10 +22,10 @@ class __TwigTemplate_270ebb098079862865b37b185914607ef8e33ebca8b64ded8e4e85a5e76
         echo "<!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=";
+        <meta charset=\"";
         // line 4
         echo twig_escape_filter($this->env, $this->env->getCharset(), "html", null, true);
-        echo "\"/>
+        echo "\" />
         <meta name=\"robots\" content=\"noindex,nofollow\" />
         <title>";
         // line 6
@@ -34,11 +34,11 @@ class __TwigTemplate_270ebb098079862865b37b185914607ef8e33ebca8b64ded8e4e85a5e76
         <link href=\"";
         // line 7
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/framework/css/structure.css"), "html", null, true);
-        echo "\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />
+        echo "\" rel=\"stylesheet\" />
         <link href=\"";
         // line 8
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/framework/css/body.css"), "html", null, true);
-        echo "\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />
+        echo "\" rel=\"stylesheet\" />
         ";
         // line 9
         $this->displayBlock('head', $context, $blocks);
@@ -111,6 +111,6 @@ class __TwigTemplate_270ebb098079862865b37b185914607ef8e33ebca8b64ded8e4e85a5e76
 
     public function getDebugInfo()
     {
-        return array (  98 => 40,  93 => 9,  88 => 6,  80 => 41,  78 => 40,  46 => 10,  44 => 9,  36 => 7,  32 => 6,  27 => 4,  22 => 1,  57 => 12,  54 => 11,  43 => 8,  40 => 8,  33 => 4,  30 => 3,);
+        return array (  98 => 40,  93 => 9,  88 => 6,  80 => 41,  78 => 40,  46 => 10,  44 => 9,  40 => 8,  36 => 7,  32 => 6,  27 => 4,  22 => 1,);
     }
 }

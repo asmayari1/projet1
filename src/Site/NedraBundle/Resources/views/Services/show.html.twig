@@ -19,7 +19,7 @@
             </tr>
             <tr>
                 <th>Description</th>
-                <td>{{ entity.description }}</td>
+                <td>{{ entity.description |raw}}</td>
             </tr>
             <tr>
                 <th>Date</th>
@@ -31,6 +31,7 @@
             </tr>
         </tbody>
     </table>
+    <img src="{{ asset('upload/formation/'~entity.id~'.'~entity.path) }}" alt="" height="525" width="666"/>
 
         <ul class="record_actions">
     <li>

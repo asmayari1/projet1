@@ -14,12 +14,12 @@ namespace Symfony\Bridge\Propel1\Tests\Fixtures;
 class ItemQuery
 {
     private $map = array(
-        'id'            => \PropelColumnTypes::INTEGER,
-        'value'         => \PropelColumnTypes::VARCHAR,
-        'price'         => \PropelColumnTypes::FLOAT,
-        'is_active'     => \PropelColumnTypes::BOOLEAN,
-        'enabled'       => \PropelColumnTypes::BOOLEAN_EMU,
-        'updated_at'    => \PropelColumnTypes::TIMESTAMP,
+        'id' => \PropelColumnTypes::INTEGER,
+        'value' => \PropelColumnTypes::VARCHAR,
+        'price' => \PropelColumnTypes::FLOAT,
+        'is_active' => \PropelColumnTypes::BOOLEAN,
+        'enabled' => \PropelColumnTypes::BOOLEAN_EMU,
+        'updated_at' => \PropelColumnTypes::TIMESTAMP,
     );
 
     public static $result = array();
@@ -96,7 +96,7 @@ class ItemQuery
         return array(
             $mainAuthorRelation,
             $authorRelation,
-            $resellerRelation
+            $resellerRelation,
         );
     }
 }

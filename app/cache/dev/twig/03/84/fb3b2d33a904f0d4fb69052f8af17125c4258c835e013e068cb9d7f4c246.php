@@ -7,7 +7,15 @@ class __TwigTemplate_0384fb3b2d33a904f0d4fb69052f8af17125c4258c835e013e068cb9d7f
     {
         parent::__construct($env);
 
-        $this->parent = $this->env->loadTemplate("::home.html.twig");
+        // line 1
+        try {
+            $this->parent = $this->env->loadTemplate("::home.html.twig");
+        } catch (Twig_Error_Loader $e) {
+            $e->setTemplateFile($this->getTemplateName());
+            $e->setTemplateLine(1);
+
+            throw $e;
+        }
 
         $this->blocks = array(
             'body' => array($this, 'block_body'),
@@ -39,7 +47,7 @@ class __TwigTemplate_0384fb3b2d33a904f0d4fb69052f8af17125c4258c835e013e068cb9d7f
             <div class=\"col-md-12\">
                 <h1 class=\"style-h1\">";
             // line 12
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["entity"]) ? $context["entity"] : $this->getContext($context, "entity")), "titre"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($context["entity"], "titre", array()), "html", null, true);
             echo "</h1>
             </div>
 
@@ -58,7 +66,7 @@ class __TwigTemplate_0384fb3b2d33a904f0d4fb69052f8af17125c4258c835e013e068cb9d7f
             <div class=\" col-lg-offset-2 col-xs-6\">
                 <p style=\"text-align: center\">";
             // line 25
-            echo $this->getAttribute((isset($context["entity"]) ? $context["entity"] : $this->getContext($context, "entity")), "description");
+            echo $this->getAttribute($context["entity"], "description", array());
             echo "</p>
             </div>
 
@@ -92,6 +100,6 @@ class __TwigTemplate_0384fb3b2d33a904f0d4fb69052f8af17125c4258c835e013e068cb9d7f
 
     public function getDebugInfo()
     {
-        return array (  78 => 36,  61 => 25,  53 => 20,  42 => 12,  35 => 7,  31 => 6,  28 => 4,);
+        return array (  86 => 36,  69 => 25,  61 => 20,  50 => 12,  43 => 7,  39 => 6,  36 => 4,  11 => 1,);
     }
 }

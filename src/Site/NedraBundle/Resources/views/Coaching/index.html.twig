@@ -14,7 +14,7 @@
         <tbody>
         {% for entity in entities %}
             <tr>
-                <td>{{ entity.description }}</td>
+                <td>{{ entity.description |raw}}</td>
                 <td>
                 <ul>
                     <li>

@@ -2,45 +2,70 @@
 
 {% block body -%}
     <h1>Liste des artiles</h1>
+    <div class="row-fluid">
 
-    <table class="records_list">
-        <thead>
-        <tr>
+        <div class="span12">
 
-            <th>Titre</th>
-            <th>Date</th>
-            <th>Auteur</th>
-            <th>Description</th>
-            <th>Actions</th>
-        </tr>
-        </thead>
-        <tbody>
-        {% for entity in entities %}
-            <tr>
-                <td>{{ entity.titre }}</td>
-                <td>{% if entity.date %}{{ entity.date|date('Y-m-d H:i:s') }}{% endif %}</td>
-                <td>{{ entity.auteur }}</td>
-                <td>{{ entity.description }}</td>
-                <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('news_show', { 'id': entity.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('news_edit', { 'id': entity.id }) }}">edit</a>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+            <div class="box gradient">
 
-    <ul>
-        <li>
-            <a href="{{ path('news_new') }}">
-                Create a new entry
-            </a>
-        </li>
-    </ul>
+                <div class="title">
+                    <h4>
+                        <span>Liste Des Formations</span>
+                    </h4>
+                </div>
+                <div class="content noPad clearfix">
+                    <table cellpadding="0" cellspacing="0" border="0"
+                           class="responsive dynamicTable display table table-bordered" width="100%">
+                        <thead>
+                        <tr>
+                            <th>Titre</th>
+                            <th>Date</th>
+                            <th>Auteur</th>
+                            <th>Description</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        {% for entity in entities %}
+                            <tr>
+                                <td>{{ entity.titre }}</td>
+                                <td>{% if entity.date %}{{ entity.date|date('Y-m-d') }}{% endif %}</td>
+                                <td>{{ entity.auteur }}</td>
+                                <td>{{ entity.description |raw}}</td>
+                                <td>
+
+                                    <a class="btn btn-success" href="{{ path('news_show', { 'id': entity.id }) }}">
+                                        <i class="glyphicon glyphicon-zoom-in icon-white"></i>
+                                        View
+                                    </a>
+                                    <a class="btn btn-info" href="{{ path('news_edit', { 'id': entity.id }) }}">
+                                        <i class="glyphicon glyphicon-edit icon-white"></i>
+                                        Edit
+                                    </a>
+                                    <a class="btn btn-danger"
+                                       href="{{ path('news_delete', { 'id': entity.id }) }}">
+                                        <i class="glyphicon glyphicon-trash icon-white"></i>
+                                        Delete
+                                    </a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+
+                    </table>
+
+
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="{{ path('news_new') }}">
+                        Create a new entry
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
 {% endblock %}
