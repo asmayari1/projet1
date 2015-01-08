@@ -18,7 +18,7 @@ class ServicesType extends AbstractType
             ->add('titre')
             ->add('adresse')
             ->add('description', 'textarea', array('attr' => array('class' => 'ckeditor')))
-
+            ->add('file')
             ->add('date')
             ->add('type')
         ;

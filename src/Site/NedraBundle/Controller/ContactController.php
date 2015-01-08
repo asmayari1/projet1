@@ -52,6 +52,7 @@ class ContactController extends Controller
                 ->setBody(
                     $this->renderView(
                          'SiteNedraBundle:Message:email.txt.twig', array(
+                            'email'=>$entity->getEmail(),
                             'personne' => $entity->getNom(),
                             'description' => $entity->getMessage()
                         )

@@ -16,15 +16,14 @@ class NewsType extends AbstractType
     {
         $builder
             ->add('titre')
-            
-             ->add('date','date', array(
+            ->add('file')
+
+            ->add('date','date', array(
                     'input'  => 'datetime',
                     'widget' => 'single_text',
                     'data' => new \DateTime("now"),
                     'attr' => array('class' => 'form-control input')))
             ->add('auteur')
-
-            ->add($builder->create('file','file'))
             ->add('description', 'textarea', array('attr' => array('class' => 'ckeditor')))
 
         ;

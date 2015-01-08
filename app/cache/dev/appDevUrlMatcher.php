@@ -59,22 +59,9 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                     return array (  '_controller' => 'web_profiler.controller.profiler:purgeAction',  '_route' => '_profiler_purge',);
                 }
 
-                if (0 === strpos($pathinfo, '/_profiler/i')) {
-                    // _profiler_info
-                    if (0 === strpos($pathinfo, '/_profiler/info') && preg_match('#^/_profiler/info/(?P<about>[^/]++)$#s', $pathinfo, $matches)) {
-                        return $this->mergeDefaults(array_replace($matches, array('_route' => '_profiler_info')), array (  '_controller' => 'web_profiler.controller.profiler:infoAction',));
-                    }
-
-                    // _profiler_import
-                    if ($pathinfo === '/_profiler/import') {
-                        return array (  '_controller' => 'web_profiler.controller.profiler:importAction',  '_route' => '_profiler_import',);
-                    }
-
-                }
-
-                // _profiler_export
-                if (0 === strpos($pathinfo, '/_profiler/export') && preg_match('#^/_profiler/export/(?P<token>[^/\\.]++)\\.txt$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => '_profiler_export')), array (  '_controller' => 'web_profiler.controller.profiler:exportAction',));
+                // _profiler_info
+                if (0 === strpos($pathinfo, '/_profiler/info') && preg_match('#^/_profiler/info/(?P<about>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => '_profiler_info')), array (  '_controller' => 'web_profiler.controller.profiler:infoAction',));
                 }
 
                 // _profiler_phpinfo
@@ -456,8 +443,8 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
                 // programme_create
                 if ($pathinfo === '/admin/programme/create') {
-                    if ($this->context->getMethod() != 'POST') {
-                        $allow[] = 'POST';
+                    if (!in_array($this->context->getMethod(), array('POST', 'GET', 'HEAD'))) {
+                        $allow = array_merge($allow, array('POST', 'GET', 'HEAD'));
                         goto not_programme_create;
                     }
 
@@ -616,9 +603,14 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // programme_show_front
+        // programme_email
+        if ($pathinfo === '/sendemail') {
+            return array (  '_controller' => 'Site\\NedraBundle\\Controller\\ProgrammeController::sendemailAction',  '_route' => 'programme_email',);
+        }
+
+        // programme_index_front
         if ($pathinfo === '/programme') {
-            return array (  '_controller' => 'Site\\NedraBundle\\Controller\\ProgrammeController::showfrontAction',  '_route' => 'programme_show_front',);
+            return array (  '_controller' => 'Site\\NedraBundle\\Controller\\ProgrammeController::indexfrontAction',  '_route' => 'programme_index_front',);
         }
 
         if (0 === strpos($pathinfo, '/a')) {
@@ -634,6 +626,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        // formation_index_front
+        if ($pathinfo === '/formation') {
+            return array (  '_controller' => 'Site\\NedraBundle\\Controller\\ServicesController::indexfrontAction',  '_route' => 'formation_index_front',);
+        }
+
         // services_index_front
         if ($pathinfo === '/coaching') {
             return array (  '_controller' => 'Site\\NedraBundle\\Controller\\CoachingController::indexfrontAction',  '_route' => 'services_index_front',);
@@ -647,6 +644,21 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         // media_index_front
         if ($pathinfo === '/portfolio') {
             return array (  '_controller' => 'Site\\NedraBundle\\Controller\\MediaController::indexfrontAction',  '_route' => 'media_index_front',);
+        }
+
+        // news_show_front
+        if (preg_match('#^/(?P<id>[^/]++)/showNews$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'news_show_front')), array (  '_controller' => 'Site\\NedraBundle\\Controller\\NewsController::showNewsAction',));
+        }
+
+        // programme_show_front
+        if (preg_match('#^/(?P<id>[^/]++)/showProgramme$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'programme_show_front')), array (  '_controller' => 'Site\\NedraBundle\\Controller\\ProgrammeController::showProgrammeAction',));
+        }
+
+        // formation_show_front
+        if (preg_match('#^/(?P<id>[^/]++)/showFormation$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'formation_show_front')), array (  '_controller' => 'Site\\NedraBundle\\Controller\\ServicesController::showFormationAction',));
         }
 
         if (0 === strpos($pathinfo, '/log')) {
@@ -810,79 +822,6 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'FOS\\UserBundle\\Controller\\ChangePasswordController::changePasswordAction',  '_route' => 'fos_user_change_password',);
         }
         not_fos_user_change_password:
-
-        // _welcome
-        if (rtrim($pathinfo, '/') === '') {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', '_welcome');
-            }
-
-            return array (  '_controller' => 'Acme\\DemoBundle\\Controller\\WelcomeController::indexAction',  '_route' => '_welcome',);
-        }
-
-        if (0 === strpos($pathinfo, '/demo')) {
-            if (0 === strpos($pathinfo, '/demo/secured')) {
-                if (0 === strpos($pathinfo, '/demo/secured/log')) {
-                    if (0 === strpos($pathinfo, '/demo/secured/login')) {
-                        // _demo_login
-                        if ($pathinfo === '/demo/secured/login') {
-                            return array (  '_controller' => 'Acme\\DemoBundle\\Controller\\SecuredController::loginAction',  '_route' => '_demo_login',);
-                        }
-
-                        // _security_check
-                        if ($pathinfo === '/demo/secured/login_check') {
-                            return array (  '_controller' => 'Acme\\DemoBundle\\Controller\\SecuredController::securityCheckAction',  '_route' => '_security_check',);
-                        }
-
-                    }
-
-                    // _demo_logout
-                    if ($pathinfo === '/demo/secured/logout') {
-                        return array (  '_controller' => 'Acme\\DemoBundle\\Controller\\SecuredController::logoutAction',  '_route' => '_demo_logout',);
-                    }
-
-                }
-
-                if (0 === strpos($pathinfo, '/demo/secured/hello')) {
-                    // acme_demo_secured_hello
-                    if ($pathinfo === '/demo/secured/hello') {
-                        return array (  'name' => 'World',  '_controller' => 'Acme\\DemoBundle\\Controller\\SecuredController::helloAction',  '_route' => 'acme_demo_secured_hello',);
-                    }
-
-                    // _demo_secured_hello
-                    if (preg_match('#^/demo/secured/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-                        return $this->mergeDefaults(array_replace($matches, array('_route' => '_demo_secured_hello')), array (  '_controller' => 'Acme\\DemoBundle\\Controller\\SecuredController::helloAction',));
-                    }
-
-                    // _demo_secured_hello_admin
-                    if (0 === strpos($pathinfo, '/demo/secured/hello/admin') && preg_match('#^/demo/secured/hello/admin/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-                        return $this->mergeDefaults(array_replace($matches, array('_route' => '_demo_secured_hello_admin')), array (  '_controller' => 'Acme\\DemoBundle\\Controller\\SecuredController::helloadminAction',));
-                    }
-
-                }
-
-            }
-
-            // _demo
-            if (rtrim($pathinfo, '/') === '/demo') {
-                if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', '_demo');
-                }
-
-                return array (  '_controller' => 'Acme\\DemoBundle\\Controller\\DemoController::indexAction',  '_route' => '_demo',);
-            }
-
-            // _demo_hello
-            if (0 === strpos($pathinfo, '/demo/hello') && preg_match('#^/demo/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => '_demo_hello')), array (  '_controller' => 'Acme\\DemoBundle\\Controller\\DemoController::helloAction',));
-            }
-
-            // _demo_contact
-            if ($pathinfo === '/demo/contact') {
-                return array (  '_controller' => 'Acme\\DemoBundle\\Controller\\DemoController::contactAction',  '_route' => '_demo_contact',);
-            }
-
-        }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }

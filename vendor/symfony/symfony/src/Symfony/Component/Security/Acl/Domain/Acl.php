@@ -125,7 +125,7 @@ class Acl implements AuditableAclInterface, NotifyPropertyChanged
      */
     public function getClassFieldAces($field)
     {
-        return isset($this->classFieldAces[$field])? $this->classFieldAces[$field] : array();
+        return isset($this->classFieldAces[$field]) ? $this->classFieldAces[$field] : array();
     }
 
     /**
@@ -397,13 +397,14 @@ class Acl implements AuditableAclInterface, NotifyPropertyChanged
     /**
      * Deletes an ACE
      *
-     * @param string  $property
-     * @param int     $index
+     * @param string $property
+     * @param int    $index
+     *
      * @throws \OutOfBoundsException
      */
     private function deleteAce($property, $index)
     {
-        $aces =& $this->$property;
+        $aces = & $this->$property;
         if (!isset($aces[$index])) {
             throw new \OutOfBoundsException(sprintf('The index "%d" does not exist.', $index));
         }
@@ -413,7 +414,7 @@ class Acl implements AuditableAclInterface, NotifyPropertyChanged
         $this->$property = array_values($this->$property);
         $this->onPropertyChanged($property, $oldValue, $this->$property);
 
-        for ($i=$index,$c=count($this->$property); $i<$c; $i++) {
+        for ($i = $index, $c = count($this->$property); $i<$c; $i++) {
             $this->onEntryPropertyChanged($aces[$i], 'aceOrder', $i+1, $i);
         }
     }
@@ -421,14 +422,15 @@ class Acl implements AuditableAclInterface, NotifyPropertyChanged
     /**
      * Deletes a field-based ACE
      *
-     * @param string  $property
-     * @param int     $index
-     * @param string  $field
+     * @param string $property
+     * @param int    $index
+     * @param string $field
+     *
      * @throws \OutOfBoundsException
      */
     private function deleteFieldAce($property, $index, $field)
     {
-        $aces =& $this->$property;
+        $aces = & $this->$property;
         if (!isset($aces[$field][$index])) {
             throw new \OutOfBoundsException(sprintf('The index "%d" does not exist.', $index));
         }
@@ -438,7 +440,7 @@ class Acl implements AuditableAclInterface, NotifyPropertyChanged
         $aces[$field] = array_values($aces[$field]);
         $this->onPropertyChanged($property, $oldValue, $this->$property);
 
-        for ($i=$index,$c=count($aces[$field]); $i<$c; $i++) {
+        for ($i = $index, $c = count($aces[$field]); $i<$c; $i++) {
             $this->onEntryPropertyChanged($aces[$field][$i], 'aceOrder', $i+1, $i);
         }
     }
@@ -452,6 +454,7 @@ class Acl implements AuditableAclInterface, NotifyPropertyChanged
      * @param SecurityIdentityInterface $sid
      * @param bool                      $granting
      * @param string                    $strategy
+     *
      * @throws \OutOfBoundsException
      * @throws \InvalidArgumentException
      */
@@ -473,7 +476,7 @@ class Acl implements AuditableAclInterface, NotifyPropertyChanged
             }
         }
 
-        $aces =& $this->$property;
+        $aces = & $this->$property;
         $oldValue = $this->$property;
         if (isset($aces[$index])) {
             $this->$property = array_merge(
@@ -482,7 +485,7 @@ class Acl implements AuditableAclInterface, NotifyPropertyChanged
                 array_slice($this->$property, $index)
             );
 
-            for ($i=$index,$c=count($this->$property)-1; $i<$c; $i++) {
+            for ($i = $index, $c = count($this->$property)-1; $i<$c; $i++) {
                 $this->onEntryPropertyChanged($aces[$i+1], 'aceOrder', $i, $i+1);
             }
         }
@@ -501,6 +504,7 @@ class Acl implements AuditableAclInterface, NotifyPropertyChanged
      * @param SecurityIdentityInterface $sid
      * @param bool                      $granting
      * @param string                    $strategy
+     *
      * @throws \InvalidArgumentException
      * @throws \OutOfBoundsException
      */
@@ -522,7 +526,7 @@ class Acl implements AuditableAclInterface, NotifyPropertyChanged
             }
         }
 
-        $aces =& $this->$property;
+        $aces = & $this->$property;
         if (!isset($aces[$field])) {
             $aces[$field] = array();
         }
@@ -539,7 +543,7 @@ class Acl implements AuditableAclInterface, NotifyPropertyChanged
                 array_slice($aces[$field], $index)
             );
 
-            for ($i=$index,$c=count($aces[$field])-1; $i<$c; $i++) {
+            for ($i = $index, $c = count($aces[$field])-1; $i<$c; $i++) {
                 $this->onEntryPropertyChanged($aces[$field][$i+1], 'aceOrder', $i, $i+1);
             }
         }
@@ -551,15 +555,16 @@ class Acl implements AuditableAclInterface, NotifyPropertyChanged
     /**
      * Updates an ACE
      *
-     * @param string  $property
-     * @param int     $index
-     * @param int     $mask
-     * @param string  $strategy
+     * @param string $property
+     * @param int    $index
+     * @param int    $mask
+     * @param string $strategy
+     *
      * @throws \OutOfBoundsException
      */
     private function updateAce($property, $index, $mask, $strategy = null)
     {
-        $aces =& $this->$property;
+        $aces = & $this->$property;
         if (!isset($aces[$index])) {
             throw new \OutOfBoundsException(sprintf('The index "%d" does not exist.', $index));
         }
@@ -578,10 +583,11 @@ class Acl implements AuditableAclInterface, NotifyPropertyChanged
     /**
      * Updates auditing for an ACE
      *
-     * @param array   &$aces
-     * @param int     $index
-     * @param bool    $auditSuccess
-     * @param bool    $auditFailure
+     * @param array &$aces
+     * @param int   $index
+     * @param bool  $auditSuccess
+     * @param bool  $auditFailure
+     *
      * @throws \OutOfBoundsException
      */
     private function updateAuditing(array &$aces, $index, $auditSuccess, $auditFailure)
@@ -604,11 +610,12 @@ class Acl implements AuditableAclInterface, NotifyPropertyChanged
     /**
      * Updates a field-based ACE
      *
-     * @param string  $property
-     * @param int     $index
-     * @param string  $field
-     * @param int     $mask
-     * @param string  $strategy
+     * @param string $property
+     * @param int    $index
+     * @param string $field
+     * @param int    $mask
+     * @param string $strategy
+     *
      * @throws \InvalidArgumentException
      * @throws \OutOfBoundsException
      */
@@ -618,7 +625,7 @@ class Acl implements AuditableAclInterface, NotifyPropertyChanged
             throw new \InvalidArgumentException('$field cannot be empty.');
         }
 
-        $aces =& $this->$property;
+        $aces = & $this->$property;
         if (!isset($aces[$field][$index])) {
             throw new \OutOfBoundsException(sprintf('The index "%d" does not exist.', $index));
         }

@@ -52,9 +52,12 @@ class NewsController extends Controller
 
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
+
             $em->persist($entity);
             $em->flush();
-
+            $entity->upload();
+            $em->merge($entity);
+            $em->flush();
             return $this->redirect($this->generateUrl('news_show', array('id' => $entity->getId())));
         }
 
@@ -123,6 +126,27 @@ class NewsController extends Controller
 
         ));
     }
+    public function showNewsAction($id)
+    {
+
+        $em = $this->getDoctrine()->getManager();
+
+        $entity = $em->getRepository('SiteNedraBundle:News')->find($id);
+
+
+
+        if (!$entity) {
+            throw $this->createNotFoundException('Unable to find News entity.');
+        }
+
+        $deleteForm = $this->createDeleteForm($id);
+
+        return $this->render('SiteNedraBundle:Front:news.html.twig', array(
+            'entity'      => $entity,
+            'delete_form' => $deleteForm->createView(),
+
+        ));
+    }
 
     /**
      * Displays a form to edit an existing News entity.
@@ -186,8 +210,10 @@ class NewsController extends Controller
 
         if ($editForm->isValid()) {
             $em->flush();
-
-            return $this->redirect($this->generateUrl('news_edit', array('id' => $id)));
+            $entity->upload();
+            $em->merge($entity);
+            $em->flush();
+            return $this->redirect($this->generateUrl('news_show', array('id' => $id)));
         }
 
         return $this->render('SiteNedraBundle:News:edit.html.twig', array(

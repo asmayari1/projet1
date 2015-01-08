@@ -17,7 +17,8 @@ class __TwigTemplate_3bdfc7562976012e745d5393b181941d9cab35b56319b156d37bb84dcaf
 
     protected function doGetParent(array $context)
     {
-        return $this->env->resolveTemplate((($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request"), "isXmlHttpRequest")) ? ("WebProfilerBundle:Profiler:ajax_layout.html.twig") : ("WebProfilerBundle:Profiler:layout.html.twig")));
+        // line 1
+        return $this->env->resolveTemplate((($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()), "isXmlHttpRequest", array())) ? ("WebProfilerBundle:Profiler:ajax_layout.html.twig") : ("WebProfilerBundle:Profiler:layout.html.twig")));
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -35,24 +36,24 @@ class __TwigTemplate_3bdfc7562976012e745d5393b181941d9cab35b56319b156d37bb84dcaf
         echo "        <img width=\"20\" height=\"28\" alt=\"Database\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAcCAYAAABh2p9gAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQRJREFUeNpi/P//PwM1ARMDlcGogZQDlpMnT7pxc3NbA9nhQKxOpL5rQLwJiPeBsI6Ozl+YBOOOHTv+AOllQNwtLS39F2owKYZ/gRq8G4i3ggxEToggWzvc3d2Pk+1lNL4fFAs6ODi8JzdS7mMRVyDVoAMHDsANdAPiOCC+jCQvQKqBQB/BDbwBxK5AHA3E/kB8nKJkA8TMQBwLxaBIKQbi70AvTADSBiSadwFXpCikpKQU8PDwkGTaly9fHFigkaKIJid4584dkiMFFI6jkTJII0WVmpHCAixZQEXWYhDeuXMnyLsVlEQKI45qFBQZ8eRECi4DBaAlDqle/8A48ip6gAADANdQY88Uc0oGAAAAAElFTkSuQmCC\" />
         <span class=\"sf-toolbar-status";
         // line 6
-        if ((50 < $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "querycount"))) {
+        if ((50 < $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "querycount", array()))) {
             echo " sf-toolbar-status-yellow";
         }
         echo "\">";
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "querycount"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "querycount", array()), "html", null, true);
         echo "</span>
         ";
         // line 7
-        if (($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "querycount") > 0)) {
+        if (($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "querycount", array()) > 0)) {
             // line 8
             echo "            <span class=\"sf-toolbar-info-piece-additional-detail\">in ";
-            echo twig_escape_filter($this->env, sprintf("%0.2f", ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "time") * 1000)), "html", null, true);
+            echo twig_escape_filter($this->env, sprintf("%0.2f", ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "time", array()) * 1000)), "html", null, true);
             echo " ms</span>
         ";
         }
         // line 10
         echo "        ";
-        if (($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "invalidEntityCount") > 0)) {
+        if (($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "invalidEntityCount", array()) > 0)) {
             // line 11
             echo "            <span class=\"sf-toolbar-info-piece-additional sf-toolbar-status sf-toolbar-status-red\"> </span>
         ";
@@ -68,23 +69,23 @@ class __TwigTemplate_3bdfc7562976012e745d5393b181941d9cab35b56319b156d37bb84dcaf
             <b>DB Queries</b>
             <span>";
         // line 17
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "querycount"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "querycount", array()), "html", null, true);
         echo "</span>
         </div>
         <div class=\"sf-toolbar-info-piece\">
             <b>Query time</b>
             <span>";
         // line 21
-        echo twig_escape_filter($this->env, sprintf("%0.2f", ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "time") * 1000)), "html", null, true);
+        echo twig_escape_filter($this->env, sprintf("%0.2f", ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "time", array()) * 1000)), "html", null, true);
         echo " ms</span>
         </div>
         <div class=\"sf-toolbar-info-piece\">
             <b>Invalid entities</b>
             <span class=\"sf-toolbar-status sf-toolbar-status-";
         // line 25
-        echo ((($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "invalidEntityCount") > 0)) ? ("red") : ("green"));
+        echo ((($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "invalidEntityCount", array()) > 0)) ? ("red") : ("green"));
         echo "\">";
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "invalidEntityCount"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "invalidEntityCount", array()), "html", null, true);
         echo "</span>
         </div>
     ";
@@ -104,11 +105,11 @@ class __TwigTemplate_3bdfc7562976012e745d5393b181941d9cab35b56319b156d37bb84dcaf
     <span class=\"count\">
         <span>";
         // line 36
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "querycount"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "querycount", array()), "html", null, true);
         echo "</span>
         <span>";
         // line 37
-        echo twig_escape_filter($this->env, sprintf("%0.0f", ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "time") * 1000)), "html", null, true);
+        echo twig_escape_filter($this->env, sprintf("%0.0f", ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "time", array()) * 1000)), "html", null, true);
         echo " ms</span>
     </span>
 </span>
@@ -123,7 +124,7 @@ class __TwigTemplate_3bdfc7562976012e745d5393b181941d9cab35b56319b156d37bb84dcaf
         if (("explain" == (isset($context["page"]) ? $context["page"] : $this->getContext($context, "page")))) {
             // line 44
             echo "        ";
-            echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("DoctrineBundle:Profiler:explain", array("token" => (isset($context["token"]) ? $context["token"] : $this->getContext($context, "token")), "panel" => "db", "connectionName" => $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request"), "query"), "get", array(0 => "connection"), "method"), "query" => $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request"), "query"), "get", array(0 => "query"), "method"))));
+            echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("DoctrineBundle:Profiler:explain", array("token" => (isset($context["token"]) ? $context["token"] : $this->getContext($context, "token")), "panel" => "db", "connectionName" => $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()), "query", array()), "get", array(0 => "connection"), "method"), "query" => $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()), "query", array()), "get", array(0 => "query"), "method"))));
             // line 49
             echo "
     ";
@@ -145,7 +146,7 @@ class __TwigTemplate_3bdfc7562976012e745d5393b181941d9cab35b56319b156d37bb84dcaf
     ";
         // line 58
         $context['_parent'] = (array) $context;
-        $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "queries"));
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "queries", array()));
         $context['loop'] = array(
           'parent' => $context['_parent'],
           'index0' => 0,
@@ -162,11 +163,11 @@ class __TwigTemplate_3bdfc7562976012e745d5393b181941d9cab35b56319b156d37bb84dcaf
         foreach ($context['_seq'] as $context["connection"] => $context["queries"]) {
             // line 59
             echo "        <h3>Connection <em>";
-            echo twig_escape_filter($this->env, (isset($context["connection"]) ? $context["connection"] : $this->getContext($context, "connection")), "html", null, true);
+            echo twig_escape_filter($this->env, $context["connection"], "html", null, true);
             echo "</em></h3>
         ";
             // line 60
-            if (twig_test_empty((isset($context["queries"]) ? $context["queries"] : $this->getContext($context, "queries")))) {
+            if (twig_test_empty($context["queries"])) {
                 // line 61
                 echo "            <p>
                 <em>No queries.</em>
@@ -175,12 +176,12 @@ class __TwigTemplate_3bdfc7562976012e745d5393b181941d9cab35b56319b156d37bb84dcaf
             } else {
                 // line 65
                 echo "            <ul class=\"alt\" id=\"queriesPlaceholder-";
-                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["loop"]) ? $context["loop"] : $this->getContext($context, "loop")), "index"), "html", null, true);
+                echo twig_escape_filter($this->env, $this->getAttribute($context["loop"], "index", array()), "html", null, true);
                 echo "\">
                 ";
                 // line 66
                 $context['_parent'] = (array) $context;
-                $context['_seq'] = twig_ensure_traversable((isset($context["queries"]) ? $context["queries"] : $this->getContext($context, "queries")));
+                $context['_seq'] = twig_ensure_traversable($context["queries"]);
                 $context['loop'] = array(
                   'parent' => $context['_parent'],
                   'index0' => 0,
@@ -197,23 +198,23 @@ class __TwigTemplate_3bdfc7562976012e745d5393b181941d9cab35b56319b156d37bb84dcaf
                 foreach ($context['_seq'] as $context["i"] => $context["query"]) {
                     // line 67
                     echo "                    <li class=\"";
-                    echo twig_escape_filter($this->env, twig_cycle(array(0 => "odd", 1 => "even"), (isset($context["i"]) ? $context["i"] : $this->getContext($context, "i"))), "html", null, true);
+                    echo twig_escape_filter($this->env, twig_cycle(array(0 => "odd", 1 => "even"), $context["i"]), "html", null, true);
                     echo "\" data-extra-info=\"";
-                    echo twig_escape_filter($this->env, sprintf("%0.2f", ($this->getAttribute((isset($context["query"]) ? $context["query"] : $this->getContext($context, "query")), "executionMS") * 1000)), "html", null, true);
+                    echo twig_escape_filter($this->env, sprintf("%0.2f", ($this->getAttribute($context["query"], "executionMS", array()) * 1000)), "html", null, true);
                     echo "\" data-target-id=\"";
-                    echo twig_escape_filter($this->env, (isset($context["i"]) ? $context["i"] : $this->getContext($context, "i")), "html", null, true);
+                    echo twig_escape_filter($this->env, $context["i"], "html", null, true);
                     echo "\">
                         <div style=\"margin-top: 4px\" id=\"queryNo-";
                     // line 68
-                    echo twig_escape_filter($this->env, (isset($context["i"]) ? $context["i"] : $this->getContext($context, "i")), "html", null, true);
+                    echo twig_escape_filter($this->env, $context["i"], "html", null, true);
                     echo "-";
-                    echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["loop"]) ? $context["loop"] : $this->getContext($context, "loop")), "parent"), "loop"), "index"), "html", null, true);
+                    echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["loop"], "parent", array()), "loop", array()), "index", array()), "html", null, true);
                     echo "\">
                             <div onclick=\"return expandQuery(this);\" title=\"Expand query\" data-target-id=\"code-";
                     // line 69
-                    echo twig_escape_filter($this->env, (isset($context["i"]) ? $context["i"] : $this->getContext($context, "i")), "html", null, true);
+                    echo twig_escape_filter($this->env, $context["i"], "html", null, true);
                     echo "-";
-                    echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["loop"]) ? $context["loop"] : $this->getContext($context, "loop")), "parent"), "loop"), "index"), "html", null, true);
+                    echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["loop"], "parent", array()), "loop", array()), "index", array()), "html", null, true);
                     echo "\" style=\"cursor: pointer;\">
                                 <img alt=\"+\" src=\"";
                     // line 70
@@ -226,68 +227,68 @@ class __TwigTemplate_3bdfc7562976012e745d5393b181941d9cab35b56319b156d37bb84dcaf
                                 <span style=\"display: none\">Shrink query</span>
                                 <span id=\"smallcode-";
                     // line 73
-                    echo twig_escape_filter($this->env, (isset($context["i"]) ? $context["i"] : $this->getContext($context, "i")), "html", null, true);
+                    echo twig_escape_filter($this->env, $context["i"], "html", null, true);
                     echo "-";
-                    echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["loop"]) ? $context["loop"] : $this->getContext($context, "loop")), "parent"), "loop"), "index"), "html", null, true);
+                    echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["loop"], "parent", array()), "loop", array()), "index", array()), "html", null, true);
                     echo "\">
                                     ";
                     // line 74
-                    echo $this->env->getExtension('doctrine_extension')->minifyQuery($this->getAttribute((isset($context["query"]) ? $context["query"] : $this->getContext($context, "query")), "sql"));
+                    echo $this->env->getExtension('doctrine_extension')->minifyQuery($this->getAttribute($context["query"], "sql", array()));
                     echo "
                                 </span>
                             </div>
                             <code id=\"code-";
                     // line 77
-                    echo twig_escape_filter($this->env, (isset($context["i"]) ? $context["i"] : $this->getContext($context, "i")), "html", null, true);
+                    echo twig_escape_filter($this->env, $context["i"], "html", null, true);
                     echo "-";
-                    echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["loop"]) ? $context["loop"] : $this->getContext($context, "loop")), "parent"), "loop"), "index"), "html", null, true);
+                    echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["loop"], "parent", array()), "loop", array()), "index", array()), "html", null, true);
                     echo "\">
                                 ";
                     // line 78
-                    echo SqlFormatter::format($this->getAttribute((isset($context["query"]) ? $context["query"] : $this->getContext($context, "query")), "sql"), (isset($context["i"]) ? $context["i"] : $this->getContext($context, "i")), $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["loop"]) ? $context["loop"] : $this->getContext($context, "loop")), "parent"), "loop"), "index"));
+                    echo SqlFormatter::format($this->getAttribute($context["query"], "sql", array()), $context["i"], $this->getAttribute($this->getAttribute($this->getAttribute($context["loop"], "parent", array()), "loop", array()), "index", array()));
                     echo "
                             </code>
                             <span id=\"original-query-";
                     // line 80
-                    echo twig_escape_filter($this->env, (isset($context["i"]) ? $context["i"] : $this->getContext($context, "i")), "html", null, true);
+                    echo twig_escape_filter($this->env, $context["i"], "html", null, true);
                     echo "-";
-                    echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["loop"]) ? $context["loop"] : $this->getContext($context, "loop")), "parent"), "loop"), "index"), "html", null, true);
+                    echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["loop"], "parent", array()), "loop", array()), "index", array()), "html", null, true);
                     echo "\" style=\"display: none;\">
                                 ";
                     // line 81
-                    echo $this->env->getExtension('doctrine_extension')->replaceQueryParameters($this->getAttribute((isset($context["query"]) ? $context["query"] : $this->getContext($context, "query")), "sql"), $this->getAttribute((isset($context["query"]) ? $context["query"] : $this->getContext($context, "query")), "params"));
+                    echo $this->env->getExtension('doctrine_extension')->replaceQueryParameters($this->getAttribute($context["query"], "sql", array()), $this->getAttribute($context["query"], "params", array()));
                     echo "
                             </span>
                             <small>
                                 <strong>Parameters</strong>: ";
                     // line 84
-                    echo twig_escape_filter($this->env, $this->env->getExtension('yaml')->encode($this->getAttribute((isset($context["query"]) ? $context["query"] : $this->getContext($context, "query")), "params")), "html", null, true);
+                    echo twig_escape_filter($this->env, $this->env->getExtension('yaml')->encode($this->getAttribute($context["query"], "params", array())), "html", null, true);
                     echo " <br />
                                 [<span id=\"expandParams-";
                     // line 85
-                    echo twig_escape_filter($this->env, (isset($context["i"]) ? $context["i"] : $this->getContext($context, "i")), "html", null, true);
+                    echo twig_escape_filter($this->env, $context["i"], "html", null, true);
                     echo "-";
-                    echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["loop"]) ? $context["loop"] : $this->getContext($context, "loop")), "parent"), "loop"), "index"), "html", null, true);
+                    echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["loop"], "parent", array()), "loop", array()), "index", array()), "html", null, true);
                     echo "\" onclick=\"javascript:toggleRunnableQuery(this);\" target-data-id=\"original-query-";
-                    echo twig_escape_filter($this->env, (isset($context["i"]) ? $context["i"] : $this->getContext($context, "i")), "html", null, true);
+                    echo twig_escape_filter($this->env, $context["i"], "html", null, true);
                     echo "-";
-                    echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["loop"]) ? $context["loop"] : $this->getContext($context, "loop")), "parent"), "loop"), "index"), "html", null, true);
+                    echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["loop"], "parent", array()), "loop", array()), "index", array()), "html", null, true);
                     echo "\" style=\"cursor: pointer;\">Display runnable query</span>]<br/>
                                 <strong>Time</strong>: ";
                     // line 86
-                    echo twig_escape_filter($this->env, sprintf("%0.2f", ($this->getAttribute((isset($context["query"]) ? $context["query"] : $this->getContext($context, "query")), "executionMS") * 1000)), "html", null, true);
+                    echo twig_escape_filter($this->env, sprintf("%0.2f", ($this->getAttribute($context["query"], "executionMS", array()) * 1000)), "html", null, true);
                     echo " ms
                             </small>
                             ";
                     // line 88
-                    if ($this->getAttribute((isset($context["query"]) ? $context["query"] : $this->getContext($context, "query")), "explainable")) {
+                    if ($this->getAttribute($context["query"], "explainable", array())) {
                         // line 89
                         echo "                                [<a href=\"";
-                        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("_profiler", array("panel" => "db", "token" => (isset($context["token"]) ? $context["token"] : $this->getContext($context, "token")), "page" => "explain", "connection" => (isset($context["connection"]) ? $context["connection"] : $this->getContext($context, "connection")), "query" => (isset($context["i"]) ? $context["i"] : $this->getContext($context, "i")))), "html", null, true);
+                        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("_profiler", array("panel" => "db", "token" => (isset($context["token"]) ? $context["token"] : $this->getContext($context, "token")), "page" => "explain", "connection" => $context["connection"], "query" => $context["i"])), "html", null, true);
                         echo "\" onclick=\"return explain(this);\" style=\"text-decoration: none;\" title=\"Explains the query\" data-target-id=\"explain-";
-                        echo twig_escape_filter($this->env, (isset($context["i"]) ? $context["i"] : $this->getContext($context, "i")), "html", null, true);
+                        echo twig_escape_filter($this->env, $context["i"], "html", null, true);
                         echo "-";
-                        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["loop"]) ? $context["loop"] : $this->getContext($context, "loop")), "parent"), "loop"), "index"), "html", null, true);
+                        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["loop"], "parent", array()), "loop", array()), "index", array()), "html", null, true);
                         echo "\" >
                                     <img alt=\"+\" src=\"";
                         // line 90
@@ -309,12 +310,12 @@ class __TwigTemplate_3bdfc7562976012e745d5393b181941d9cab35b56319b156d37bb84dcaf
                     echo "                        </div>
                         ";
                     // line 98
-                    if ($this->getAttribute((isset($context["query"]) ? $context["query"] : $this->getContext($context, "query")), "explainable")) {
+                    if ($this->getAttribute($context["query"], "explainable", array())) {
                         // line 99
                         echo "                        <div id=\"explain-";
-                        echo twig_escape_filter($this->env, (isset($context["i"]) ? $context["i"] : $this->getContext($context, "i")), "html", null, true);
+                        echo twig_escape_filter($this->env, $context["i"], "html", null, true);
                         echo "-";
-                        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["loop"]) ? $context["loop"] : $this->getContext($context, "loop")), "parent"), "loop"), "index"), "html", null, true);
+                        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["loop"], "parent", array()), "loop", array()), "index", array()), "html", null, true);
                         echo "\" class=\"loading\"></div>
                         ";
                     }
@@ -357,10 +358,10 @@ class __TwigTemplate_3bdfc7562976012e745d5393b181941d9cab35b56319b156d37bb84dcaf
 
     ";
         // line 109
-        if ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "connections")) {
+        if ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "connections", array())) {
             // line 110
             echo "        ";
-            $this->env->loadTemplate("WebProfilerBundle:Profiler:table.html.twig")->display(array("data" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "connections")));
+            $this->env->loadTemplate("WebProfilerBundle:Profiler:table.html.twig")->display(array("data" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "connections", array())));
             // line 111
             echo "    ";
         } else {
@@ -376,10 +377,10 @@ class __TwigTemplate_3bdfc7562976012e745d5393b181941d9cab35b56319b156d37bb84dcaf
 
     ";
         // line 119
-        if ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "managers")) {
+        if ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "managers", array())) {
             // line 120
             echo "        ";
-            $this->env->loadTemplate("WebProfilerBundle:Profiler:table.html.twig")->display(array("data" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "managers")));
+            $this->env->loadTemplate("WebProfilerBundle:Profiler:table.html.twig")->display(array("data" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "managers", array())));
             // line 121
             echo "    ";
         } else {
@@ -396,15 +397,15 @@ class __TwigTemplate_3bdfc7562976012e745d5393b181941d9cab35b56319b156d37bb84dcaf
     ";
         // line 129
         $context['_parent'] = (array) $context;
-        $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "entities"));
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "entities", array()));
         foreach ($context['_seq'] as $context["manager"] => $context["classes"]) {
             // line 130
             echo "        <h3>Manager <em>";
-            echo twig_escape_filter($this->env, (isset($context["manager"]) ? $context["manager"] : $this->getContext($context, "manager")), "html", null, true);
+            echo twig_escape_filter($this->env, $context["manager"], "html", null, true);
             echo "</em></h3>
         ";
             // line 131
-            if (twig_test_empty((isset($context["classes"]) ? $context["classes"] : $this->getContext($context, "classes")))) {
+            if (twig_test_empty($context["classes"])) {
                 // line 132
                 echo "            <p><em>No loaded entities.</em></p>
         ";
@@ -421,28 +422,28 @@ class __TwigTemplate_3bdfc7562976012e745d5393b181941d9cab35b56319b156d37bb84dcaf
                 ";
                 // line 142
                 $context['_parent'] = (array) $context;
-                $context['_seq'] = twig_ensure_traversable((isset($context["classes"]) ? $context["classes"] : $this->getContext($context, "classes")));
+                $context['_seq'] = twig_ensure_traversable($context["classes"]);
                 foreach ($context['_seq'] as $context["_key"] => $context["class"]) {
                     // line 143
                     echo "                    <tr>
                         <td>";
                     // line 144
-                    echo twig_escape_filter($this->env, (isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "html", null, true);
+                    echo twig_escape_filter($this->env, $context["class"], "html", null, true);
                     echo "</td>
                         <td>
                             ";
                     // line 146
-                    if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["collector"]) ? $context["collector"] : null), "mappingErrors", array(), "any", false, true), (isset($context["manager"]) ? $context["manager"] : $this->getContext($context, "manager")), array(), "array", false, true), (isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), array(), "array", true, true)) {
+                    if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["collector"]) ? $context["collector"] : null), "mappingErrors", array(), "any", false, true), $context["manager"], array(), "array", false, true), $context["class"], array(), "array", true, true)) {
                         // line 147
                         echo "                                <ul>
                                     ";
                         // line 148
                         $context['_parent'] = (array) $context;
-                        $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "mappingErrors"), (isset($context["manager"]) ? $context["manager"] : $this->getContext($context, "manager")), array(), "array"), (isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), array(), "array"));
+                        $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "mappingErrors", array()), $context["manager"], array(), "array"), $context["class"], array(), "array"));
                         foreach ($context['_seq'] as $context["_key"] => $context["error"]) {
                             // line 149
                             echo "                                        <li>";
-                            echo twig_escape_filter($this->env, (isset($context["error"]) ? $context["error"] : $this->getContext($context, "error")), "html", null, true);
+                            echo twig_escape_filter($this->env, $context["error"], "html", null, true);
                             echo "</li>
                                     ";
                         }
@@ -586,6 +587,6 @@ class __TwigTemplate_3bdfc7562976012e745d5393b181941d9cab35b56319b156d37bb84dcaf
 
     public function getDebugInfo()
     {
-        return array (  480 => 162,  474 => 161,  469 => 158,  461 => 155,  457 => 153,  444 => 149,  440 => 148,  437 => 147,  435 => 146,  430 => 144,  427 => 143,  423 => 142,  413 => 134,  409 => 132,  407 => 131,  402 => 130,  398 => 129,  393 => 126,  384 => 121,  381 => 120,  379 => 119,  374 => 116,  368 => 112,  365 => 111,  362 => 110,  360 => 109,  341 => 105,  337 => 103,  322 => 101,  314 => 99,  305 => 95,  294 => 90,  285 => 89,  268 => 85,  264 => 84,  252 => 80,  247 => 78,  214 => 69,  177 => 65,  169 => 60,  140 => 55,  132 => 51,  128 => 49,  107 => 36,  93 => 28,  273 => 96,  254 => 92,  240 => 86,  238 => 85,  230 => 82,  221 => 77,  219 => 76,  217 => 75,  179 => 69,  159 => 61,  135 => 53,  78 => 21,  71 => 17,  209 => 82,  193 => 73,  154 => 58,  149 => 51,  133 => 42,  103 => 32,  95 => 28,  86 => 24,  57 => 11,  48 => 8,  51 => 10,  34 => 5,  31 => 4,  806 => 488,  803 => 487,  792 => 485,  788 => 484,  784 => 482,  771 => 481,  745 => 475,  742 => 474,  723 => 472,  706 => 471,  702 => 469,  698 => 468,  694 => 467,  690 => 466,  686 => 465,  682 => 464,  678 => 463,  675 => 462,  673 => 461,  656 => 460,  645 => 458,  630 => 452,  625 => 450,  621 => 449,  618 => 448,  616 => 447,  602 => 445,  597 => 442,  563 => 410,  545 => 407,  528 => 406,  525 => 405,  523 => 404,  518 => 402,  513 => 400,  199 => 67,  196 => 92,  182 => 66,  173 => 65,  158 => 80,  68 => 30,  62 => 27,  28 => 3,  357 => 123,  332 => 116,  327 => 114,  324 => 113,  318 => 111,  306 => 107,  297 => 104,  291 => 102,  263 => 95,  258 => 81,  243 => 88,  231 => 83,  224 => 71,  212 => 78,  202 => 94,  190 => 76,  187 => 70,  161 => 63,  143 => 56,  136 => 71,  122 => 43,  117 => 39,  112 => 35,  85 => 25,  75 => 19,  58 => 25,  44 => 10,  204 => 72,  188 => 90,  174 => 65,  171 => 61,  167 => 71,  138 => 54,  125 => 44,  121 => 50,  118 => 49,  104 => 32,  87 => 25,  49 => 14,  46 => 7,  27 => 3,  91 => 27,  88 => 25,  63 => 15,  389 => 160,  386 => 159,  378 => 157,  371 => 156,  367 => 128,  363 => 153,  358 => 151,  353 => 149,  345 => 120,  343 => 146,  340 => 145,  334 => 117,  331 => 140,  328 => 139,  326 => 138,  321 => 112,  309 => 97,  307 => 128,  302 => 125,  296 => 121,  293 => 120,  290 => 119,  288 => 101,  283 => 88,  281 => 114,  276 => 111,  274 => 97,  269 => 94,  265 => 96,  259 => 103,  255 => 93,  253 => 100,  235 => 74,  232 => 88,  227 => 81,  222 => 83,  210 => 77,  208 => 68,  189 => 71,  184 => 63,  175 => 58,  170 => 84,  166 => 54,  163 => 62,  155 => 47,  152 => 46,  144 => 49,  127 => 35,  109 => 34,  94 => 28,  82 => 22,  76 => 34,  61 => 13,  39 => 6,  36 => 5,  79 => 21,  72 => 18,  69 => 17,  54 => 10,  47 => 9,  42 => 7,  40 => 11,  37 => 10,  22 => 1,  164 => 59,  157 => 56,  145 => 74,  139 => 49,  131 => 52,  120 => 31,  115 => 39,  111 => 37,  108 => 36,  106 => 33,  101 => 32,  98 => 31,  92 => 27,  83 => 33,  80 => 21,  74 => 14,  66 => 11,  60 => 13,  55 => 24,  52 => 12,  50 => 10,  41 => 19,  32 => 4,  29 => 3,  462 => 202,  453 => 151,  449 => 198,  446 => 197,  441 => 196,  439 => 195,  431 => 189,  429 => 188,  422 => 184,  415 => 180,  408 => 176,  401 => 172,  394 => 168,  387 => 122,  380 => 158,  373 => 156,  361 => 125,  355 => 106,  351 => 141,  348 => 121,  342 => 137,  338 => 119,  335 => 134,  329 => 131,  325 => 129,  323 => 128,  320 => 127,  315 => 110,  312 => 98,  303 => 106,  300 => 105,  298 => 91,  289 => 113,  286 => 112,  278 => 86,  275 => 105,  270 => 102,  267 => 101,  262 => 98,  256 => 96,  248 => 97,  246 => 90,  241 => 77,  233 => 87,  229 => 73,  226 => 84,  220 => 70,  216 => 79,  213 => 78,  207 => 75,  203 => 78,  200 => 72,  197 => 69,  194 => 68,  191 => 77,  185 => 74,  181 => 65,  178 => 59,  176 => 64,  172 => 57,  168 => 62,  165 => 83,  162 => 59,  156 => 62,  153 => 77,  150 => 55,  147 => 58,  141 => 48,  134 => 54,  130 => 41,  123 => 61,  119 => 42,  116 => 41,  113 => 48,  105 => 25,  102 => 32,  99 => 31,  96 => 37,  90 => 42,  84 => 40,  81 => 23,  73 => 19,  70 => 15,  67 => 15,  64 => 14,  59 => 14,  53 => 12,  45 => 8,  43 => 12,  38 => 6,  35 => 5,  33 => 4,  30 => 3,);
+        return array (  481 => 162,  475 => 161,  470 => 158,  462 => 155,  458 => 153,  454 => 151,  445 => 149,  441 => 148,  438 => 147,  436 => 146,  431 => 144,  428 => 143,  424 => 142,  414 => 134,  410 => 132,  408 => 131,  403 => 130,  399 => 129,  394 => 126,  388 => 122,  385 => 121,  382 => 120,  380 => 119,  375 => 116,  369 => 112,  366 => 111,  363 => 110,  361 => 109,  356 => 106,  342 => 105,  338 => 103,  323 => 101,  315 => 99,  313 => 98,  310 => 97,  306 => 95,  299 => 91,  295 => 90,  286 => 89,  284 => 88,  279 => 86,  269 => 85,  265 => 84,  259 => 81,  253 => 80,  248 => 78,  242 => 77,  236 => 74,  230 => 73,  225 => 71,  221 => 70,  215 => 69,  209 => 68,  200 => 67,  183 => 66,  178 => 65,  172 => 61,  170 => 60,  165 => 59,  148 => 58,  144 => 56,  141 => 55,  133 => 51,  129 => 49,  126 => 44,  123 => 43,  120 => 42,  112 => 37,  108 => 36,  102 => 32,  99 => 31,  94 => 28,  86 => 25,  79 => 21,  72 => 17,  68 => 15,  65 => 14,  62 => 13,  58 => 11,  55 => 10,  49 => 8,  47 => 7,  39 => 6,  36 => 5,  33 => 4,  30 => 3,  21 => 1,);
     }
 }

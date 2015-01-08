@@ -140,8 +140,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <h1><a class="brand" href="index.html"> Nedra Ghariani
-                        <small></small>
+                <h1><a class="brand" href="index.html">
+                        <small>
+                            <img class="media-object" src="{{ asset('img/logo2.png') }}"
+
+                        </small>
                     </a></h1>
                 <div class="nav-collapse collapse">
                     <ul class="nav pull-right">
@@ -152,10 +155,10 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="{{ path('services_index_front') }}">Coaching </a></li>
-                                <li><a href="{{ path('services_index_front') }}">Formation</a></li>
+                                <li><a href="{{ path('formation_index_front') }}">Formation</a></li>
                             </ul>
                         </li>
-                        <li class="programme"><a href="{{ path('programme_show_front') }}">Evenement</a></li>
+                        <li class="programme"><a href="{{ path('programme_index_front') }}">Programmes:TV/Radio</a></li>
 
                         <li><a href="{{ path('temoignages_index_front') }}">Témoignages</a></li>
                         <li><a href="{{ path('media_index_front') }}">Portfollio</a></li>
@@ -167,8 +170,9 @@
     </div>
 </section>
 <!--Header Ends================================================ -->
-<section id="bodySection" style="left: 0px;">
-    <div class="container">
+<section id="bodySection"  style="background-color: #DADADA">
+
+<div class="container" >
         {% block slider %}
         {% endblock %}
 
@@ -178,23 +182,18 @@
     </div>
 
 </section>
-<!-- Footer
- ================================================== -->
+
 <section id="footerSection">
+
     <div class="container">
         <footer class="footer well well-small">
             <div class="row-fluid">
                 <div class="span4">
                     <h4>Newsletter and Subscription</h4>
-
-                    <div id="sidebar">
-                        {{ render(controller('SiteNedraBundle:Programme:recentArticles', { 'max': 3 })) }}
-                    </div>
-
-                    <form>
+                    <form action="{{path('programme_email')}}" method="Post">
                         <div class="input-append">
-                            <input id="appendedInputButton" placeholder="Enter your e-mail" type="text">
-                            <button class="btn btn-warning" type="button">send</button>
+                            <input id="appendedInputButton" name="email" placeholder="Enter your e-mail" type="text">
+                            <button class="btn btn-warning" type="submit">send</button>
                         </div>
                     </form>
                 </div>
@@ -209,8 +208,6 @@
                 </div>
 
                 <div class="span3">
-
-
                     <a href="" title="services" class="style-h5"><i></i> Accueil </a><br/>
                     <a href="" title="" class="style-h5"> Nedra Ghariani Mahdid </a><br/>
                     <a href="" title="portfolio" class="style-h5"> Coaching </a><br/>

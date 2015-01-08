@@ -2,7 +2,7 @@
 
 {% block body -%}
     <section id="bannerSection"
-             style="background:url(themes/images/banner/portfolio.png) no-repeat center center  ;">
+             style="background:url({{asset('themes/images/banner/portfolio.png')}}) no-repeat center center  ;">
         <div class="container">
             <h1 id="pageTitle" class="style-h1">
                 <small class="style-h1">Contactez-moi</small>
@@ -26,20 +26,20 @@
     </section>
     <br>
     <div  class="row">
+        {% for flashMessage in app.session.flashbag.get('notice') %}
+
         <div class="alert alert-success" role="alert">
-            {% for flashMessage in app.session.flashbag.get('notice') %}
-                <div class="flash-notice">
+               <div class="flash-notice">
                     {{ flashMessage }}
                 </div>
             {% endfor %}
         </div>
         <div  class="span6">
-    {{ form(form) }}
+      {{ form(form) }}
 
+     </div>
 
-
-        </div>
-        <div  class="span6">
+        <div  class="span4">
                 <div id="myMap" style="height:500px">
                     <h4 style="text-align: center ">Retrouvez la librairie la plus proche de vous </h4>
                     <iframe src="https://mapsengine.google.com/map/embed?mid=zhi9TRL4bKTM.k588PHJEw4TY" width="480" height="400"></iframe>
@@ -47,5 +47,7 @@
                 </div>
 
         </div>
-    </div>
+        </div>
+
+
 {% endblock %}

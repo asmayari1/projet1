@@ -22,10 +22,12 @@ SiteNedraBundle_services:
 SiteNedraBundle_temoignages:
     resource: "@SiteNedraBundle/Resources/config/routing/temoignages.yml"
     prefix:   /admin/temoignages
-
-programme_show_front:
+programme_email:
+     path:     /sendemail
+     defaults: { _controller: "SiteNedraBundle:Programme:sendemail" }
+programme_index_front:
     path:     /programme
-    defaults: { _controller: "SiteNedraBundle:Programme:showfront" }
+    defaults: { _controller: "SiteNedraBundle:Programme:indexfront" }
 
 introduction_index_front:
     path:     /apropos
@@ -35,7 +37,7 @@ news_index_front:
     path:     /actualite
     defaults: { _controller: "SiteNedraBundle:News:indexfront" }
 
-services_index_front:
+formation_index_front:
     path:     /formation
     defaults: { _controller: "SiteNedraBundle:Services:indexfront" }
 services_index_front:
@@ -49,4 +51,16 @@ temoignages_index_front:
 media_index_front:
     path:     /portfolio
     defaults: { _controller: "SiteNedraBundle:Media:indexfront"}
+
+news_show_front:
+    path:     /{id}/showNews
+    defaults: { _controller: "SiteNedraBundle:News:showNews" }
+
+programme_show_front:
+    path:     /{id}/showProgramme
+    defaults: { _controller: "SiteNedraBundle:Programme:showProgramme" }
+
+formation_show_front:
+    path:     /{id}/showFormation
+    defaults: { _controller: "SiteNedraBundle:Services:showFormation" }
 

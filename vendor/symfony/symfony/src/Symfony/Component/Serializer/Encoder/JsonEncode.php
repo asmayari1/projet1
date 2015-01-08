@@ -18,7 +18,7 @@ namespace Symfony\Component\Serializer\Encoder;
  */
 class JsonEncode implements EncoderInterface
 {
-    private $options ;
+    private $options;
     private $lastError = JSON_ERROR_NONE;
 
     public function __construct($bitmask = 0)
@@ -65,6 +65,7 @@ class JsonEncode implements EncoderInterface
      * Merge default json encode options with context.
      *
      * @param array $context
+     *
      * @return array
      */
     private function resolveContext(array $context = array())

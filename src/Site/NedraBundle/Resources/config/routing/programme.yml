@@ -13,7 +13,7 @@ programme_new:
 programme_create:
     path:     /create
     defaults: { _controller: "SiteNedraBundle:Programme:create" }
-    requirements: { _method: post }
+    requirements: { _method: post|get }
 
 programme_edit:
     path:     /{id}/edit

@@ -30,13 +30,13 @@ class RegistrationFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('username', null, array('label' => 'Nom', 'translation_domain' => 'FOSUserBundle'))
-            ->add('email', 'email', array('label' => 'Email', 'translation_domain' => 'FOSUserBundle'))
+            ->add('username', null, array('label' => 'form.username', 'translation_domain' => 'FOSUserBundle'))
+            ->add('email', 'email', array('label' => 'form.email', 'translation_domain' => 'FOSUserBundle'))
             ->add('plainPassword', 'repeated', array(
                 'type' => 'password',
                 'options' => array('translation_domain' => 'FOSUserBundle'),
-                'first_options' => array('label' => 'mot de passe'),
-                'second_options' => array('label' => 'confirmer votre mot de passe'),
+                'first_options' => array('label' => 'form.password'),
+                'second_options' => array('label' => 'form.password_confirmation'),
                 'invalid_message' => 'fos_user.password.mismatch',
             ))
         ;
@@ -49,6 +49,7 @@ class RegistrationFormType extends AbstractType
             'intention'  => 'registration',
         ));
     }
+
     public function getName()
     {
         return 'fos_user_registration';

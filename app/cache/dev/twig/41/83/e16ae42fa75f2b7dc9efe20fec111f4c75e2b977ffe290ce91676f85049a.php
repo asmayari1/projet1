@@ -7,7 +7,15 @@ class __TwigTemplate_4183e16ae42fa75f2b7dc9efe20fec111f4c75e2b977ffe290ce91676f8
     {
         parent::__construct($env);
 
-        $this->parent = $this->env->loadTemplate("@WebProfiler/Profiler/layout.html.twig");
+        // line 1
+        try {
+            $this->parent = $this->env->loadTemplate("@WebProfiler/Profiler/layout.html.twig");
+        } catch (Twig_Error_Loader $e) {
+            $e->setTemplateFile($this->getTemplateName());
+            $e->setTemplateLine(1);
+
+            throw $e;
+        }
 
         $this->blocks = array(
             'toolbar' => array($this, 'block_toolbar'),
@@ -31,22 +39,22 @@ class __TwigTemplate_4183e16ae42fa75f2b7dc9efe20fec111f4c75e2b977ffe290ce91676f8
     {
         // line 4
         echo "    ";
-        if ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "user")) {
+        if ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "user", array())) {
             // line 5
             echo "        ";
-            $context["color_code"] = ((($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "enabled") && $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "authenticated"))) ? ("green") : ("yellow"));
+            $context["color_code"] = ((($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "enabled", array()) && $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "authenticated", array()))) ? ("green") : ("yellow"));
             // line 6
             echo "        ";
-            $context["authentication_color_code"] = ((($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "enabled") && $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "authenticated"))) ? ("green") : ("red"));
+            $context["authentication_color_code"] = ((($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "enabled", array()) && $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "authenticated", array()))) ? ("green") : ("red"));
             // line 7
             echo "        ";
-            $context["authentication_color_text"] = ((($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "enabled") && $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "authenticated"))) ? ("Yes") : ("No"));
+            $context["authentication_color_text"] = ((($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "enabled", array()) && $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "authenticated", array()))) ? ("Yes") : ("No"));
             // line 8
             echo "    ";
         } else {
             // line 9
             echo "        ";
-            $context["color_code"] = (($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "enabled")) ? ("red") : ("black"));
+            $context["color_code"] = (($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "enabled", array())) ? ("red") : ("black"));
             // line 10
             echo "    ";
         }
@@ -55,7 +63,7 @@ class __TwigTemplate_4183e16ae42fa75f2b7dc9efe20fec111f4c75e2b977ffe290ce91676f8
         ob_start();
         // line 12
         echo "        ";
-        if ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "user")) {
+        if ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "user", array())) {
             // line 13
             echo "            <div class=\"sf-toolbar-info-piece\">
                 <b>Logged in as</b>
@@ -63,7 +71,7 @@ class __TwigTemplate_4183e16ae42fa75f2b7dc9efe20fec111f4c75e2b977ffe290ce91676f8
             // line 15
             echo twig_escape_filter($this->env, (isset($context["color_code"]) ? $context["color_code"] : $this->getContext($context, "color_code")), "html", null, true);
             echo "\">";
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "user"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "user", array()), "html", null, true);
             echo "</span>
             </div>
             <div class=\"sf-toolbar-info-piece\">
@@ -77,20 +85,20 @@ class __TwigTemplate_4183e16ae42fa75f2b7dc9efe20fec111f4c75e2b977ffe290ce91676f8
             </div>
             ";
             // line 21
-            if (($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "tokenClass") != null)) {
+            if (($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "tokenClass", array()) != null)) {
                 // line 22
                 echo "            <div class=\"sf-toolbar-info-piece\">
                 <b>Token class</b>
                 ";
                 // line 24
-                echo $this->env->getExtension('code')->abbrClass($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "tokenClass"));
+                echo $this->env->getExtension('code')->abbrClass($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "tokenClass", array()));
                 echo "
             </div>
             ";
             }
             // line 27
             echo "        ";
-        } elseif ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "enabled")) {
+        } elseif ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "enabled", array())) {
             // line 28
             echo "            You are not authenticated.
         ";
@@ -113,9 +121,9 @@ class __TwigTemplate_4183e16ae42fa75f2b7dc9efe20fec111f4c75e2b977ffe290ce91676f8
         echo "\"></span>
         ";
         // line 36
-        if ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "user")) {
+        if ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "user", array())) {
             echo "<div class=\"sf-toolbar-status sf-toolbar-info-piece-additional\">";
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "user"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "user", array()), "html", null, true);
             echo "</div>";
         }
         // line 37
@@ -144,14 +152,14 @@ class __TwigTemplate_4183e16ae42fa75f2b7dc9efe20fec111f4c75e2b977ffe290ce91676f8
         echo "    <h2>Security</h2>
     ";
         // line 50
-        if ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "user")) {
+        if ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "user", array())) {
             // line 51
             echo "        <table>
             <tr>
                 <th>Username</th>
                 <td>";
             // line 54
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "user"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "user", array()), "html", null, true);
             echo "</td>
             </tr>
             <tr>
@@ -159,14 +167,14 @@ class __TwigTemplate_4183e16ae42fa75f2b7dc9efe20fec111f4c75e2b977ffe290ce91676f8
                 <td>
                     ";
             // line 59
-            if ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "authenticated")) {
+            if ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "authenticated", array())) {
                 // line 60
                 echo "                        yes
                     ";
             } else {
                 // line 62
                 echo "                        no ";
-                if ((!twig_length_filter($this->env, $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "roles")))) {
+                if ( !twig_length_filter($this->env, $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "roles", array()))) {
                     echo "<em>(probably because the user has no roles)</em>";
                 }
                 // line 63
@@ -179,18 +187,18 @@ class __TwigTemplate_4183e16ae42fa75f2b7dc9efe20fec111f4c75e2b977ffe290ce91676f8
                 <th>Roles</th>
                 <td>";
             // line 68
-            echo twig_escape_filter($this->env, $this->env->getExtension('yaml')->encode($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "roles")), "html", null, true);
+            echo twig_escape_filter($this->env, $this->env->getExtension('yaml')->encode($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "roles", array())), "html", null, true);
             echo "</td>
             </tr>
             ";
             // line 70
-            if (($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "tokenClass") != null)) {
+            if (($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "tokenClass", array()) != null)) {
                 // line 71
                 echo "            <tr>
                 <th>Token class</th>
                 <td>";
                 // line 73
-                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "tokenClass"), "html", null, true);
+                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "tokenClass", array()), "html", null, true);
                 echo "</td>
             </tr>
             ";
@@ -198,7 +206,7 @@ class __TwigTemplate_4183e16ae42fa75f2b7dc9efe20fec111f4c75e2b977ffe290ce91676f8
             // line 76
             echo "        </table>
     ";
-        } elseif ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "enabled")) {
+        } elseif ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "enabled", array())) {
             // line 78
             echo "        <p>
             <em>No token</em>
@@ -225,6 +233,6 @@ class __TwigTemplate_4183e16ae42fa75f2b7dc9efe20fec111f4c75e2b977ffe290ce91676f8
 
     public function getDebugInfo()
     {
-        return array (  209 => 82,  193 => 73,  154 => 54,  149 => 51,  133 => 42,  103 => 32,  95 => 28,  86 => 24,  57 => 12,  48 => 9,  51 => 10,  34 => 5,  31 => 4,  806 => 488,  803 => 487,  792 => 485,  788 => 484,  784 => 482,  771 => 481,  745 => 475,  742 => 474,  723 => 472,  706 => 471,  702 => 469,  698 => 468,  694 => 467,  690 => 466,  686 => 465,  682 => 464,  678 => 463,  675 => 462,  673 => 461,  656 => 460,  645 => 458,  630 => 452,  625 => 450,  621 => 449,  618 => 448,  616 => 447,  602 => 445,  597 => 442,  563 => 410,  545 => 407,  528 => 406,  525 => 405,  523 => 404,  518 => 402,  513 => 400,  199 => 76,  196 => 92,  182 => 68,  173 => 63,  158 => 80,  68 => 30,  62 => 27,  28 => 3,  357 => 123,  332 => 116,  327 => 114,  324 => 113,  318 => 111,  306 => 107,  297 => 104,  291 => 102,  263 => 95,  258 => 94,  243 => 92,  231 => 83,  224 => 81,  212 => 78,  202 => 94,  190 => 76,  187 => 70,  161 => 63,  143 => 51,  136 => 71,  122 => 37,  117 => 39,  112 => 35,  85 => 24,  75 => 19,  58 => 25,  44 => 10,  204 => 78,  188 => 90,  174 => 65,  171 => 73,  167 => 71,  138 => 56,  125 => 38,  121 => 50,  118 => 49,  104 => 32,  87 => 41,  49 => 14,  46 => 13,  27 => 3,  91 => 33,  88 => 25,  63 => 18,  389 => 160,  386 => 159,  378 => 157,  371 => 156,  367 => 128,  363 => 153,  358 => 151,  353 => 149,  345 => 120,  343 => 146,  340 => 145,  334 => 117,  331 => 140,  328 => 139,  326 => 138,  321 => 112,  309 => 108,  307 => 128,  302 => 125,  296 => 121,  293 => 120,  290 => 119,  288 => 101,  283 => 100,  281 => 114,  276 => 111,  274 => 97,  269 => 107,  265 => 96,  259 => 103,  255 => 93,  253 => 100,  235 => 85,  232 => 88,  227 => 86,  222 => 83,  210 => 77,  208 => 76,  189 => 71,  184 => 63,  175 => 58,  170 => 84,  166 => 54,  163 => 82,  155 => 47,  152 => 46,  144 => 49,  127 => 35,  109 => 34,  94 => 21,  82 => 22,  76 => 34,  61 => 15,  39 => 6,  36 => 5,  79 => 21,  72 => 18,  69 => 17,  54 => 11,  47 => 11,  42 => 7,  40 => 11,  37 => 10,  22 => 1,  164 => 60,  157 => 56,  145 => 74,  139 => 49,  131 => 45,  120 => 31,  115 => 39,  111 => 47,  108 => 37,  106 => 33,  101 => 31,  98 => 45,  92 => 27,  83 => 33,  80 => 21,  74 => 14,  66 => 11,  60 => 13,  55 => 24,  52 => 12,  50 => 22,  41 => 19,  32 => 6,  29 => 6,  462 => 202,  453 => 199,  449 => 198,  446 => 197,  441 => 196,  439 => 195,  431 => 189,  429 => 188,  422 => 184,  415 => 180,  408 => 176,  401 => 172,  394 => 168,  387 => 164,  380 => 158,  373 => 156,  361 => 125,  355 => 122,  351 => 141,  348 => 121,  342 => 137,  338 => 119,  335 => 134,  329 => 131,  325 => 129,  323 => 128,  320 => 127,  315 => 110,  312 => 109,  303 => 106,  300 => 105,  298 => 120,  289 => 113,  286 => 112,  278 => 98,  275 => 105,  270 => 102,  267 => 101,  262 => 98,  256 => 96,  248 => 97,  246 => 136,  241 => 93,  233 => 87,  229 => 87,  226 => 84,  220 => 81,  216 => 79,  213 => 78,  207 => 75,  203 => 78,  200 => 72,  197 => 69,  194 => 68,  191 => 77,  185 => 74,  181 => 65,  178 => 59,  176 => 64,  172 => 57,  168 => 62,  165 => 83,  162 => 59,  156 => 62,  153 => 77,  150 => 55,  147 => 50,  141 => 48,  134 => 54,  130 => 41,  123 => 61,  119 => 40,  116 => 36,  113 => 48,  105 => 25,  102 => 41,  99 => 30,  96 => 37,  90 => 42,  84 => 40,  81 => 23,  73 => 19,  70 => 15,  67 => 24,  64 => 15,  59 => 16,  53 => 12,  45 => 8,  43 => 12,  38 => 7,  35 => 6,  33 => 4,  30 => 3,);
+        return array (  217 => 82,  211 => 78,  207 => 76,  201 => 73,  197 => 71,  195 => 70,  190 => 68,  184 => 64,  181 => 63,  176 => 62,  172 => 60,  170 => 59,  162 => 54,  157 => 51,  155 => 50,  152 => 49,  149 => 48,  141 => 42,  138 => 41,  133 => 38,  130 => 37,  124 => 36,  120 => 35,  117 => 34,  114 => 33,  111 => 32,  107 => 30,  103 => 28,  100 => 27,  94 => 24,  90 => 22,  88 => 21,  81 => 19,  72 => 15,  68 => 13,  65 => 12,  62 => 11,  59 => 10,  56 => 9,  53 => 8,  50 => 7,  47 => 6,  44 => 5,  41 => 4,  38 => 3,  11 => 1,);
     }
 }

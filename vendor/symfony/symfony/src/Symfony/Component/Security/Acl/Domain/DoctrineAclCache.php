@@ -12,6 +12,7 @@
 namespace Symfony\Component\Security\Acl\Domain;
 
 use Doctrine\Common\Cache\Cache;
+use Doctrine\Common\Cache\CacheProvider;
 use Symfony\Component\Security\Acl\Model\AclCacheInterface;
 use Symfony\Component\Security\Acl\Model\AclInterface;
 use Symfony\Component\Security\Acl\Model\ObjectIdentityInterface;
@@ -55,7 +56,9 @@ class DoctrineAclCache implements AclCacheInterface
      */
     public function clearCache()
     {
-        $this->cache->deleteByPrefix($this->prefix);
+        if ($this->cache instanceof CacheProvider) {
+            $this->cache->deleteAll();
+        }
     }
 
     /**
@@ -144,6 +147,7 @@ class DoctrineAclCache implements AclCacheInterface
      * Unserializes the ACL.
      *
      * @param string $serialized
+     *
      * @return AclInterface
      */
     private function unserializeAcl($serialized)
@@ -202,6 +206,7 @@ class DoctrineAclCache implements AclCacheInterface
      * Returns the key for the object identity
      *
      * @param ObjectIdentityInterface $oid
+     *
      * @return string
      */
     private function getDataKeyByIdentity(ObjectIdentityInterface $oid)
@@ -214,6 +219,7 @@ class DoctrineAclCache implements AclCacheInterface
      * Returns the alias key for the object identity key
      *
      * @param string $aclId
+     *
      * @return string
      */
     private function getAliasKeyForIdentity($aclId)

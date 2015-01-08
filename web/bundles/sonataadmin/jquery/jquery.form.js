@@ -176,7 +176,7 @@ $.fn.ajaxSubmit = function(options) {
 	return this;
 
 
-	// private function for handling file upload (hat tip to YAHOO!)
+	// private function for handling file uploads (hat tip to YAHOO!)
 	function fileUpload() {
 		var form = $form[0];
 

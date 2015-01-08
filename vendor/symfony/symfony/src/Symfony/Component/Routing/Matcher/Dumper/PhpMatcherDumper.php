@@ -38,7 +38,7 @@ class PhpMatcherDumper extends MatcherDumper
     public function dump(array $options = array())
     {
         $options = array_replace(array(
-            'class'      => 'ProjectUrlMatcher',
+            'class' => 'ProjectUrlMatcher',
             'base_class' => 'Symfony\\Component\\Routing\\Matcher\\UrlMatcher',
         ), $options);
 
@@ -78,7 +78,7 @@ EOF;
     /**
      * Generates the code for the match method implementing UrlMatcherInterface.
      *
-     * @param bool    $supportsRedirections Whether redirections are supported by the base class
+     * @param bool $supportsRedirections Whether redirections are supported by the base class
      *
      * @return string Match method as PHP code
      */
@@ -307,7 +307,6 @@ EOF;
 
             $code .= sprintf("            return \$this->mergeDefaults(array_replace(%s), %s);\n"
                 , implode(', ', $vars), str_replace("\n", '', var_export($route->getDefaults(), true)));
-
         } elseif ($route->getDefaults()) {
             $code .= sprintf("            return %s;\n", str_replace("\n", '', var_export(array_replace($route->getDefaults(), array('_route' => $name)), true)));
         } else {
